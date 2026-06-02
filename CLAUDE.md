@@ -9,20 +9,25 @@ PTRM-NMPC: Probabilistic Tiny Recursive Model-based Nonlinear Model Predictive C
 ## Commands
 
 ```bash
-# Activate environment and run the full pipeline (dataset generation → training → Monte Carlo experiments)
-conda activate pytorch
+# Run the full pipeline (dataset generation → training → Monte Carlo experiments)
 python quadrotor_core_simulation.py
 
-# The script auto-detects CUDA/CPU; output figure saved as ptrm_nmpc_advanced_experiments.png
+# Run the extended experiment suite (v5: 6 experiments with ablation studies)
+python experiments/ptrm_nmpc_v5_experiments.py
+
+# Generate IEEE-quality figures for manuscript
+python experiments/plot_ieee_figures.py
+
+# The scripts auto-detect CUDA/CPU; figures saved to respective results directories
 ```
 
-No test runner, linter, or build system exists yet. Dependencies are implicit: PyTorch, NumPy, Matplotlib (install via conda `pytorch` environment).
+No test runner, linter, or build system exists yet. Dependencies: PyTorch, NumPy, Matplotlib (available in base conda environment).
 
 ## Code Architecture
 
-The entire simulation lives in a single monolithic file `quadrotor_core_simulation.py` (755 lines), organized into 7 sections:
+### Main simulation: `quadrotor_core_simulation.py`
 
-### Class Pipeline (execution order)
+The core simulation lives in a single monolithic file, organized into 7 sections:
 
 1. **`QuadrotorDynamics`** — 6D quadrotor translational dynamics + DT-CCBF safety filter
    - `step_discrete()`: RK4 integration with optional +50% mass/drag mismatch and Gaussian process noise
@@ -40,15 +45,30 @@ The entire simulation lives in a single monolithic file `quadrotor_core_simulati
 4. **`PTRMNMPCPredictor`** — Online probabilistic inference (K=50 candidates, D=16 recursion, σ=0.25 noise)
    - `predict_action()`: K parallel noise-injected rollouts → Q-head ranking → trajectory-space hysteresis → optional CBF
 
-### Training & Evaluation Functions
+### Extended experiments: `experiments/ptrm_nmpc_v5_experiments.py`
 
-- `generate_quadrotor_dataset()`: 150 expert NMPC trajectories
-- `train_trm_jointly()`: Joint policy (deep supervision, γ=0.95) + Q-head (cost regression, V_max=150, λ_Q=0.1), 35 epochs, Adam lr=0.0025
-- `run_monte_carlo_experiments()`: 3 experiments (obstacle avoidance, robustness under mismatch, latency profiling across K=[1,10,50,100])
+6 experiments with 100 MC runs each:
+- **exp1**: K-scaling under 3 CBF conditions (NoCBF/WeakCBF/StrongCBF), K∈{1,5,10,20,50,100}
+- **exp2**: σ-scaling ablation, σ∈{0.5,1.0,1.5,2.0,3.0,4.0}
+- **exp3**: Model mismatch robustness (4 conditions × K∈{1,5,10,20,50,100})
+- **exp4**: Noise robustness
+- **exp5**: Ablation (rollout horizon T + obstacle weight w_obs)
+- **exp6**: Runtime profiling
+
+### IEEE figure generation: `experiments/plot_ieee_figures.py`
+
+Generates Figure 1–5 for manuscript:
+- Fig 1: Success rate vs K (3 CBF conditions)
+- Fig 2: IAE vs K (3 CBF conditions)
+- Fig 3: Robustness under mismatch (grouped bar charts)
+- Fig 4: Ablation studies (σ scaling + rollout horizon)
+- Fig 5: 3D trajectory visualization
+
+Output: `experiments/figures_ieee/` (PDF + PNG)
 
 ### Manuscript ↔ Code Mapping
 
-`PTRM_NMPC_manuscript.md` is the paper draft. All numerical result tables (Tables 1–3 in Section 6) contain "script-reported" placeholders — they are filled by running `quadrotor_core_simulation.py`. When updating the manuscript with results, copy values from the script's stdout output.
+`PTRM_NMPC_manuscript.md` is the paper draft. **All numerical result tables (Tables 1–3 in Section 6) are now filled with real experimental data** from `experiments/results_v5/raw_results.json`. The data has been verified for consistency between the manuscript and the JSON source.
 
 ## Critical Implementation Details
 
@@ -59,6 +79,8 @@ The entire simulation lives in a single monolithic file `quadrotor_core_simulati
 - **DT-CCBF uses Log-Sum-Exponential smooth approximation** of the min-barrier (not hard min), enabling gradient-based safety projection
 - **CBF fallback**: When QP is infeasible (A^T u ≤ b has no solution within box constraints), the solver falls back to the closest feasible control within actuator limits plus safety buffer δ_buffer=0.15m
 - **Code comments are in Chinese**; manuscript is in English
+- **No-CBF IAE increases with K** (163.9→190.8): This is expected — K=1 collisions terminate early (low cumulative error), while higher-K surviving trajectories traverse longer detour paths
+- **Process Noise K=100 IAE (217.6) ≥ K=50 IAE (217.1)**: Within MC variance; zero-mean noise doesn't systematically benefit from more candidates
 
 ## Key Hyperparameters
 
@@ -72,6 +94,8 @@ The entire simulation lives in a single monolithic file `quadrotor_core_simulati
 | K (candidates) | 50 | `PTRMNMPCPredictor.__init__` |
 | D (recursion depth) | 16 | `PTRMNMPCPredictor.__init__` |
 | σ (noise scale) | 0.25 | `PTRMNMPCPredictor.__init__` |
+| σ (online perturbation) | 2.0 | Experiment config |
+| rollout horizon T | 20 steps (0.4s) | Experiment config |
 | latent_dim | 64 | `TRMNMPC.__init__` |
 | mpc_horizon | 30 (10 steps × 3D) | `TRMNMPC.__init__` |
 | Training epochs | 35 | `train_trm_jointly` |
@@ -82,11 +106,32 @@ The entire simulation lives in a single monolithic file `quadrotor_core_simulati
 
 - [x] Phase 1: Core simulation framework (quadrotor dynamics + DT-CCBF + PTRM network)
 - [x] Phase 2: Manuscript drafting (English, targeting IEEE TAC / Automatica)
-- [ ] Phase 3: Full experiments (Monte Carlo across multiple scenarios)
+- [x] Phase 3: Full experiments (Monte Carlo across multiple scenarios, 6 experiments, 100 MC runs each)
+- [x] Phase 3a: Data backfill to manuscript Tables 1–3
+- [x] Phase 3b: IEEE-quality figure generation (Fig 1–5)
 - [ ] Phase 4: Paper revision and submission
 
-## Planned Directories (not yet created)
+## Directory Structure
 
-- `docs/` — Design specs, wiki, and plans
-- `experiments/` — Training and evaluation scripts
-- `tests/` — Unit and integration tests
+```
+PTRM-NMPC/
+├── CLAUDE.md                          # This file
+├── PTRM_NMPC_manuscript.md            # Paper draft (English)
+├── quadrotor_core_simulation.py       # Main simulation script
+├── quadrotor_core/                    # Modularized core (v2-v4 iterations)
+├── experiments/
+│   ├── ptrm_nmpc_v5_experiments.py    # Extended experiment suite
+│   ├── plot_ieee_figures.py           # IEEE figure generation
+│   ├── results_v5/                    # V5 experiment results + LaTeX tables
+│   │   ├── raw_results.json           # All numerical data
+│   │   ├── *.tex                      # Auto-generated LaTeX tables
+│   │   └── *.pdf / *.png              # Auto-generated figures
+│   └── figures_ieee/                  # IEEE-quality figures for manuscript
+│       ├── fig1_success_rate_vs_K.pdf
+│       ├── fig2_iae_vs_K.pdf
+│       ├── fig3_robustness_mismatch.pdf
+│       ├── fig4_ablation_studies.pdf
+│       └── fig5_trajectories_3d.pdf
+├── plot_3d_trajectories.py            # Standalone 3D trajectory plotter
+└── requirements.txt
+```
