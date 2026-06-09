@@ -1,0 +1,76 @@
+{
+  "task": "narrow",
+  "config": "+50% mass (m=2.25, b=0.1)",
+  "controller": "K=10 paired McNemar",
+  "seeds": [
+    {
+      "seed": 2026,
+      "file": "cross_config_mass_n40.json",
+      "PD": 0,
+      "R1_s5": 31,
+      "N": 40,
+      "R1_s5_rate": 0.775,
+      "R1_s5_ci95": [
+        0.6249690325768998,
+        0.8768390867645927
+      ],
+      "PD_rate": 0.0,
+      "PD_ci95": [
+        0.0,
+        0.08762160119728665
+      ]
+    },
+    {
+      "seed": 7777,
+      "file": "r1_s5_mass_k10_n40_seed7777.json",
+      "PD": 0,
+      "R1_s5": 32,
+      "N": 40,
+      "PD_note": "PD K=10 is single-source Gaussian \u03c3=2 around nominal-mass PD law; collapses to 0/40 on every tested seed (deterministic mode failure).",
+      "R1_s5_rate": 0.8,
+      "R1_s5_ci95": [
+        0.652426936536005,
+        0.895000102745623
+      ],
+      "PD_rate": 0.0,
+      "PD_ci95": [
+        0.0,
+        0.08762160119728665
+      ]
+    },
+    {
+      "seed": 31415,
+      "file": "seed31415_mass_paired_stats.json",
+      "PD": 0,
+      "R1_s5": 36,
+      "N": 40,
+      "R1_s5_rate": 0.9,
+      "R1_s5_ci95": [
+        0.769482247724777,
+        0.9604204713173937
+      ],
+      "PD_rate": 0.0,
+      "PD_ci95": [
+        0.0,
+        0.08762160119728665
+      ]
+    }
+  ],
+  "pooled": {
+    "PD_succ": 0,
+    "PD_N": 120,
+    "PD_rate": 0.0,
+    "PD_wilson_ci95": [
+      0.0,
+      0.031019166418703486
+    ],
+    "R1_s5_succ": 99,
+    "R1_s5_N": 120,
+    "R1_s5_rate": 0.825,
+    "R1_s5_wilson_ci95": [
+      0.7472429012735073,
+      0.8825946405543355
+    ]
+  },
+  "interpretation": "PD collapses to 0/120 across all three seeds (nominal-mass PD law is deterministic mode failure under +50% mass). R1_s5 retains 99/120 = 82.5% pooled success with Wilson 95% CI [74.7%, 88.3%]. The headline 77.5% (seed 2026) is the most conservative of the three; the pooled estimate sits at 82.5% with the 90% upper-CI floor at 74.7%."
+}

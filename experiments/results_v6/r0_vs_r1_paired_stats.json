@@ -1,0 +1,36 @@
+{
+  "task": "narrow +50% mass",
+  "K": 10,
+  "N": 40,
+  "seed": 2026,
+  "source": "r0_r1_pd_mass_n40_s2026.json",
+  "tests": [
+    {
+      "comparison": "R0_pd_s5_vs_PD",
+      "b": 32,
+      "c": 0,
+      "p_exact_two_sided": 4.656612873077393e-10,
+      "note": "R0 better if c>b"
+    },
+    {
+      "comparison": "R1_s5_vs_PD",
+      "b": 29,
+      "c": 0,
+      "p_exact_two_sided": 3.725290298461914e-09,
+      "note": "R1 better if c>b"
+    },
+    {
+      "comparison": "R0_pd_s5_vs_R1_s5",
+      "b": 6,
+      "c": 3,
+      "p_exact_two_sided": 0.5078125,
+      "note": "R0 better if c>b"
+    }
+  ],
+  "counts": {
+    "PD": 0,
+    "R0_pd_s5": 32,
+    "R1_s5": 29
+  },
+  "interpretation": "Under +50% mass at seed 2026: single-source-wide R0_pd_s5 (K=10 PD-Gaussian \u03c3=5) achieves 32/40 = 80.0%, slightly higher than the two-source R1_s5 at 29/40 = 72.5%. McNemar R0-vs-R1 is statistically inconclusive (see tests). The result reframes the methodological story: the dominant lever is the wide noise scale \u03c3=5 in either configuration, not the two-source partition per se."
+}

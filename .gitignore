@@ -1,32 +1,137 @@
-# Python
+# ============================================================
+# .gitignore for CBF-Projected-Hard-Argmin-Sampling repository
+# ============================================================
+
+# --- Python ---
 __pycache__/
 *.py[cod]
 *.egg-info/
-dist/
-build/
 *.egg
+dist/
+.eggs/
+.pytest_cache/
 
-# PyTorch
-*.pt
-*.pth
-
-# Jupyter
+# --- Jupyter ---
 .ipynb_checkpoints/
 
-# Experiment outputs
-*.png
-*.pdf
-*.csv
-
-# OS
+# --- OS / IDE ---
 .DS_Store
 Thumbs.db
-
-# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-
-# Conda / venv
+*~
 .env
+
+# --- LaTeX build artifacts ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# --- Tooling state ---
+.claude/
+MEMORY/
+*.local.*
+
+# --- Project: archived / superseded artifacts (not for distribution) ---
+archive/
+new_manuscript_sections/
+build/
+
+# --- Project: legacy monolithic simulation scripts (replaced by quadrotor_core/) ---
+quadrotor_core_simulation.py
+quadrotor_core_simulation_v2.py
+quadrotor_core_simulation_v3.py
+quadrotor_core_simulation_v4.py
+fix_ablation_output.py
+plot_3d_trajectories.py
+run_all_experiments.py
+build_manuscript_pdf.py
+
+# --- Project: superseded / developer-only experiment scripts (kept locally, not for distribution) ---
+experiments/ptrm_nmpc_v5_experiments.py
+experiments/ptrm_nmpc_v6_experiments.py
+experiments/hybrid_arch_experiment.py
+experiments/hybrid_arch_experiment_v2.py
+experiments/hybrid_arch_experiment_v3.py
+experiments/hybrid_final_experiment.py
+experiments/path_a_validation.py
+experiments/path_b_fix_validation.py
+experiments/path_c_train_and_validate.py
+experiments/path_d_validation.py
+experiments/probes_a_stats.py
+experiments/probes_a_zero_train.py
+experiments/ptrm_advantage_quick.py
+experiments/ptrm_advantage_stats.py
+experiments/r6_mcis_verification.py
+experiments/r6_verification.py
+experiments/mcis_computation.py
+experiments/latency_decomposition.py
+experiments/mppi_cem_sigma_sweep.py
+experiments/mppi_lambda_sweep.py
+experiments/multi_obstacle_extended.py
+experiments/noise_ablation.py
+experiments/dataset_scaling.py
+experiments/fallback_collision_conditional.py
+experiments/hybrid_*.py
+experiments/peer_review_*.md
+experiments/generate_paper_figures.py
+
+# --- Project: legacy v3/v4 result directory (superseded by results_v6/) ---
+experiments/results/
+experiments/results_hybrid/
+
+# --- Project: developer-only peer-review notes & diagnostic scripts ---
+experiments/review_*.md
+experiments/review[0-9]*_*.md
+experiments/v6_quick_test.py
+experiments/v6_supplement.py
+experiments/train_cl_trm.py
+experiments/retrain_trm.py
+experiments/run_e1_ablation.py
+experiments/run_p02_expanded.py
+experiments/run_p03_ablations.py
+experiments/run_fallback_audit.py
+experiments/run_mce_baselines.py
+experiments/run_pi_baseline.py
+experiments/run_ablation_update.py
+experiments/run_remaining_tables.py
+experiments/theory_verification.py
+experiments/trm_failure_diagnostic.py
+experiments/trm_k_sweep_diagnostic.py
+
+# --- Project: developer-only memory and notes ---
+CLAUDE.md
+SESSION_HANDOFF.md
+REVIEW_REPORT.md
+
+# --- Project: large intermediate / dev-only artifacts ---
+experiments/results_v5/
+experiments/figures_diag/
+experiments/*.log
+experiments/results_v6/*.log
+experiments/results_v6/*_smoke.json
+experiments/results_v6/*_smoke.pt
+experiments/results_v6/p03_ablation_results.json
+experiments/results_v6/probes_a_narrow_n20.json
+experiments/results_v6/probes_a3_narrow_n80.json
+experiments/results_v6/probes_a3_narrow_n300_s7777.json
+experiments/results_v6/ptrm_advantage_*.json
+experiments/results_v6/narrow_dataset_v1.pt
+
+# --- Manuscript working/intermediate outputs ---
+PTRM_NMPC_manuscript_v2.pdf
+PTRM_NMPC_manuscript_new.pdf

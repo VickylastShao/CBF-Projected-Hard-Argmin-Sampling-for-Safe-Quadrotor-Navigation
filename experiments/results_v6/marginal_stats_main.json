@@ -1,0 +1,381 @@
+{
+  "main_K": [
+    {
+      "K": 5,
+      "n": 80,
+      "mcnemar_b": 3,
+      "mcnemar_c": 27,
+      "mcnemar_p": 8.430331945419312e-06,
+      "dterr_marginal_mean": -3.038724310765974,
+      "dterr_marginal_ci": [
+        -4.260494876636949,
+        -1.91585527960764
+      ],
+      "diae_marginal_mean": -5.108213155195466,
+      "diae_marginal_ci": [
+        -6.507294148698509,
+        -3.7223960835886167
+      ]
+    },
+    {
+      "K": 10,
+      "n": 80,
+      "mcnemar_b": 1,
+      "mcnemar_c": 27,
+      "mcnemar_p": 2.1606683731079102e-07,
+      "dterr_marginal_mean": -3.2905493363039566,
+      "dterr_marginal_ci": [
+        -4.402261169571575,
+        -2.2856004489495536
+      ],
+      "diae_marginal_mean": -5.6430096460352654,
+      "diae_marginal_ci": [
+        -6.95286918841841,
+        -4.370181603653361
+      ]
+    },
+    {
+      "K": 20,
+      "n": 80,
+      "mcnemar_b": 1,
+      "mcnemar_c": 19,
+      "mcnemar_p": 4.00543212890625e-05,
+      "dterr_marginal_mean": -2.287213730244548,
+      "dterr_marginal_ci": [
+        -3.2794623783160204,
+        -1.3027048949291933
+      ],
+      "diae_marginal_mean": -4.5361267693257545,
+      "diae_marginal_ci": [
+        -5.75242374178568,
+        -3.3699498895493534
+      ]
+    }
+  ],
+  "holm": {
+    "family_size": 7,
+    "alpha": 0.05,
+    "tests": [
+      {
+        "key": "K=5 narrow",
+        "p": 8.430331945419312e-06,
+        "reject": true
+      },
+      {
+        "key": "K=10 narrow",
+        "p": 2.1606683731079102e-07,
+        "reject": true
+      },
+      {
+        "key": "K=20 narrow",
+        "p": 4.00543212890625e-05,
+        "reject": true
+      },
+      {
+        "key": "mass narrow K=10",
+        "p": 9.313225746154785e-10,
+        "reject": true
+      },
+      {
+        "key": "drag narrow K=10",
+        "p": 0.00048828125,
+        "reject": true
+      },
+      {
+        "key": "two_gate K=10",
+        "p": 1.0,
+        "reject": false
+      },
+      {
+        "key": "u_shape K=10",
+        "p": 1.0,
+        "reject": false
+      }
+    ]
+  },
+  "holm_realized_m10": {
+    "family_size": 10,
+    "alpha": 0.05,
+    "tests": [
+      {
+        "key": "main narrow K=5",
+        "n_pair": 80,
+        "b": 3,
+        "c": 27,
+        "p": 8.430331945419312e-06,
+        "reject_holm_m10": true,
+        "reject_holm_m25_sensitivity": true
+      },
+      {
+        "key": "main narrow K=10",
+        "n_pair": 80,
+        "b": 1,
+        "c": 27,
+        "p": 2.1606683731079102e-07,
+        "reject_holm_m10": true,
+        "reject_holm_m25_sensitivity": true
+      },
+      {
+        "key": "main narrow K=20",
+        "n_pair": 80,
+        "b": 1,
+        "c": 19,
+        "p": 4.00543212890625e-05,
+        "reject_holm_m10": true,
+        "reject_holm_m25_sensitivity": true
+      },
+      {
+        "key": "crossconfig +50% mass K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 31,
+        "p": 9.313225746154785e-10,
+        "reject_holm_m10": true,
+        "reject_holm_m25_sensitivity": true
+      },
+      {
+        "key": "crossconfig +50% drag K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 12,
+        "p": 0.00048828125,
+        "reject_holm_m10": true,
+        "reject_holm_m25_sensitivity": true
+      },
+      {
+        "key": "crosstask two_gate K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "reject_holm_m10": false,
+        "reject_holm_m25_sensitivity": false
+      },
+      {
+        "key": "crosstask u_shape K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "reject_holm_m10": false,
+        "reject_holm_m25_sensitivity": false
+      },
+      {
+        "key": "negabl A3vsR1 K=5",
+        "n_pair": 80,
+        "b": 3,
+        "c": 9,
+        "p": 0.14599609375,
+        "reject_holm_m10": false,
+        "reject_holm_m25_sensitivity": false
+      },
+      {
+        "key": "negabl A3vsR1 K=10",
+        "n_pair": 80,
+        "b": 4,
+        "c": 10,
+        "p": 0.1795654296875,
+        "reject_holm_m10": false,
+        "reject_holm_m25_sensitivity": false
+      },
+      {
+        "key": "negabl A3vsR1 K=20",
+        "n_pair": 80,
+        "b": 0,
+        "c": 3,
+        "p": 0.25,
+        "reject_holm_m10": false,
+        "reject_holm_m25_sensitivity": false
+      }
+    ]
+  },
+  "holm_m13_primary": {
+    "family_size": 13,
+    "alpha": 0.05,
+    "tests": [
+      {
+        "key": "crossconfig +50% mass K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 31,
+        "p": 9.313225746154785e-10,
+        "rank": 1,
+        "holm_m13_threshold": 0.0038461538461538464,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.0017857142857142859,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "negabl A3-vs-PD K=5",
+        "n_pair": 80,
+        "b": 2,
+        "c": 37,
+        "p": 2.841261448338628e-09,
+        "rank": 2,
+        "holm_m13_threshold": 0.004166666666666667,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.001851851851851852,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "A3 vs PD (same run, properly paired)",
+        "direction": "A3 better"
+      },
+      {
+        "key": "main narrow K=10",
+        "n_pair": 80,
+        "b": 1,
+        "c": 27,
+        "p": 2.1606683731079102e-07,
+        "rank": 3,
+        "holm_m13_threshold": 0.004545454545454546,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.0019230769230769232,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "main narrow K=5",
+        "n_pair": 80,
+        "b": 3,
+        "c": 27,
+        "p": 8.430331945419312e-06,
+        "rank": 4,
+        "holm_m13_threshold": 0.005,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.002,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "main narrow K=20",
+        "n_pair": 80,
+        "b": 1,
+        "c": 19,
+        "p": 4.00543212890625e-05,
+        "rank": 5,
+        "holm_m13_threshold": 0.005555555555555556,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.0020833333333333333,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "crossconfig +50% drag K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 12,
+        "p": 0.00048828125,
+        "rank": 6,
+        "holm_m13_threshold": 0.00625,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.002173913043478261,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "negabl A3-vs-PD K=10",
+        "n_pair": 80,
+        "b": 6,
+        "c": 24,
+        "p": 0.001430906355381012,
+        "rank": 7,
+        "holm_m13_threshold": 0.0071428571428571435,
+        "reject_holm_m13": true,
+        "holm_m28_threshold": 0.002272727272727273,
+        "reject_holm_m28_sensitivity": true,
+        "pair_type": "A3 vs PD (same run, properly paired)",
+        "direction": "A3 better"
+      },
+      {
+        "key": "negabl A3-vs-PD K=20",
+        "n_pair": 80,
+        "b": 3,
+        "c": 13,
+        "p": 0.021270751953125,
+        "rank": 8,
+        "holm_m13_threshold": 0.008333333333333333,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.002380952380952381,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "A3 vs PD (same run, properly paired)",
+        "direction": "A3 better"
+      },
+      {
+        "key": "negabl A3vsR1 K=5",
+        "n_pair": 80,
+        "b": 3,
+        "c": 9,
+        "p": 0.14599609375,
+        "rank": 9,
+        "holm_m13_threshold": 0.01,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.0025,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "negabl A3vsR1 K=10",
+        "n_pair": 80,
+        "b": 4,
+        "c": 10,
+        "p": 0.1795654296875,
+        "rank": 10,
+        "holm_m13_threshold": 0.0125,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.002631578947368421,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "negabl A3vsR1 K=20",
+        "n_pair": 80,
+        "b": 0,
+        "c": 3,
+        "p": 0.25,
+        "rank": 11,
+        "holm_m13_threshold": 0.016666666666666666,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.002777777777777778,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "crosstask two_gate K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "rank": 12,
+        "holm_m13_threshold": 0.025,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.0029411764705882353,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      },
+      {
+        "key": "crosstask u_shape K=10",
+        "n_pair": 40,
+        "b": 0,
+        "c": 0,
+        "p": 1.0,
+        "rank": 13,
+        "holm_m13_threshold": 0.05,
+        "reject_holm_m13": false,
+        "holm_m28_threshold": 0.003125,
+        "reject_holm_m28_sensitivity": false,
+        "pair_type": "existing (marginal_stats_main)",
+        "direction": "R1_s5 better"
+      }
+    ],
+    "note": "primary family from \u00a75.1 multiple-comparison correction; augmented from m=10 (exist) + 3 A3-vs-PD cells from probes_a3."
+  }
+}

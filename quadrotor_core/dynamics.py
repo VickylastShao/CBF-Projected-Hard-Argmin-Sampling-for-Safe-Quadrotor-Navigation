@@ -13,7 +13,7 @@ import torch
 class QuadrotorDynamics:
     """6维四轴飞行器外环平移动力学模拟器，集成多障碍物环境与安全缓冲区保护机制"""
 
-    def __init__(self, m=1.5, b_drag=0.1, dt=0.02):
+    def __init__(self, m=1.5, b_drag=0.1, dt=0.02, obstacles=None):
         self.g = 9.81        # 重力加速度 (m/s^2)
         self.m = m           # 标称质量 (kg) (支持在实验中引入物理参数失配)
         self.b_drag = b_drag # 空气摩擦阻尼因数 (N*s/m)
@@ -30,12 +30,22 @@ class QuadrotorDynamics:
         # 保守防撞缓冲区，用以在致动器饱和进入 Fallback 阶段时提供物理缓冲，确保系统"自愈"过程中绝对安全
         self.delta_buffer = 0.15
 
-        # 定义由三个交错球体障碍物形成的非凸避障通道环境
-        self.obstacles = [
-            {"p": np.array([1.0, 1.0, 1.0]), "r": 0.5},
-            {"p": np.array([2.0, 1.5, 2.0]), "r": 0.5},
-            {"p": np.array([1.5, 2.2, 1.5]), "r": 0.4}
-        ]
+        # CBF 触发/回退统计计数器（审稿修订：P3 实证支持）
+        self.cbf_active_count = 0    # CBF 投影触发次数（u_box 违反约束需修正）
+        self.cbf_fallback_count = 0  # CBF 回退触发次数（二分无解，致动器饱和）
+        self.cbf_call_count = 0      # CBF 总调用次数
+
+        # 定义由交错球体障碍物形成的非凸避障通道环境
+        # 支持自定义障碍物配置（审稿修订R5: 多障碍物环境实验）
+        if obstacles is not None:
+            self.obstacles = obstacles
+        else:
+            # 默认配置: 三个交错球体障碍物
+            self.obstacles = [
+                {"p": np.array([1.0, 1.0, 1.0]), "r": 0.5},
+                {"p": np.array([2.0, 1.5, 2.0]), "r": 0.5},
+                {"p": np.array([1.5, 2.2, 1.5]), "r": 0.4}
+            ]
 
     def step_discrete(self, x, u, use_mismatch=False, process_noise=0.0):
         """
@@ -65,10 +75,26 @@ class QuadrotorDynamics:
         # 模拟物理环境中的持续高斯过程噪声
         if process_noise > 0.0:
             noise = torch.randn_like(x_next) * process_noise
-            noise = torch.clamp(noise, -0.015, 0.015)
+            noise = torch.clamp(noise, -3 * process_noise, 3 * process_noise)
             x_next = x_next + noise
 
         return x_next
+
+    def reset_cbf_stats(self):
+        """重置 CBF 统计计数器"""
+        self.cbf_active_count = 0
+        self.cbf_fallback_count = 0
+        self.cbf_call_count = 0
+
+    def get_cbf_stats(self):
+        """返回当前 CBF 统计摘要"""
+        return {
+            "cbf_calls": self.cbf_call_count,
+            "cbf_active": self.cbf_active_count,
+            "cbf_fallback": self.cbf_fallback_count,
+            "cbf_active_rate": self.cbf_active_count / max(self.cbf_call_count, 1),
+            "cbf_fallback_rate": self.cbf_fallback_count / max(self.cbf_call_count, 1),
+        }
 
     def apply_cbf_projection(self, x, u_nominal, kappa=5.0):
         """
@@ -121,14 +147,25 @@ class QuadrotorDynamics:
 
         b_smooth = B_smooth_drift - (1.0 - self.gamma_d) * B_smooth
 
-        u_safe = self._project_control(u_nominal.detach().cpu().numpy(), A_smooth, b_smooth)
+        self.cbf_call_count += 1
+        u_safe, was_active, was_fallback = self._project_control(
+            u_nominal.detach().cpu().numpy(), A_smooth, b_smooth)
+        if was_active:
+            self.cbf_active_count += 1
+        if was_fallback:
+            self.cbf_fallback_count += 1
         return torch.tensor(u_safe, dtype=torch.float32)
 
     def _project_control(self, u_nominal, A, b):
-        """解析法高精度二分求解 Lagrange 乘子以满足 active 避障约束"""
+        """解析法高精度二分求解 Lagrange 乘子以满足 active 避障约束
+
+        返回 (u_safe, was_active, was_fallback):
+          - was_active: True 表示 u_box 违反约束，CBF 投影被触发
+          - was_fallback: True 表示二分法无解，进入致动器饱和紧急回退
+        """
         u_box = np.clip(u_nominal, self.u_min, self.u_max)
         if np.dot(A, u_box) <= b:
-            return u_box
+            return u_box, False, False
 
         # 寻找 lambda 上界
         low = 0.0
@@ -158,5 +195,6 @@ class QuadrotorDynamics:
                 best_u = u_box
             else:
                 best_u = np.where(A >= 0.0, self.u_min, self.u_max)
+            return best_u, True, True
 
-        return best_u
+        return best_u, True, False

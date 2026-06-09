@@ -1,0 +1,144 @@
+{
+  "e1": {
+    "trm_pd_a05": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "trm_pd_a08": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "pd_rollout": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "trm_rollout_k50": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "trm_rollout_k1": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.0007335963862715289,
+      "terminal_error_std": 0.00013515662816540822,
+      "iae_mean": 0.7288768131551042,
+      "iae_std": 0.1443904904291385
+    }
+  },
+  "e2": {
+    "pure_rollout": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "q_head_rollout": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.005992749088909477,
+      "terminal_error_std": 0.0021021985199161175,
+      "iae_mean": 0.6601702498445181,
+      "iae_std": 0.14467389956079432
+    },
+    "random": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.0070252719335258005,
+      "terminal_error_std": 0.0033143566971825396,
+      "iae_mean": 0.6350775828624319,
+      "iae_std": 0.11328455505536486
+    },
+    "pd_k1": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.0007335963862715289,
+      "terminal_error_std": 0.00013515662816540822,
+      "iae_mean": 0.7288768131551042,
+      "iae_std": 0.1443904904291385
+    }
+  },
+  "e3": {
+    "pd_k1_n0.0": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.009349128254689277,
+      "terminal_error_std": 0.001489401960093414,
+      "iae_mean": 0.8427808099621906,
+      "iae_std": 0.1578229072098508
+    },
+    "pd_k1_n0.01": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.08531428780406713,
+      "terminal_error_std": 0.03726293755339758,
+      "iae_mean": 0.8815098741208202,
+      "iae_std": 0.17679103538025642
+    },
+    "pd_k1_n0.05": {
+      "success_rate": 50.0,
+      "collision_rate": 40.0,
+      "terminal_error_mean": 0.41834268569946287,
+      "terminal_error_std": 0.1925810580956823,
+      "iae_mean": 1.1162635972074546,
+      "iae_std": 0.2001884681250722
+    },
+    "pd_k1_n0.1": {
+      "success_rate": 5.0,
+      "collision_rate": 85.0,
+      "terminal_error_mean": 0.8958869837224483,
+      "terminal_error_std": 0.38346036721209764,
+      "iae_mean": 1.4220654536634685,
+      "iae_std": 0.1894542146936548
+    },
+    "trm_pd_k50_n0.0": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.006051007518544793,
+      "terminal_error_std": 0.0023307094466607074,
+      "iae_mean": 0.7639337858668636,
+      "iae_std": 0.15103800360346686
+    },
+    "trm_pd_k50_n0.01": {
+      "success_rate": 100.0,
+      "collision_rate": 0.0,
+      "terminal_error_mean": 0.0734536276664585,
+      "terminal_error_std": 0.027899503745293076,
+      "iae_mean": 0.7910669332155958,
+      "iae_std": 0.13175288711771696
+    },
+    "trm_pd_k50_n0.05": {
+      "success_rate": 65.0,
+      "collision_rate": 30.0,
+      "terminal_error_mean": 0.4111073494888842,
+      "terminal_error_std": 0.16607232760183746,
+      "iae_mean": 0.9911736190468072,
+      "iae_std": 0.10712352145204021
+    },
+    "trm_pd_k50_n0.1": {
+      "success_rate": 0.0,
+      "collision_rate": 95.0,
+      "terminal_error_mean": 0.878431386500597,
+      "terminal_error_std": 0.3637609656171176,
+      "iae_mean": 1.3260003908189635,
+      "iae_std": 0.16806097491276223
+    }
+  }
+}

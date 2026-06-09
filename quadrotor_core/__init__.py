@@ -8,7 +8,7 @@ PTRM-NMPC 核心模块包
 
 from .dynamics import QuadrotorDynamics
 from .nmpc_solver import GoldenNMPCSolver
-from .trm_network import TRMNMPC
+from .trm_network import TRMNMPC, SimpleEncoderQHead
 from .ptrm_predictor import PTRMNMPCPredictor
-from .dataset import generate_quadrotor_dataset, evaluate_batch_decoded_trajectory_cost
-from .training import train_trm_jointly
+from .dataset import generate_quadrotor_dataset, generate_cl_trm_dataset, evaluate_batch_decoded_trajectory_cost
+from .training import train_trm_jointly, train_trm_candidate_conditioned, train_simple_encoder_qhead

@@ -1,0 +1,37 @@
+{
+  "seed": 31415,
+  "task": "narrow",
+  "config": "+50% mass",
+  "K": 10,
+  "N": 40,
+  "PD": {
+    "success_n": 0,
+    "success_rate": 0.0
+  },
+  "R1_s5": {
+    "success_n": 36,
+    "success_rate": 0.9
+  },
+  "mcnemar": {
+    "b": 36,
+    "c": 0,
+    "n": 36,
+    "p_exact_two_sided": 2.9103830456733704e-11
+  },
+  "marginal_delta": {
+    "penalty_TErr": 10.0,
+    "penalty_IAE": 20.0,
+    "delta_TErr_mean": -8.931455492787062,
+    "delta_IAE_mean": -11.560984867640771,
+    "delta_TErr_ci95": [
+      -9.681863721874542,
+      -7.93795659893658
+    ],
+    "delta_IAE_ci95": [
+      -12.608864044178812,
+      -10.254750905433509
+    ],
+    "B_bootstrap": 10000
+  },
+  "note": "Third-seed replication. Seed 7777 had R1_s5 31/40 vs PD 0/40 (b=31,c=0). Seed 31415 confirms qualitative collapse: PD fully collapses, R1_s5 retains majority success."
+}

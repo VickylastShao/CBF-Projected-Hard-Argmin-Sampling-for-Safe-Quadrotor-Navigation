@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Dynamic obstacle scenario ($K\!=\!50$, Strong CBF, $N_{\mathrm{MC}}=300$, 3 seeds). A moving obstacle traverses the corridor during the trajectory.}
+\label{tab:dynamic_obstacle}
+\begin{tabular}{lccc}
+\toprule
+Method & Success Rate & $T_{\mathrm{err}}$ (m) & IAE \\
+\midrule
+  PTRM $K\!=\!50$ & 100.0\% & $0.0055 \pm 0.0022$ & 0.69 \\
+  MPPI $K\!=\!50$ & 100.0\% & $0.0155 \pm 0.0065$ & 0.69 \\
+  PD $K\!=\!1$ & 100.0\% & $0.0008 \pm 0.0004$ & 0.76 \\
+\bottomrule
+\end{tabular}
+\end{table}

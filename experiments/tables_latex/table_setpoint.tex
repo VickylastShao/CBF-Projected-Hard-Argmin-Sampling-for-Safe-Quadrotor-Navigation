@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Additional setpoint evaluation ($K\!=\!50$, Strong CBF, $N_{\mathrm{MC}}=300$, 3 seeds).}
+\label{tab:setpoint}
+\begin{tabular}{llccc}
+\toprule
+Setpoint & Method & Success Rate & $T_{\mathrm{err}}$ (m) & IAE \\
+\midrule
+  Setpoint A & PTRM $K\!=\!50$ & 100.0\% & $0.0055 \pm 0.0023$ & 0.43 \\
+   & MPPI $K\!=\!50$ & 100.0\% & $0.0155 \pm 0.0066$ & 0.48 \\
+   & PD $K\!=\!1$ & 100.0\% & $0.0006 \pm 0.0004$ & 0.46 \\
+  \midrule
+  Setpoint B & PTRM $K\!=\!50$ & 100.0\% & $0.0056 \pm 0.0023$ & 0.39 \\
+   & MPPI $K\!=\!50$ & 100.0\% & $0.0155 \pm 0.0065$ & 0.47 \\
+   & PD $K\!=\!1$ & 100.0\% & $0.0003 \pm 0.0001$ & 0.43 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Online single-step inference latency decomposition for the proposed TRM-PD hybrid candidate generation with pure rollout-all evaluation. Timing uses CPU execution, 10 warmup calls, and 50 repeated calls.}
+\label{tab:latency}
+\begin{tabular}{cccccccc}
+\toprule
+$K$ & Gen & Rollout & Hyst+Sel & CBF & Total & Total std & vs. $dt$ \\
+& (ms) & (ms) & (ms) & (ms) & (ms) & (ms) & budget \\
+\midrule
+  $1$ & 1.36 & 0.02 & 0.020 & 0.128 & 1.52 & 0.25 & 13.2$\times$ \\
+  $10$ & 2.04 & 4.49 & 0.037 & 0.183 & 6.76 & 1.01 & 3.0$\times$ \\
+  $50$ & 2.06 & 4.69 & 0.048 & 0.204 & 7.01 & 1.09 & 2.9$\times$ \\
+  $100$ & 2.08 & 5.02 & 0.054 & 0.216 & 7.38 & 1.58 & 2.7$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}

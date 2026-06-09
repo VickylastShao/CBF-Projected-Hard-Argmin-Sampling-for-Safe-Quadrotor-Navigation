@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Baseline comparison under nominal conditions ($N_{\mathrm{MC}}=300$, 3 seeds). Best nominal $T_{\mathrm{err}}$ in \textbf{bold}; MLP+CBF fails all trials.}
+\label{tab:baselines}
+\begin{tabular}{lccc}
+\toprule
+Method & Success Rate & $T_{\mathrm{err}}$ (m) & IAE \\
+\midrule
+  PD $K\!=\!1$ & 100.0\% & $0.0008 \pm 0.0004$ & 0.76 \\
+  PTRM $K\!=\!50$ & 100.0\% & $0.0055 \pm 0.0022$ & 0.69 \\
+  MPPI $K\!=\!50$ & 100.0\% & $0.0155 \pm 0.0065$ & 0.69 \\
+  CEM $K\!=\!50$ & 100.0\% & $0.0030 \pm 0.0012$ & 0.67 \\
+  MLP+CBF & 0.0\% & $12.4177 \pm 0.1450$ & 8.14 \\
+\bottomrule
+\end{tabular}
+\end{table}

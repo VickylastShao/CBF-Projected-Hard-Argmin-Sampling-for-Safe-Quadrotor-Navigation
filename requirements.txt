@@ -1,11 +1,13 @@
-# PTRM-NMPC Requirements
-# Python 3.11+ recommended
-
-# Core
+# Python 3.10+ recommended
+# Core scientific stack
 torch>=2.0.0
 numpy>=1.24.0
 matplotlib>=3.7.0
+scipy>=1.10.0
 
-# Optional (for development)
+# Baseline NMPC solver (CasADi + IPOPT). Used only by experiments/baselines/casadi_nmpc_controller.py
+casadi>=3.6.0
+
+# Optional (development only)
 # pytest>=7.0.0
 # black>=23.0.0
