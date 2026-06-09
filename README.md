@@ -1,5 +1,11 @@
 # CBF-Projected Hard-Argmin Sampling for Safe Quadrotor Navigation
 
+[![Release](https://img.shields.io/github/v/release/VickylastShao/CBF-Projected-Hard-Argmin-Sampling-for-Safe-Quadrotor-Navigation?label=release&color=blue)](https://github.com/VickylastShao/CBF-Projected-Hard-Argmin-Sampling-for-Safe-Quadrotor-Navigation/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Manuscript PDF](https://img.shields.io/badge/manuscript-PDF-red.svg)](https://github.com/VickylastShao/CBF-Projected-Hard-Argmin-Sampling-for-Safe-Quadrotor-Navigation/releases/download/v1.0/PTRM_NMPC_manuscript.pdf)
+[![Reproducibility](https://img.shields.io/badge/reproducibility-5_min,_no_GPU-informational)](https://github.com/VickylastShao/CBF-Projected-Hard-Argmin-Sampling-for-Safe-Quadrotor-Navigation#quick-reproducibility-checks-5-minutes-no-gpu-needed)
+
 **Companion code, data, and figures for the manuscript:**
 
 > *Wide-Scale Sampling with Hard-Argmin Selection and CBF Projection for Safe Quadrotor Navigation in Narrow Passages*
