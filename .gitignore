@@ -127,10 +127,55 @@ experiments/results_v6/*_smoke.json
 experiments/results_v6/*_smoke.pt
 experiments/results_v6/p03_ablation_results.json
 experiments/results_v6/probes_a_narrow_n20.json
-experiments/results_v6/probes_a3_narrow_n80.json
 experiments/results_v6/probes_a3_narrow_n300_s7777.json
 experiments/results_v6/ptrm_advantage_*.json
 experiments/results_v6/narrow_dataset_v1.pt
+
+# --- Build artifacts ---
+build/
+
+# --- Legacy IEEE-conference-version figures (superseded by results_v6/fig*) ---
+experiments/figures_ieee/
+
+# --- Standalone LaTeX table stubs (manuscript inlines tables directly) ---
+experiments/tables_latex/
+
+# --- Per-experiment stats/log outputs (kept in dev tree, not for distribution) ---
+experiments/results_v6/*_stats.md
+experiments/results_v6/*_summary.md
+experiments/results_v6/*_diagnostic.md
+experiments/results_v6/*_diagnostic.json
+experiments/results_v6/*_log.txt
+experiments/results_v6/run_log.txt
+experiments/results_v6/quick_test_log*.txt
+experiments/results_v6/week*_summary.md
+
+# --- Per-experiment intermediate JSON (developer working data) ---
+experiments/results_v6/path_*_validation_results.json
+experiments/results_v6/probes_a3_two_gate_*.json
+experiments/results_v6/probes_a3_u_shape_*.json
+experiments/results_v6/random_ablation_*.json
+experiments/results_v6/retrain_*.json
+experiments/results_v6/seed31415_*.json
+experiments/results_v6/mce_*_cem_icem.json
+experiments/results_v6/mce_two_gate*.json
+experiments/results_v6/mce_u_shape*.json
+experiments/results_v6/r0_pd_s5_*.json
+experiments/results_v6/no_cbf_*.json
+experiments/results_v6/cbf_fallback_narrow_*.json
+experiments/results_v6/fallback_collision_*.json
+experiments/results_v6/gap_width_*.json
+experiments/results_v6/adaptive_pd_*.json
+experiments/results_v6/b1_eval_*.json
+experiments/results_v6/mcis_*.json
+experiments/results_v6/mppi_cem_sigma_sweep_*.json
+experiments/results_v6/a3_vs_r1_*.json
+
+# --- Legacy/superseded TRM model checkpoints ---
+experiments/results_v6/mlp_model.pt
+experiments/results_v6/simple_encoder_model*.pt
+experiments/results_v6/trm_model_v2.pt
+experiments/results_v6/trm_model.pt.backup
 
 # --- Manuscript working/intermediate outputs ---
 PTRM_NMPC_manuscript_v2.pdf

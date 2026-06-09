@@ -13,8 +13,8 @@ This directory contains the scripts that produce every numerical table and figur
 | Table VI — CEM / iCEM | `mce_mass_n40_cem_icem.json` |
 | Table VII — CasADi+IPOPT $H{=}20$ parity | `casadi_nmpc_narrow_n80_s7777.json`, `casadi_vs_tsh_kscale_paired_stats.json` |
 | Table VIII — negative ablation (random vs. learned TRM) | `negabl_unified_n80_s7777.json` |
-| Table IX — Dryden wind robustness | `dryden_wind_benchmark.json` |
-| Table X — dynamic obstacle | `dynamic_obstacle_benchmark.json` |
+| Table IX — Dryden wind robustness | `dryden_wind_narrow_n40_s7777.json` |
+| Table X — dynamic obstacle | `dynamic_obstacle_narrow_n40_s7777.json` |
 | Table XI — latency profile | `casadi_latency_distribution_n40_s7777.json` |
 | Holm-Bonferroni summary (Appendix) | recomputed by `compute_holm_m13.py` |
 
