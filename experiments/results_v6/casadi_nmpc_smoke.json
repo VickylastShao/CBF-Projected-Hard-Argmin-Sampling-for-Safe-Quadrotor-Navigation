@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 3,
+    "n_steps": 40,
+    "horizons": [
+      10
+    ],
+    "mass": 1.5,
+    "drag": 0.1,
+    "enable_cbf": true,
+    "note": "CasADi+IPOPT NMPC (paper-grade NLP solver) \u2014 modern reference"
+  },
+  "by_method": {
+    "CasADi_IPOPT_H10": {
+      "n": 3,
+      "success_count": 0,
+      "success_rate": 0.0,
+      "TErr_mean": 3.7223404248555503,
+      "TErr_median": 3.847963809967041,
+      "IAE_mean": 3.5982773001988733,
+      "latency_ms_mean": 5.337008224159945,
+      "latency_ms_p95": 5.684880965127377,
+      "individual": [
+        {
+          "TErr": 3.9248270988464355,
+          "IAE": 3.6381115293502813,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 5.735878250561655,
+          "latency_ms_median": 5.3754959953948855,
+          "latency_ms_p95": 9.035272247274404
+        },
+        {
+          "TErr": 3.847963809967041,
+          "IAE": 3.6624424171447756,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 5.225905396218877,
+          "latency_ms_median": 5.266333988402039,
+          "latency_ms_p95": 7.432245317613702
+        },
+        {
+          "TErr": 3.394230365753174,
+          "IAE": 3.4942779541015625,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 5.0492410256993026,
+          "latency_ms_median": 5.062965006800368,
+          "latency_ms_p95": 7.286198940710164
+        }
+      ]
+    }
+  },
+  "paired_tests": [
+    {
+      "method": "CasADi_IPOPT_H10",
+      "vs": "R1_s5_K10",
+      "b": 0,
+      "c": 3,
+      "p_exact_two_sided": 0.25
+    },
+    {
+      "method": "CasADi_IPOPT_H10",
+      "vs": "R0_pd_s5_K10",
+      "b": 0,
+      "c": 3,
+      "p_exact_two_sided": 0.25
+    },
+    {
+      "method": "CasADi_IPOPT_H10",
+      "vs": "PD_K10",
+      "b": 0,
+      "c": 3,
+      "p_exact_two_sided": 0.25
+    }
+  ]
+}

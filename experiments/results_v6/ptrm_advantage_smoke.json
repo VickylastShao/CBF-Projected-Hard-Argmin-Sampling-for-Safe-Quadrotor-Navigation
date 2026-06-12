@@ -1,0 +1,538 @@
+{
+  "meta": {
+    "seed": 2026,
+    "model_path": "/mnt/c/Users/vicks/MyWork/PTRM-NMPC/experiments/results_v6/cl_trm_model.pt",
+    "n_mc": 2,
+    "n_steps": 40,
+    "k_values": [
+      1,
+      5
+    ],
+    "d_values": [
+      16
+    ],
+    "methods": [
+      "PD+Rollout",
+      "TRM+Rollout",
+      "TRM+PD+Rollout",
+      "CEM"
+    ],
+    "enable_cbf": true,
+    "sigma": 0.25,
+    "pd_sigma": 2.0,
+    "alpha_blend": 0.3,
+    "rollout_steps": 20,
+    "obs_weight": 2000.0,
+    "cem_n_iter": 3,
+    "note": "candidate quality is diagnostic and excluded from control latency"
+  },
+  "tasks": {
+    "two_gate": {
+      "config": {
+        "family": "two_gate",
+        "seed": 2026,
+        "z0": 1.3178934813675438,
+        "obstacles": [
+          {
+            "p": [
+              1.25,
+              1.15,
+              1.3178934813675438
+            ],
+            "r": 0.42
+          },
+          {
+            "p": [
+              1.75,
+              1.5,
+              1.3678934813675439
+            ],
+            "r": 0.45
+          },
+          {
+            "p": [
+              2.2,
+              1.85,
+              1.2678934813675438
+            ],
+            "r": 0.42
+          },
+          {
+            "p": [
+              1.45,
+              2.35,
+              1.417893481367544
+            ],
+            "r": 0.36
+          },
+          {
+            "p": [
+              2.05,
+              0.65,
+              1.2178934813675437
+            ],
+            "r": 0.36
+          }
+        ],
+        "x_sp": [
+          3.0,
+          3.0,
+          1.3178935050964355,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "initial_states": [
+          [
+            -0.11087482422590256,
+            0.16144323348999023,
+            1.3119499683380127,
+            0.21113599836826324,
+            0.2396811544895172,
+            0.011476604267954826
+          ],
+          [
+            0.06537110358476639,
+            -0.08723613619804382,
+            1.4339594841003418,
+            0.16118940711021423,
+            0.036382973194122314,
+            0.005634014960378408
+          ]
+        ]
+      },
+      "results": {
+        "D16": {
+          "K1": {
+            "PD+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.7659263610839844,
+              "terminal_error_std": 0.008569955825805664,
+              "iae_mean": 3.448090127110481,
+              "iae_std": 0.026030120253562883,
+              "min_distance_mean": 0.1677272539793354,
+              "min_distance_min": 0.16249402649792039,
+              "latency_ms_mean": 8.357027573947562,
+              "latency_ms_median": 8.141216494550463,
+              "latency_ms_p95": 10.896216602122877,
+              "candidate_best_rollout_cost_mean": 4745.716552734375,
+              "candidate_best_rollout_cost_std": 88.437255859375,
+              "candidate_mean_rollout_cost_mean": 4745.716552734375,
+              "candidate_std_rollout_cost_mean": 0.0,
+              "individual": [
+                {
+                  "method": "PD+Rollout",
+                  "TErr": 2.7573564052581787,
+                  "IAE": 3.422060006856918,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.16249402649792039,
+                  "latency_ms_mean": 8.560845772444736,
+                  "latency_ms_median": 8.292967002489604,
+                  "latency_ms_p95": 11.455995588039514
+                },
+                {
+                  "method": "PD+Rollout",
+                  "TErr": 2.77449631690979,
+                  "IAE": 3.4741202473640436,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.17296048146075044,
+                  "latency_ms_mean": 8.153209375450388,
+                  "latency_ms_median": 7.989465986611322,
+                  "latency_ms_p95": 10.336437616206238
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4657.279296875,
+                  "mean_rollout_cost": 4657.279296875,
+                  "std_rollout_cost": 0.0
+                },
+                {
+                  "best_rollout_cost": 4834.15380859375,
+                  "mean_rollout_cost": 4834.15380859375,
+                  "std_rollout_cost": 0.0
+                }
+              ],
+              "effective_rollouts": 1
+            },
+            "TRM+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.2567524909973145,
+              "terminal_error_std": 0.034360408782958984,
+              "iae_mean": 3.2802291274070745,
+              "iae_std": 0.04202964305877699,
+              "min_distance_mean": 0.4867413564221176,
+              "min_distance_min": 0.48526045754055597,
+              "latency_ms_mean": 1.690484663049574,
+              "latency_ms_median": 1.5936582494759932,
+              "latency_ms_p95": 2.008811294217593,
+              "candidate_best_rollout_cost_mean": 4762.972900390625,
+              "candidate_best_rollout_cost_std": 88.316650390625,
+              "candidate_mean_rollout_cost_mean": 4762.972900390625,
+              "candidate_std_rollout_cost_mean": 0.0,
+              "individual": [
+                {
+                  "method": "TRM+Rollout",
+                  "TErr": 2.2223920822143555,
+                  "IAE": 3.2381994843482973,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.48526045754055597,
+                  "latency_ms_mean": 1.6512230242369696,
+                  "latency_ms_median": 1.5543710032943636,
+                  "latency_ms_p95": 1.9735252179088991
+                },
+                {
+                  "method": "TRM+Rollout",
+                  "TErr": 2.2911128997802734,
+                  "IAE": 3.3222587704658513,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.4882222553036792,
+                  "latency_ms_mean": 1.7297463018621784,
+                  "latency_ms_median": 1.6329454956576228,
+                  "latency_ms_p95": 2.0440973705262873
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4674.65625,
+                  "mean_rollout_cost": 4674.65625,
+                  "std_rollout_cost": 0.0
+                },
+                {
+                  "best_rollout_cost": 4851.28955078125,
+                  "mean_rollout_cost": 4851.28955078125,
+                  "std_rollout_cost": 0.0
+                }
+              ],
+              "effective_rollouts": 1
+            },
+            "TRM+PD+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 1.963630497455597,
+              "terminal_error_std": 0.05851024389266968,
+              "iae_mean": 3.206698499619961,
+              "iae_std": 0.04923047572374384,
+              "min_distance_mean": 0.2748816711347852,
+              "min_distance_min": 0.273965614467334,
+              "latency_ms_mean": 2.0359695990919136,
+              "latency_ms_median": 1.8591294865473174,
+              "latency_ms_p95": 3.1284195662010457,
+              "candidate_best_rollout_cost_mean": 4755.4150390625,
+              "candidate_best_rollout_cost_std": 88.7431640625,
+              "candidate_mean_rollout_cost_mean": 4755.4150390625,
+              "candidate_std_rollout_cost_mean": 0.0,
+              "individual": [
+                {
+                  "method": "TRM+PD+Rollout",
+                  "TErr": 1.9051202535629272,
+                  "IAE": 3.157468023896217,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.2757977278022364,
+                  "latency_ms_mean": 2.124754199758172,
+                  "latency_ms_median": 1.9034174911212176,
+                  "latency_ms_p95": 3.2513832804397675
+                },
+                {
+                  "method": "TRM+PD+Rollout",
+                  "TErr": 2.0221407413482666,
+                  "IAE": 3.255928975343705,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.273965614467334,
+                  "latency_ms_mean": 1.947184998425655,
+                  "latency_ms_median": 1.814841481973417,
+                  "latency_ms_p95": 3.005455851962324
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4666.671875,
+                  "mean_rollout_cost": 4666.671875,
+                  "std_rollout_cost": 0.0
+                },
+                {
+                  "best_rollout_cost": 4844.158203125,
+                  "mean_rollout_cost": 4844.158203125,
+                  "std_rollout_cost": 0.0
+                }
+              ],
+              "effective_rollouts": 1
+            },
+            "CEM": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.7656222581863403,
+              "terminal_error_std": 0.006274819374084473,
+              "iae_mean": 3.4478940099477766,
+              "iae_std": 0.02552608549594848,
+              "min_distance_mean": 0.16773276857432917,
+              "min_distance_min": 0.16240662646492537,
+              "latency_ms_mean": 18.2748335377255,
+              "latency_ms_median": 17.97424849064555,
+              "latency_ms_p95": 21.20758861929062,
+              "candidate_best_rollout_cost_mean": null,
+              "candidate_best_rollout_cost_std": null,
+              "candidate_mean_rollout_cost_mean": null,
+              "candidate_std_rollout_cost_mean": null,
+              "individual": [
+                {
+                  "method": "CEM",
+                  "TErr": 2.759347438812256,
+                  "IAE": 3.4223679244518284,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.16240662646492537,
+                  "latency_ms_mean": 18.33881335114711,
+                  "latency_ms_median": 17.833126490586437,
+                  "latency_ms_p95": 21.38048165361397
+                },
+                {
+                  "method": "CEM",
+                  "TErr": 2.771897077560425,
+                  "IAE": 3.4734200954437253,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.17305891068373297,
+                  "latency_ms_mean": 18.210853724303888,
+                  "latency_ms_median": 18.115370490704663,
+                  "latency_ms_p95": 21.034695584967267
+                }
+              ],
+              "candidate_quality_individual": [
+                null,
+                null
+              ],
+              "effective_rollouts": 3
+            }
+          },
+          "K5": {
+            "PD+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.7203032970428467,
+              "terminal_error_std": 0.048727989196777344,
+              "iae_mean": 3.45048211812973,
+              "iae_std": 0.03716191053390605,
+              "min_distance_mean": 0.17260276114797468,
+              "min_distance_min": 0.16947861915846824,
+              "latency_ms_mean": 18.62772762287932,
+              "latency_ms_median": 17.59214799676556,
+              "latency_ms_p95": 25.923855400469616,
+              "candidate_best_rollout_cost_mean": 4745.695068359375,
+              "candidate_best_rollout_cost_std": 88.403564453125,
+              "candidate_mean_rollout_cost_mean": 4746.882080078125,
+              "candidate_std_rollout_cost_mean": 1.6514534056186676,
+              "individual": [
+                {
+                  "method": "PD+Rollout",
+                  "TErr": 2.6715753078460693,
+                  "IAE": 3.4133202075958238,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.16947861915846824,
+                  "latency_ms_mean": 15.640321849059546,
+                  "latency_ms_median": 15.158869500737637,
+                  "latency_ms_p95": 22.344912357220892
+                },
+                {
+                  "method": "PD+Rollout",
+                  "TErr": 2.769031286239624,
+                  "IAE": 3.487644028663636,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.17572690313748113,
+                  "latency_ms_mean": 21.615133396699093,
+                  "latency_ms_median": 20.025426492793486,
+                  "latency_ms_p95": 29.50279844371834
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4657.29150390625,
+                  "mean_rollout_cost": 4659.17724609375,
+                  "std_rollout_cost": 2.6046080589294434
+                },
+                {
+                  "best_rollout_cost": 4834.0986328125,
+                  "mean_rollout_cost": 4834.5869140625,
+                  "std_rollout_cost": 0.6982987523078918
+                }
+              ],
+              "effective_rollouts": 5
+            },
+            "TRM+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.233944058418274,
+              "terminal_error_std": 0.0378648042678833,
+              "iae_mean": 3.2792090475559235,
+              "iae_std": 0.04609730839729287,
+              "min_distance_mean": 0.49034088422666344,
+              "min_distance_min": 0.46359315349539637,
+              "latency_ms_mean": 10.049619024721324,
+              "latency_ms_median": 10.036382496764418,
+              "latency_ms_p95": 12.674639307078905,
+              "candidate_best_rollout_cost_mean": 4758.595458984375,
+              "candidate_best_rollout_cost_std": 87.865966796875,
+              "candidate_mean_rollout_cost_mean": 4764.627685546875,
+              "candidate_std_rollout_cost_mean": 4.913746356964111,
+              "individual": [
+                {
+                  "method": "TRM+Rollout",
+                  "TErr": 2.1960792541503906,
+                  "IAE": 3.2331117391586304,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.46359315349539637,
+                  "latency_ms_mean": 9.600813024735544,
+                  "latency_ms_median": 9.630732994992286,
+                  "latency_ms_p95": 11.840804247185588
+                },
+                {
+                  "method": "TRM+Rollout",
+                  "TErr": 2.2718088626861572,
+                  "IAE": 3.325306355953216,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.5170886149579306,
+                  "latency_ms_mean": 10.498425024707103,
+                  "latency_ms_median": 10.44203199853655,
+                  "latency_ms_p95": 13.508474366972221
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4670.7294921875,
+                  "mean_rollout_cost": 4676.50732421875,
+                  "std_rollout_cost": 5.667693138122559
+                },
+                {
+                  "best_rollout_cost": 4846.46142578125,
+                  "mean_rollout_cost": 4852.748046875,
+                  "std_rollout_cost": 4.159799575805664
+                }
+              ],
+              "effective_rollouts": 5
+            },
+            "TRM+PD+Rollout": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 1.9152570366859436,
+              "terminal_error_std": 0.06680434942245483,
+              "iae_mean": 3.1952962353825565,
+              "iae_std": 0.05226494520902625,
+              "min_distance_mean": 0.2816965044548377,
+              "min_distance_min": 0.27526486019471735,
+              "latency_ms_mean": 9.87886587427056,
+              "latency_ms_median": 9.507042494078632,
+              "latency_ms_p95": 12.829707714990942,
+              "candidate_best_rollout_cost_mean": 4753.481689453125,
+              "candidate_best_rollout_cost_std": 89.569091796875,
+              "candidate_mean_rollout_cost_mean": 4758.23046875,
+              "candidate_std_rollout_cost_mean": 3.9197040796279907,
+              "individual": [
+                {
+                  "method": "TRM+PD+Rollout",
+                  "TErr": 1.8484526872634888,
+                  "IAE": 3.1430312901735302,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.288128148714958,
+                  "latency_ms_mean": 10.198524974111933,
+                  "latency_ms_median": 9.750516983331181,
+                  "latency_ms_p95": 13.684965805441601
+                },
+                {
+                  "method": "TRM+PD+Rollout",
+                  "TErr": 1.9820613861083984,
+                  "IAE": 3.2475611805915827,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.27526486019471735,
+                  "latency_ms_mean": 9.559206774429185,
+                  "latency_ms_median": 9.263568004826084,
+                  "latency_ms_p95": 11.974449624540284
+                }
+              ],
+              "candidate_quality_individual": [
+                {
+                  "best_rollout_cost": 4663.91259765625,
+                  "mean_rollout_cost": 4668.142578125,
+                  "std_rollout_cost": 2.7907321453094482
+                },
+                {
+                  "best_rollout_cost": 4843.05078125,
+                  "mean_rollout_cost": 4848.318359375,
+                  "std_rollout_cost": 5.048676013946533
+                }
+              ],
+              "effective_rollouts": 5
+            },
+            "CEM": {
+              "n_mc": 2,
+              "success_rate": 0.0,
+              "collision_rate": 0.0,
+              "terminal_error_mean": 2.6813100576400757,
+              "terminal_error_std": 0.0637441873550415,
+              "iae_mean": 3.448388546705246,
+              "iae_std": 0.0441092073917384,
+              "min_distance_mean": 0.17511944268869017,
+              "min_distance_min": 0.17246347001231205,
+              "latency_ms_mean": 19.057620138846687,
+              "latency_ms_median": 18.68904524599202,
+              "latency_ms_p95": 22.199355649354402,
+              "candidate_best_rollout_cost_mean": null,
+              "candidate_best_rollout_cost_std": null,
+              "candidate_mean_rollout_cost_mean": null,
+              "candidate_std_rollout_cost_mean": null,
+              "individual": [
+                {
+                  "method": "CEM",
+                  "TErr": 2.617565870285034,
+                  "IAE": 3.4042793393135073,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.17246347001231205,
+                  "latency_ms_mean": 18.970772374450462,
+                  "latency_ms_median": 18.88572449388448,
+                  "latency_ms_p95": 21.54369609343121
+                },
+                {
+                  "method": "CEM",
+                  "TErr": 2.745054244995117,
+                  "IAE": 3.492497754096984,
+                  "success": false,
+                  "collision": false,
+                  "min_dist": 0.1777754153650683,
+                  "latency_ms_mean": 19.144467903242912,
+                  "latency_ms_median": 18.492365998099558,
+                  "latency_ms_p95": 22.855015205277596
+                }
+              ],
+              "candidate_quality_individual": [
+                null,
+                null
+              ],
+              "effective_rollouts": 15
+            }
+          }
+        }
+      }
+    }
+  }
+}
