@@ -1,0 +1,92 @@
+{
+  "source": "r1_s5_narrow_n80.json",
+  "comparison": "PD_K{} vs R1_s5_K{}",
+  "rows": [
+    {
+      "K": 5,
+      "penalty_TErr": 5,
+      "penalty_IAE": 10,
+      "delta_TErr": -1.5387243107659743,
+      "delta_IAE": -2.108213155195466
+    },
+    {
+      "K": 5,
+      "penalty_TErr": 10,
+      "penalty_IAE": 20,
+      "delta_TErr": -3.038724310765974,
+      "delta_IAE": -5.108213155195466
+    },
+    {
+      "K": 5,
+      "penalty_TErr": 20,
+      "penalty_IAE": 40,
+      "delta_TErr": -6.038724310765974,
+      "delta_IAE": -11.108213155195466
+    },
+    {
+      "K": 5,
+      "penalty_TErr": 50,
+      "penalty_IAE": 100,
+      "delta_TErr": -15.038724310765975,
+      "delta_IAE": -29.108213155195465
+    },
+    {
+      "K": 10,
+      "penalty_TErr": 5,
+      "penalty_IAE": 10,
+      "delta_TErr": -1.6655493363039569,
+      "delta_IAE": -2.393009646035266
+    },
+    {
+      "K": 10,
+      "penalty_TErr": 10,
+      "penalty_IAE": 20,
+      "delta_TErr": -3.2905493363039566,
+      "delta_IAE": -5.6430096460352654
+    },
+    {
+      "K": 10,
+      "penalty_TErr": 20,
+      "penalty_IAE": 40,
+      "delta_TErr": -6.540549336303957,
+      "delta_IAE": -12.143009646035264
+    },
+    {
+      "K": 10,
+      "penalty_TErr": 50,
+      "penalty_IAE": 100,
+      "delta_TErr": -16.290549336303958,
+      "delta_IAE": -31.64300964603526
+    },
+    {
+      "K": 20,
+      "penalty_TErr": 5,
+      "penalty_IAE": 10,
+      "delta_TErr": -1.162213730244548,
+      "delta_IAE": -2.2861267693257536
+    },
+    {
+      "K": 20,
+      "penalty_TErr": 10,
+      "penalty_IAE": 20,
+      "delta_TErr": -2.287213730244548,
+      "delta_IAE": -4.5361267693257545
+    },
+    {
+      "K": 20,
+      "penalty_TErr": 20,
+      "penalty_IAE": 40,
+      "delta_TErr": -4.537213730244548,
+      "delta_IAE": -9.036126769325753
+    },
+    {
+      "K": 20,
+      "penalty_TErr": 50,
+      "penalty_IAE": 100,
+      "delta_TErr": -11.287213730244549,
+      "delta_IAE": -22.536126769325755
+    }
+  ],
+  "sign_invariant": true,
+  "note": "All \u0394TErr and \u0394IAE remain negative across penalty sweep (5,10) \u2192 (50,100); R1_s5 advantage robust to penalty choice."
+}

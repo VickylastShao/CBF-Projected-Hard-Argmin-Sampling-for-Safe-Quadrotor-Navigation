@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 3,
+    "n_steps": 40,
+    "K": 10,
+    "moving_obstacle_idx": 1,
+    "velocities_y_mps": [
+      0.0
+    ],
+    "mass": 1.5,
+    "drag": 0.1,
+    "enable_cbf": true,
+    "casadi_horizon": 20,
+    "note": "constant-velocity obstacle drift; controller observes current position with no predictive knowledge"
+  },
+  "by_velocity": {
+    "vy_0.00": {
+      "PD": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 4.34392515818278,
+        "IAE_mean": 3.6950832843780517,
+        "min_dist_mean": 0.16375670035680132,
+        "latency_ms_mean": 19.437426441678934,
+        "individual": [
+          {
+            "TErr": 4.45295524597168,
+            "IAE": 3.692572927474975,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.1722049236297607,
+            "latency_ms_mean": 16.998811974190176,
+            "latency_ms_p95": 23.696024177479536
+          },
+          {
+            "TErr": 4.423637866973877,
+            "IAE": 3.7391104221343996,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.16837943792343135,
+            "latency_ms_mean": 18.144988376297988,
+            "latency_ms_p95": 32.82927943218965
+          },
+          {
+            "TErr": 4.155182361602783,
+            "IAE": 3.653566503524781,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.15068573951721187,
+            "latency_ms_mean": 23.168478974548634,
+            "latency_ms_p95": 39.499923697439954
+          }
+        ]
+      },
+      "R0_pd_s5": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 3.4803563753763833,
+        "IAE_mean": 3.54409619808197,
+        "min_dist_mean": 0.1549519817034403,
+        "latency_ms_mean": 7.962196446896996,
+        "individual": [
+          {
+            "TErr": 3.5735607147216797,
+            "IAE": 3.5442891216278074,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.15140129327774043,
+            "latency_ms_mean": 8.044011592573952,
+            "latency_ms_p95": 10.60906006314326
+          },
+          {
+            "TErr": 3.868551731109619,
+            "IAE": 3.6734995079040536,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.15010167360305782,
+            "latency_ms_mean": 7.675459278107155,
+            "latency_ms_p95": 9.917364493594505
+          },
+          {
+            "TErr": 2.9989566802978516,
+            "IAE": 3.41449996471405,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.16335297822952266,
+            "latency_ms_mean": 8.167118470009882,
+            "latency_ms_p95": 11.1934437911259
+          }
+        ]
+      },
+      "R1_s5": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 3.670931021372477,
+        "IAE_mean": 3.5904781182607013,
+        "min_dist_mean": 0.15052311817804967,
+        "latency_ms_mean": 8.141160798065053,
+        "individual": [
+          {
+            "TErr": 3.8585634231567383,
+            "IAE": 3.6094918107986445,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.14897758960723873,
+            "latency_ms_mean": 7.80578272533603,
+            "latency_ms_p95": 9.77489740762394
+          },
+          {
+            "TErr": 3.732936143875122,
+            "IAE": 3.637311568260192,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.14864797592163081,
+            "latency_ms_mean": 8.21554472349817,
+            "latency_ms_p95": 10.131142512545921
+          },
+          {
+            "TErr": 3.4212934970855713,
+            "IAE": 3.5246309757232672,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.1539437890052795,
+            "latency_ms_mean": 8.402154945360962,
+            "latency_ms_p95": 11.736127457697874
+          }
+        ]
+      },
+      "CasADi_H20": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 2.2938220500946045,
+        "IAE_mean": 3.158202548027038,
+        "min_dist_mean": 0.21612410942713414,
+        "latency_ms_mean": 12.491638488912335,
+        "individual": [
+          {
+            "TErr": 2.6222898960113525,
+            "IAE": 3.1866349267959597,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.2092104077339172,
+            "latency_ms_mean": 13.050491196918301,
+            "latency_ms_p95": 15.446773284929803
+          },
+          {
+            "TErr": 2.244797468185425,
+            "IAE": 3.214673509597777,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.2219698548316955,
+            "latency_ms_mean": 12.206791400967631,
+            "latency_ms_p95": 14.690141117898747
+          },
+          {
+            "TErr": 2.014378786087036,
+            "IAE": 3.0732992076873775,
+            "success": false,
+            "collided": false,
+            "min_dist": 0.21719206571578975,
+            "latency_ms_mean": 12.21763286885107,
+            "latency_ms_p95": 14.91441124526318
+          }
+        ]
+      }
+    }
+  },
+  "paired_tests": [
+    {
+      "v_y": 0.0,
+      "method_a": "R1_s5",
+      "method_b": "PD",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "v_y": 0.0,
+      "method_a": "R1_s5",
+      "method_b": "CasADi_H20",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "v_y": 0.0,
+      "method_a": "R0_pd_s5",
+      "method_b": "PD",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "v_y": 0.0,
+      "method_a": "R0_pd_s5",
+      "method_b": "CasADi_H20",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "v_y": 0.0,
+      "method_a": "CasADi_H20",
+      "method_b": "PD",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    }
+  ]
+}

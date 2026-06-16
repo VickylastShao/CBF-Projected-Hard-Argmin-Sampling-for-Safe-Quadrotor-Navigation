@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 3,
+    "n_steps": 40,
+    "K": 10,
+    "V_airspeed_mps": 5.0,
+    "intensity_multipliers": [
+      1.0
+    ],
+    "dryden_base_sigma_mps": [
+      0.5,
+      0.5,
+      0.3
+    ],
+    "dryden_L_m": [
+      200.0,
+      200.0,
+      50.0
+    ],
+    "mass": 1.5,
+    "drag": 0.1,
+    "enable_cbf": true,
+    "note": "Dryden first-order longitudinal/lateral gust filters applied as F_d = -b_drag * v_gust external force"
+  },
+  "by_intensity": {
+    "x1.00": {
+      "PD": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 4.343993028004964,
+        "IAE_mean": 3.695095176696777,
+        "latency_ms_mean": 12.809841967828106,
+        "individual": [
+          {
+            "TErr": 4.453005790710449,
+            "IAE": 3.6925814533233634,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 13.263133527652826
+          },
+          {
+            "TErr": 4.423712253570557,
+            "IAE": 3.7391288280487065,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 12.777054973412305
+          },
+          {
+            "TErr": 4.155261039733887,
+            "IAE": 3.653575248718262,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 12.389337402419187
+          }
+        ]
+      },
+      "R0_pd_s5": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 3.4829047520955405,
+        "IAE_mean": 3.544253540039063,
+        "latency_ms_mean": 6.959458805795293,
+        "individual": [
+          {
+            "TErr": 3.573152542114258,
+            "IAE": 3.544192032814026,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 6.737967548542656
+          },
+          {
+            "TErr": 3.869276762008667,
+            "IAE": 3.6736365270614626,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 7.17077392473584
+          },
+          {
+            "TErr": 3.0062849521636963,
+            "IAE": 3.414932060241699,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 6.9696349441073835
+          }
+        ]
+      },
+      "R1_s5": {
+        "n": 3,
+        "success_count": 0,
+        "collisions": 0,
+        "success_rate": 0.0,
+        "TErr_mean": 3.670555830001831,
+        "IAE_mean": 3.5903998661041254,
+        "latency_ms_mean": 7.314243991762244,
+        "individual": [
+          {
+            "TErr": 3.8574419021606445,
+            "IAE": 3.6092639064788816,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 7.746232980571222
+          },
+          {
+            "TErr": 3.733144760131836,
+            "IAE": 3.6373502588272077,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 7.051901247177739
+          },
+          {
+            "TErr": 3.4210808277130127,
+            "IAE": 3.5245854330062865,
+            "success": false,
+            "collided": false,
+            "latency_ms_mean": 7.144597747537773
+          }
+        ]
+      }
+    }
+  },
+  "paired_tests": [
+    {
+      "scale": 1.0,
+      "method_a": "R1_s5",
+      "method_b": "PD",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "scale": 1.0,
+      "method_a": "R0_pd_s5",
+      "method_b": "PD",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "scale": 1.0,
+      "method_a": "R0_pd_s5",
+      "method_b": "R1_s5",
+      "succ_a": 0,
+      "succ_b": 0,
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 40,
+    "n_steps": 150,
+    "methods": [
+      "PD",
+      "R1_s5"
+    ],
+    "k_values": [
+      5,
+      10,
+      20
+    ],
+    "configs": [
+      "nominal",
+      "mass",
+      "drag"
+    ]
+  },
+  "cells": {
+    "nominal/PD/K5": {
+      "config": "nominal",
+      "method": "PD",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 25,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 1226,
+      "fallback_rate_pct": 20.433333333333334,
+      "elapsed_s": 304.04419305099873
+    },
+    "nominal/R1_s5/K5": {
+      "config": "nominal",
+      "method": "R1_s5",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 38,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 563,
+      "fallback_rate_pct": 9.383333333333335,
+      "elapsed_s": 77.3517509160447
+    },
+    "nominal/PD/K10": {
+      "config": "nominal",
+      "method": "PD",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 29,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 1034,
+      "fallback_rate_pct": 17.233333333333334,
+      "elapsed_s": 245.0529697330203
+    },
+    "nominal/R1_s5/K10": {
+      "config": "nominal",
+      "method": "R1_s5",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 39,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 416,
+      "fallback_rate_pct": 6.933333333333333,
+      "elapsed_s": 46.52943282900378
+    },
+    "nominal/PD/K20": {
+      "config": "nominal",
+      "method": "PD",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 37,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 822,
+      "fallback_rate_pct": 13.700000000000001,
+      "elapsed_s": 182.76020216598408
+    },
+    "nominal/R1_s5/K20": {
+      "config": "nominal",
+      "method": "R1_s5",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 40,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 300,
+      "fallback_rate_pct": 5.0,
+      "elapsed_s": 66.17054711899254
+    },
+    "mass/PD/K5": {
+      "config": "mass",
+      "method": "PD",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 1,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 2921,
+      "fallback_rate_pct": 48.68333333333334,
+      "elapsed_s": 275.0896884180256
+    },
+    "mass/R1_s5/K5": {
+      "config": "mass",
+      "method": "R1_s5",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 35,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 1020,
+      "fallback_rate_pct": 17.0,
+      "elapsed_s": 46.27199835598003
+    },
+    "mass/PD/K10": {
+      "config": "mass",
+      "method": "PD",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 1,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 2900,
+      "fallback_rate_pct": 48.333333333333336,
+      "elapsed_s": 90.25598222401459
+    },
+    "mass/R1_s5/K10": {
+      "config": "mass",
+      "method": "R1_s5",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 36,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 801,
+      "fallback_rate_pct": 13.350000000000001,
+      "elapsed_s": 44.416515931952745
+    },
+    "mass/PD/K20": {
+      "config": "mass",
+      "method": "PD",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 1,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 2851,
+      "fallback_rate_pct": 47.516666666666666,
+      "elapsed_s": 89.5827786430018
+    },
+    "mass/R1_s5/K20": {
+      "config": "mass",
+      "method": "R1_s5",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 39,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 677,
+      "fallback_rate_pct": 11.283333333333333,
+      "elapsed_s": 45.227946013968904
+    },
+    "drag/PD/K5": {
+      "config": "drag",
+      "method": "PD",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 24,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 1157,
+      "fallback_rate_pct": 19.28333333333333,
+      "elapsed_s": 83.95898580504581
+    },
+    "drag/R1_s5/K5": {
+      "config": "drag",
+      "method": "R1_s5",
+      "K": 5,
+      "n_trials": 40,
+      "success_count": 37,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 522,
+      "fallback_rate_pct": 8.7,
+      "elapsed_s": 43.66335895500379
+    },
+    "drag/PD/K10": {
+      "config": "drag",
+      "method": "PD",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 32,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 951,
+      "fallback_rate_pct": 15.85,
+      "elapsed_s": 86.60863497602986
+    },
+    "drag/R1_s5/K10": {
+      "config": "drag",
+      "method": "R1_s5",
+      "K": 10,
+      "n_trials": 40,
+      "success_count": 40,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 425,
+      "fallback_rate_pct": 7.083333333333333,
+      "elapsed_s": 44.34913508902537
+    },
+    "drag/PD/K20": {
+      "config": "drag",
+      "method": "PD",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 35,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 844,
+      "fallback_rate_pct": 14.066666666666666,
+      "elapsed_s": 82.27868218399817
+    },
+    "drag/R1_s5/K20": {
+      "config": "drag",
+      "method": "R1_s5",
+      "K": 20,
+      "n_trials": 40,
+      "success_count": 40,
+      "cbf_calls_total": 6000,
+      "fallback_invocations": 277,
+      "fallback_rate_pct": 4.616666666666667,
+      "elapsed_s": 41.1860709139728
+    }
+  }
+}

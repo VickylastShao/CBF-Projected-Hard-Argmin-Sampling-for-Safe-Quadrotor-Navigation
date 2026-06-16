@@ -1,0 +1,4409 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 2026,
+    "n_mc": 80,
+    "n_steps": 150,
+    "k_values": [
+      5,
+      10,
+      20
+    ],
+    "probes": [
+      "R1_s5"
+    ],
+    "baselines": [
+      "PD"
+    ],
+    "model_path": "/mnt/c/Users/vicks/MyWork/PTRM-NMPC/experiments/results_v6/cl_trm_model.pt",
+    "mag_scale": 1.4
+  },
+  "by_method": {
+    "PD_K5": {
+      "n": 80,
+      "success_count": 46,
+      "success_rate": 0.575,
+      "TErr_mean": 0.6436237049521878,
+      "TErr_median": 0.23676170408725739,
+      "IAE_mean": 9.310246937331277,
+      "latency_ms_mean": 128.87182088237995,
+      "individual": [
+        {
+          "TErr": 0.21562601625919342,
+          "IAE": 9.222364484071731,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 230.7141190064916,
+          "latency_ms_median": 253.0856244993629,
+          "latency_ms_p95": 420.1811561069915
+        },
+        {
+          "TErr": 0.22806845605373383,
+          "IAE": 8.798126417398455,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 270.532929279337,
+          "latency_ms_median": 311.45834499329794,
+          "latency_ms_p95": 450.588515095296
+        },
+        {
+          "TErr": 0.14358150959014893,
+          "IAE": 9.54572140365839,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 247.86106708052102,
+          "latency_ms_median": 272.428177006077,
+          "latency_ms_p95": 397.4798217604983
+        },
+        {
+          "TErr": 0.773186445236206,
+          "IAE": 10.480490875244133,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 240.80912010414372,
+          "latency_ms_median": 272.7670395106543,
+          "latency_ms_p95": 424.3372536002424
+        },
+        {
+          "TErr": 0.04634501039981842,
+          "IAE": 8.932277938202022,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 288.74203777910833,
+          "latency_ms_median": 317.5257414986845,
+          "latency_ms_p95": 430.47132296196645
+        },
+        {
+          "TErr": 0.2079574465751648,
+          "IAE": 8.316981236934662,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 240.59526910636728,
+          "latency_ms_median": 275.81022000231314,
+          "latency_ms_p95": 399.71760739135783
+        },
+        {
+          "TErr": 0.32454460859298706,
+          "IAE": 9.013821516633026,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 269.2448346784416,
+          "latency_ms_median": 306.6898855031468,
+          "latency_ms_p95": 397.1877066942397
+        },
+        {
+          "TErr": 0.22355449199676514,
+          "IAE": 8.987834693789488,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 273.732138586153,
+          "latency_ms_median": 297.8041199967265,
+          "latency_ms_p95": 395.6843984502484
+        },
+        {
+          "TErr": 1.8230875730514526,
+          "IAE": 10.892096450328824,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 264.9078244589812,
+          "latency_ms_median": 306.57756599248387,
+          "latency_ms_p95": 436.5623043573577
+        },
+        {
+          "TErr": 0.8740381598472595,
+          "IAE": 10.728107568025584,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 332.61431167426053,
+          "latency_ms_median": 340.18407700932585,
+          "latency_ms_p95": 640.7320493963192
+        },
+        {
+          "TErr": 0.4142899215221405,
+          "IAE": 9.333992948532106,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 314.49177958013024,
+          "latency_ms_median": 307.8213829867309,
+          "latency_ms_p95": 667.2670731059042
+        },
+        {
+          "TErr": 0.1699414700269699,
+          "IAE": 8.296035769879815,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 322.9390805247628,
+          "latency_ms_median": 342.58985551423393,
+          "latency_ms_p95": 513.0580367942455
+        },
+        {
+          "TErr": 0.5610960721969604,
+          "IAE": 9.784705847501748,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 263.67953695958323,
+          "latency_ms_median": 286.86952698626556,
+          "latency_ms_p95": 433.18460380542086
+        },
+        {
+          "TErr": 2.7281370162963867,
+          "IAE": 11.697831325531004,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 275.04683712516754,
+          "latency_ms_median": 285.7798714831006,
+          "latency_ms_p95": 567.3118225633516
+        },
+        {
+          "TErr": 0.22528767585754395,
+          "IAE": 8.862206026315688,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 352.3269736795919,
+          "latency_ms_median": 353.77837451233063,
+          "latency_ms_p95": 671.3787368047632
+        },
+        {
+          "TErr": 0.8254938721656799,
+          "IAE": 9.161823405027391,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 388.59767500058905,
+          "latency_ms_median": 356.41450849652756,
+          "latency_ms_p95": 785.2910388595772
+        },
+        {
+          "TErr": 0.0495208278298378,
+          "IAE": 7.581481927782295,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 337.8396567075591,
+          "latency_ms_median": 324.3681875173934,
+          "latency_ms_p95": 718.3011179920866
+        },
+        {
+          "TErr": 0.1931939572095871,
+          "IAE": 8.42406906098127,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 246.13015342057528,
+          "latency_ms_median": 281.6721795097692,
+          "latency_ms_p95": 396.0730539474752
+        },
+        {
+          "TErr": 0.2683408260345459,
+          "IAE": 9.816374014019967,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 195.03081152642457,
+          "latency_ms_median": 192.25978550093714,
+          "latency_ms_p95": 359.4679512418222
+        },
+        {
+          "TErr": 0.13770467042922974,
+          "IAE": 9.244387913048266,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 224.62378578144126,
+          "latency_ms_median": 259.2334560031304,
+          "latency_ms_p95": 368.69680310046533
+        },
+        {
+          "TErr": 0.041006650775671005,
+          "IAE": 8.073674532845608,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 198.66425098036416,
+          "latency_ms_median": 208.97148549556732,
+          "latency_ms_p95": 360.08358604449313
+        },
+        {
+          "TErr": 0.2076217383146286,
+          "IAE": 9.44029330462217,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 212.3903820196089,
+          "latency_ms_median": 229.7003560088342,
+          "latency_ms_p95": 348.6287015519337
+        },
+        {
+          "TErr": 0.05046859011054039,
+          "IAE": 8.479486054405571,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 227.71750384010375,
+          "latency_ms_median": 272.97547401394695,
+          "latency_ms_p95": 378.62654430937226
+        },
+        {
+          "TErr": 0.5702270269393921,
+          "IAE": 10.449047092199324,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 159.63045698687588,
+          "latency_ms_median": 148.1072714959737,
+          "latency_ms_p95": 333.5045023617567
+        },
+        {
+          "TErr": 0.05662813410162926,
+          "IAE": 6.619957668036221,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 206.406074486246,
+          "latency_ms_median": 224.2358445073478,
+          "latency_ms_p95": 373.2064439056557
+        },
+        {
+          "TErr": 0.03160466253757477,
+          "IAE": 8.006054518371819,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 190.17856760066934,
+          "latency_ms_median": 206.25672049936838,
+          "latency_ms_p95": 344.42070359218627
+        },
+        {
+          "TErr": 0.05867185816168785,
+          "IAE": 7.729900933578605,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 237.26266000633282,
+          "latency_ms_median": 288.79913200216834,
+          "latency_ms_p95": 390.1784753528773
+        },
+        {
+          "TErr": 2.1973876953125,
+          "IAE": 11.172274789810185,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 238.85784802647927,
+          "latency_ms_median": 276.06650949746836,
+          "latency_ms_p95": 383.5647662432164
+        },
+        {
+          "TErr": 3.1507582664489746,
+          "IAE": 12.115410571098321,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 244.24218065862078,
+          "latency_ms_median": 277.75660550105385,
+          "latency_ms_p95": 410.43911024898983
+        },
+        {
+          "TErr": 0.06503374129533768,
+          "IAE": 7.112506738901139,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 211.49501516658347,
+          "latency_ms_median": 224.73309900669847,
+          "latency_ms_p95": 376.7750607308697
+        },
+        {
+          "TErr": 2.6418094635009766,
+          "IAE": 11.016022109985357,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 213.57142604751667,
+          "latency_ms_median": 228.44301200530026,
+          "latency_ms_p95": 397.26715439464886
+        },
+        {
+          "TErr": 0.2705061137676239,
+          "IAE": 8.638309816122057,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 194.7198052999253,
+          "latency_ms_median": 219.01395349414088,
+          "latency_ms_p95": 347.2749002074124
+        },
+        {
+          "TErr": 0.5257216691970825,
+          "IAE": 10.437247200012207,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 205.61316251230892,
+          "latency_ms_median": 225.6452379951952,
+          "latency_ms_p95": 347.4958284947206
+        },
+        {
+          "TErr": 0.28550422191619873,
+          "IAE": 8.64928335249424,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 201.6507518685345,
+          "latency_ms_median": 229.6949480078183,
+          "latency_ms_p95": 348.4998291009105
+        },
+        {
+          "TErr": 0.06295435130596161,
+          "IAE": 8.341680751889944,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 190.0998644924645,
+          "latency_ms_median": 205.71301701420452,
+          "latency_ms_p95": 347.500406859035
+        },
+        {
+          "TErr": 3.0875208377838135,
+          "IAE": 11.696877307891846,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 181.84674058652794,
+          "latency_ms_median": 177.51226499967743,
+          "latency_ms_p95": 365.00198944559077
+        },
+        {
+          "TErr": 0.7767046689987183,
+          "IAE": 10.149720941781998,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 209.17345558099137,
+          "latency_ms_median": 236.7916770017473,
+          "latency_ms_p95": 358.6529217922361
+        },
+        {
+          "TErr": 0.12789925932884216,
+          "IAE": 9.441153571307657,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 225.23235197217824,
+          "latency_ms_median": 271.6708465013653,
+          "latency_ms_p95": 361.43615493929246
+        },
+        {
+          "TErr": 0.37547197937965393,
+          "IAE": 9.106459258198733,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 216.10136882033353,
+          "latency_ms_median": 263.60334249329753,
+          "latency_ms_p95": 368.8417384051718
+        },
+        {
+          "TErr": 0.09448224306106567,
+          "IAE": 9.156751638054846,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 162.1882238072188,
+          "latency_ms_median": 131.70119699498173,
+          "latency_ms_p95": 363.4669437058617
+        },
+        {
+          "TErr": 0.8820513486862183,
+          "IAE": 10.597397128343585,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 25.31674908027829,
+          "latency_ms_median": 22.42851600749418,
+          "latency_ms_p95": 46.43834589951431
+        },
+        {
+          "TErr": 0.07355780899524689,
+          "IAE": 8.988943907916545,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 24.15588981937617,
+          "latency_ms_median": 22.52242949907668,
+          "latency_ms_p95": 37.57203541463239
+        },
+        {
+          "TErr": 0.1323014199733734,
+          "IAE": 8.370824384987358,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 28.406020374192547,
+          "latency_ms_median": 23.12994800740853,
+          "latency_ms_p95": 52.45854668173702
+        },
+        {
+          "TErr": 0.9047871828079224,
+          "IAE": 9.885680547952653,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 25.737290646065958,
+          "latency_ms_median": 22.296050505246967,
+          "latency_ms_p95": 47.72679614252408
+        },
+        {
+          "TErr": 2.699676036834717,
+          "IAE": 11.259288339614871,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 26.38006408737662,
+          "latency_ms_median": 22.625125508056954,
+          "latency_ms_p95": 44.93024169933048
+        },
+        {
+          "TErr": 0.06133108586072922,
+          "IAE": 7.112051706016062,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 23.709383499614585,
+          "latency_ms_median": 22.32945400464814,
+          "latency_ms_p95": 37.60239690600429
+        },
+        {
+          "TErr": 0.6596051454544067,
+          "IAE": 10.339228743314745,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 23.510173746035434,
+          "latency_ms_median": 21.17018749413546,
+          "latency_ms_p95": 42.58199124742531
+        },
+        {
+          "TErr": 0.15416420996189117,
+          "IAE": 8.011024510562423,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.714011234929785,
+          "latency_ms_median": 12.671018994296901,
+          "latency_ms_p95": 17.207331959798456
+        },
+        {
+          "TErr": 1.2077462673187256,
+          "IAE": 10.787785813808446,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.352381214499474,
+          "latency_ms_median": 13.426249497570097,
+          "latency_ms_p95": 16.857070908008605
+        },
+        {
+          "TErr": 0.09380371123552322,
+          "IAE": 8.550544249415397,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.809424177976325,
+          "latency_ms_median": 12.62717298232019,
+          "latency_ms_p95": 15.934681553335393
+        },
+        {
+          "TErr": 0.08584638684988022,
+          "IAE": 7.182730474844575,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.301241133012809,
+          "latency_ms_median": 13.064231010503136,
+          "latency_ms_p95": 17.552762755076397
+        },
+        {
+          "TErr": 0.18103908002376556,
+          "IAE": 9.078025437891489,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.993696875443371,
+          "latency_ms_median": 12.879036512458697,
+          "latency_ms_p95": 16.660379701352213
+        },
+        {
+          "TErr": 0.1977555900812149,
+          "IAE": 8.958745279014108,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.830810866823109,
+          "latency_ms_median": 12.723755498882383,
+          "latency_ms_p95": 16.749434007215314
+        },
+        {
+          "TErr": 0.26721426844596863,
+          "IAE": 8.579698588848117,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.333144092854733,
+          "latency_ms_median": 13.317535500391386,
+          "latency_ms_p95": 17.219599902455226
+        },
+        {
+          "TErr": 0.24622377753257751,
+          "IAE": 9.343916140198708,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.185585992371974,
+          "latency_ms_median": 12.689025010331534,
+          "latency_ms_p95": 18.049064752995037
+        },
+        {
+          "TErr": 1.5897226333618164,
+          "IAE": 10.658222475051888,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.351239381396832,
+          "latency_ms_median": 13.435404995107092,
+          "latency_ms_p95": 16.47497795638628
+        },
+        {
+          "TErr": 0.20552289485931396,
+          "IAE": 8.316210263073444,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.677211424452253,
+          "latency_ms_median": 12.507691499195062,
+          "latency_ms_p95": 17.094081769755565
+        },
+        {
+          "TErr": 0.24545495212078094,
+          "IAE": 8.78352538466453,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.312912567247016,
+          "latency_ms_median": 13.18365200131666,
+          "latency_ms_p95": 16.959859350754414
+        },
+        {
+          "TErr": 0.2223457247018814,
+          "IAE": 9.834173863828186,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.65037047987183,
+          "latency_ms_median": 12.32836399867665,
+          "latency_ms_p95": 16.681586294726003
+        },
+        {
+          "TErr": 1.2781728506088257,
+          "IAE": 10.917331418991086,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.865450327672685,
+          "latency_ms_median": 13.31232649681624,
+          "latency_ms_p95": 18.050011654850096
+        },
+        {
+          "TErr": 1.0680367946624756,
+          "IAE": 9.87942816019058,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.774594447691925,
+          "latency_ms_median": 12.592769504408352,
+          "latency_ms_p95": 16.638547151524104
+        },
+        {
+          "TErr": 2.515993356704712,
+          "IAE": 10.282335300445558,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.344370634489072,
+          "latency_ms_median": 13.318609999259934,
+          "latency_ms_p95": 17.541032070585057
+        },
+        {
+          "TErr": 1.749998688697815,
+          "IAE": 10.425790948867792,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.54431246581953,
+          "latency_ms_median": 13.301138489623554,
+          "latency_ms_p95": 17.784945490711834
+        },
+        {
+          "TErr": 0.14136816561222076,
+          "IAE": 8.57111051231622,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.929732973182885,
+          "latency_ms_median": 12.975574485608377,
+          "latency_ms_p95": 16.5706089566811
+        },
+        {
+          "TErr": 0.029298746958374977,
+          "IAE": 8.392407948151227,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.3633325995955,
+          "latency_ms_median": 13.24461899639573,
+          "latency_ms_p95": 17.831745588046026
+        },
+        {
+          "TErr": 0.07924902439117432,
+          "IAE": 8.810920801162728,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.783479368081316,
+          "latency_ms_median": 12.661250511882827,
+          "latency_ms_p95": 16.24013465770986
+        },
+        {
+          "TErr": 0.5945133566856384,
+          "IAE": 10.37906460285187,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.396572573692538,
+          "latency_ms_median": 13.298711492097937,
+          "latency_ms_p95": 18.19555303954985
+        },
+        {
+          "TErr": 0.09783100336790085,
+          "IAE": 8.767995904982087,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.203610426901529,
+          "latency_ms_median": 11.823476001154631,
+          "latency_ms_p95": 15.500750682258513
+        },
+        {
+          "TErr": 1.7151007652282715,
+          "IAE": 10.695744864940638,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.585909513290972,
+          "latency_ms_median": 12.504721511504613,
+          "latency_ms_p95": 16.05338895897148
+        },
+        {
+          "TErr": 1.0319907665252686,
+          "IAE": 9.555922372341167,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.439397793107977,
+          "latency_ms_median": 12.01400300487876,
+          "latency_ms_p95": 16.229581805237103
+        },
+        {
+          "TErr": 0.3721614480018616,
+          "IAE": 9.963138529062274,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.467826347759305,
+          "latency_ms_median": 12.11899850750342,
+          "latency_ms_p95": 16.394759452668946
+        },
+        {
+          "TErr": 1.8086082935333252,
+          "IAE": 10.239646611213688,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.58889035282967,
+          "latency_ms_median": 12.6775370008545,
+          "latency_ms_p95": 15.932198287919164
+        },
+        {
+          "TErr": 2.3383378982543945,
+          "IAE": 10.666941752433774,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.308687913464382,
+          "latency_ms_median": 12.198120501125231,
+          "latency_ms_p95": 15.681949345162138
+        },
+        {
+          "TErr": 0.4948488175868988,
+          "IAE": 9.658355124592784,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.568489626282826,
+          "latency_ms_median": 12.429991998942569,
+          "latency_ms_p95": 16.337554849451408
+        },
+        {
+          "TErr": 0.19642961025238037,
+          "IAE": 8.47092174112797,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.596232180367224,
+          "latency_ms_median": 12.48010148992762,
+          "latency_ms_p95": 16.44876345380908
+        },
+        {
+          "TErr": 0.0412348136305809,
+          "IAE": 7.409380716048182,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.82180193423604,
+          "latency_ms_median": 12.440407517715357,
+          "latency_ms_p95": 16.22790079563856
+        },
+        {
+          "TErr": 0.06947781145572662,
+          "IAE": 8.634205363094804,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.140525672390746,
+          "latency_ms_median": 12.2211229900131,
+          "latency_ms_p95": 15.335834407596844
+        },
+        {
+          "TErr": 0.05140077322721481,
+          "IAE": 7.69982083119452,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.597700435241373,
+          "latency_ms_median": 12.45146150176879,
+          "latency_ms_p95": 17.008220049319767
+        },
+        {
+          "TErr": 0.3979503810405731,
+          "IAE": 9.257424243092537,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.877074272255413,
+          "latency_ms_median": 12.611783502507024,
+          "latency_ms_p95": 16.91916854615556
+        },
+        {
+          "TErr": 0.19676430523395538,
+          "IAE": 8.551007025539878,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.318045218707994,
+          "latency_ms_median": 12.15394149767235,
+          "latency_ms_p95": 15.755303858895784
+        }
+      ]
+    },
+    "R1_s5_K5": {
+      "n": 80,
+      "success_count": 70,
+      "success_rate": 0.875,
+      "TErr_mean": 0.17057296824641527,
+      "TErr_median": 0.038414375856518745,
+      "IAE_mean": 6.936627480890718,
+      "latency_ms_mean": 6.531290044746129,
+      "individual": [
+        {
+          "TErr": 0.017764076590538025,
+          "IAE": 7.069435912333426,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.731979546796841,
+          "latency_ms_median": 6.508349499199539,
+          "latency_ms_p95": 8.398336514073888
+        },
+        {
+          "TErr": 0.19420191645622253,
+          "IAE": 8.09152283787727,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.641000685825323,
+          "latency_ms_median": 6.406747503206134,
+          "latency_ms_p95": 8.334185549756512
+        },
+        {
+          "TErr": 0.03307068720459938,
+          "IAE": 6.36009058967233,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.762011022268173,
+          "latency_ms_median": 6.355805511702783,
+          "latency_ms_p95": 9.24819940992165
+        },
+        {
+          "TErr": 0.0367475189268589,
+          "IAE": 7.150411298871044,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.44065545212167,
+          "latency_ms_median": 6.225085002370179,
+          "latency_ms_p95": 8.028017888136672
+        },
+        {
+          "TErr": 0.03118749149143696,
+          "IAE": 6.631397375883535,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.9538156111957505,
+          "latency_ms_median": 6.719106997479685,
+          "latency_ms_p95": 9.028698598558549
+        },
+        {
+          "TErr": 0.03597937896847725,
+          "IAE": 6.502620445862409,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.966957646848944,
+          "latency_ms_median": 6.665108492597938,
+          "latency_ms_p95": 9.242379847273696
+        },
+        {
+          "TErr": 0.04447416588664055,
+          "IAE": 6.854148219153287,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.564852861920372,
+          "latency_ms_median": 6.403810504707508,
+          "latency_ms_p95": 8.341159249539485
+        },
+        {
+          "TErr": 3.039531946182251,
+          "IAE": 10.766526260375983,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.299397221494776,
+          "latency_ms_median": 6.205657497048378,
+          "latency_ms_p95": 7.776374196691903
+        },
+        {
+          "TErr": 0.012957283295691013,
+          "IAE": 6.766777783446015,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.857423780796428,
+          "latency_ms_median": 6.724785998812877,
+          "latency_ms_p95": 8.560825728636697
+        },
+        {
+          "TErr": 0.02175891399383545,
+          "IAE": 7.417261452786625,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.465207639615983,
+          "latency_ms_median": 7.238665493787266,
+          "latency_ms_p95": 9.755243852850974
+        },
+        {
+          "TErr": 0.06104961782693863,
+          "IAE": 7.024555098116402,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.032637041023311,
+          "latency_ms_median": 6.840833506430499,
+          "latency_ms_p95": 8.604637191456273
+        },
+        {
+          "TErr": 0.038013096898794174,
+          "IAE": 6.558441182300452,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.442643313591058,
+          "latency_ms_median": 6.257607994484715,
+          "latency_ms_p95": 8.225637050054496
+        },
+        {
+          "TErr": 0.01936330832540989,
+          "IAE": 7.410371786169708,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.764594045816921,
+          "latency_ms_median": 6.620602507609874,
+          "latency_ms_p95": 8.748766141070519
+        },
+        {
+          "TErr": 0.04847145825624466,
+          "IAE": 7.353824206814171,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.00540821320222,
+          "latency_ms_median": 6.764250501873903,
+          "latency_ms_p95": 9.252079998259433
+        },
+        {
+          "TErr": 0.02750653773546219,
+          "IAE": 6.017235322743652,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.767726800753735,
+          "latency_ms_median": 6.5910969860851765,
+          "latency_ms_p95": 8.76696830237051
+        },
+        {
+          "TErr": 0.542700469493866,
+          "IAE": 8.69782395482064,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.525544446776621,
+          "latency_ms_median": 6.459429496317171,
+          "latency_ms_p95": 7.985090713191312
+        },
+        {
+          "TErr": 0.03313513845205307,
+          "IAE": 5.909241350740196,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.277690091131565,
+          "latency_ms_median": 6.119254510849714,
+          "latency_ms_p95": 8.075698641187044
+        },
+        {
+          "TErr": 0.04518790915608406,
+          "IAE": 6.326983334347607,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.614441100003508,
+          "latency_ms_median": 6.431508503737859,
+          "latency_ms_p95": 8.51589984813472
+        },
+        {
+          "TErr": 0.05355484038591385,
+          "IAE": 7.874125576242806,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.347656659587908,
+          "latency_ms_median": 6.162863501231186,
+          "latency_ms_p95": 8.200750398100354
+        },
+        {
+          "TErr": 0.06266941875219345,
+          "IAE": 7.730318282544613,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.4795247207318125,
+          "latency_ms_median": 6.223534015589394,
+          "latency_ms_p95": 8.069185295607895
+        },
+        {
+          "TErr": 0.011616863310337067,
+          "IAE": 5.975679593868555,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.334223680508633,
+          "latency_ms_median": 6.322986999293789,
+          "latency_ms_p95": 7.785548508400096
+        },
+        {
+          "TErr": 0.008445736020803452,
+          "IAE": 6.6068924161791776,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.338050025321233,
+          "latency_ms_median": 6.279018503846601,
+          "latency_ms_p95": 7.688452299043999
+        },
+        {
+          "TErr": 0.025896122679114342,
+          "IAE": 5.79871830135584,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.831020244280808,
+          "latency_ms_median": 6.600614506169222,
+          "latency_ms_p95": 8.79420530691277
+        },
+        {
+          "TErr": 0.03144398704171181,
+          "IAE": 6.263366349935532,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.465434319688939,
+          "latency_ms_median": 6.291470504947938,
+          "latency_ms_p95": 8.362756807764525
+        },
+        {
+          "TErr": 0.026408452540636063,
+          "IAE": 5.557722823936494,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.43044591435076,
+          "latency_ms_median": 6.265150514082052,
+          "latency_ms_p95": 8.177670692384707
+        },
+        {
+          "TErr": 0.0318114273250103,
+          "IAE": 6.215697295032439,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.244193320550646,
+          "latency_ms_median": 6.0989979829173535,
+          "latency_ms_p95": 7.4563154426869005
+        },
+        {
+          "TErr": 0.024178147315979004,
+          "IAE": 5.6713720857724566,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.043630552943796,
+          "latency_ms_median": 6.737165502272546,
+          "latency_ms_p95": 9.05118829687126
+        },
+        {
+          "TErr": 0.03935135155916214,
+          "IAE": 7.1050160408765075,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.530227427332041,
+          "latency_ms_median": 6.507024503662251,
+          "latency_ms_p95": 7.905271048366558
+        },
+        {
+          "TErr": 0.2046893984079361,
+          "IAE": 8.921466460227965,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.953708354112071,
+          "latency_ms_median": 5.8746229915414006,
+          "latency_ms_p95": 7.331175512808841
+        },
+        {
+          "TErr": 0.03556722775101662,
+          "IAE": 7.229128230288625,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.487263346401353,
+          "latency_ms_median": 6.3515115034533665,
+          "latency_ms_p95": 7.9462405396043305
+        },
+        {
+          "TErr": 0.44640037417411804,
+          "IAE": 8.437219378948216,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.326990565867163,
+          "latency_ms_median": 6.16832599916961,
+          "latency_ms_p95": 7.920352855580856
+        },
+        {
+          "TErr": 0.033795468509197235,
+          "IAE": 6.738179909139872,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.686413126493183,
+          "latency_ms_median": 6.54250499792397,
+          "latency_ms_p95": 8.465755909855943
+        },
+        {
+          "TErr": 0.024958407506346703,
+          "IAE": 6.151275201514369,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.301571560325101,
+          "latency_ms_median": 6.067113994504325,
+          "latency_ms_p95": 8.078302461944984
+        },
+        {
+          "TErr": 0.034591611474752426,
+          "IAE": 6.675681602284311,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.362734019639902,
+          "latency_ms_median": 6.107812005211599,
+          "latency_ms_p95": 8.173453397466798
+        },
+        {
+          "TErr": 0.02962675504386425,
+          "IAE": 5.514145400822164,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.3643786805914715,
+          "latency_ms_median": 6.128490509581752,
+          "latency_ms_p95": 7.876479759579523
+        },
+        {
+          "TErr": 0.7029010653495789,
+          "IAE": 9.209274015426633,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.836807838796328,
+          "latency_ms_median": 6.632579010329209,
+          "latency_ms_p95": 8.684246291522868
+        },
+        {
+          "TErr": 1.4329583644866943,
+          "IAE": 10.233995831012725,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.367238233991277,
+          "latency_ms_median": 6.180861499160528,
+          "latency_ms_p95": 7.5918922520941114
+        },
+        {
+          "TErr": 0.04161105677485466,
+          "IAE": 7.679433726370331,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.425208000582643,
+          "latency_ms_median": 6.275738007389009,
+          "latency_ms_p95": 7.992560503771529
+        },
+        {
+          "TErr": 0.053072892129421234,
+          "IAE": 6.2478424233198195,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.522055166036201,
+          "latency_ms_median": 6.339678991935216,
+          "latency_ms_p95": 8.268822747049851
+        },
+        {
+          "TErr": 0.05332336947321892,
+          "IAE": 6.149004967585209,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.242191940740061,
+          "latency_ms_median": 5.991865007672459,
+          "latency_ms_p95": 7.999397006642536
+        },
+        {
+          "TErr": 0.056349337100982666,
+          "IAE": 6.6091494084149565,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.707535207193966,
+          "latency_ms_median": 6.517271991469897,
+          "latency_ms_p95": 8.532033064693678
+        },
+        {
+          "TErr": 0.5292662382125854,
+          "IAE": 8.936028082370767,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.496535534000334,
+          "latency_ms_median": 6.38286949833855,
+          "latency_ms_p95": 7.984968610981014
+        },
+        {
+          "TErr": 0.039075229316949844,
+          "IAE": 6.338203031122684,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.348115032499966,
+          "latency_ms_median": 6.2258739926619455,
+          "latency_ms_p95": 7.628933695377778
+        },
+        {
+          "TErr": 0.3867230713367462,
+          "IAE": 7.809886505007744,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.401408533759725,
+          "latency_ms_median": 6.307393006864004,
+          "latency_ms_p95": 7.90785447024973
+        },
+        {
+          "TErr": 0.365425705909729,
+          "IAE": 8.780201683640485,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.715383118911025,
+          "latency_ms_median": 6.6077154915547,
+          "latency_ms_p95": 8.506058294733517
+        },
+        {
+          "TErr": 0.015013537369668484,
+          "IAE": 5.736538295615471,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.506822434603237,
+          "latency_ms_median": 6.398058496415615,
+          "latency_ms_p95": 7.900045890710316
+        },
+        {
+          "TErr": 0.0265935231000185,
+          "IAE": 6.360853420943023,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.248259633624305,
+          "latency_ms_median": 6.1280355002963915,
+          "latency_ms_p95": 7.680146706115915
+        },
+        {
+          "TErr": 0.05707507207989693,
+          "IAE": 6.213984597697857,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.249418020403634,
+          "latency_ms_median": 6.138813492725603,
+          "latency_ms_p95": 7.3414622398558995
+        },
+        {
+          "TErr": 0.03182431310415268,
+          "IAE": 5.72151243235916,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.3474132064341875,
+          "latency_ms_median": 6.180245007271878,
+          "latency_ms_p95": 8.142735745059321
+        },
+        {
+          "TErr": 0.011663354933261871,
+          "IAE": 5.911129116564987,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.630310739662188,
+          "latency_ms_median": 6.477787494077347,
+          "latency_ms_p95": 8.383259295078458
+        },
+        {
+          "TErr": 0.02917441911995411,
+          "IAE": 5.804102514274415,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.221790819933328,
+          "latency_ms_median": 6.114520496339537,
+          "latency_ms_p95": 7.459462340921163
+        },
+        {
+          "TErr": 0.05867258831858635,
+          "IAE": 7.0541305982321525,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.417819072764057,
+          "latency_ms_median": 6.235605003894307,
+          "latency_ms_p95": 8.107972584548406
+        },
+        {
+          "TErr": 0.028191829100251198,
+          "IAE": 6.310915817581111,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.313267560714546,
+          "latency_ms_median": 6.0558264958672225,
+          "latency_ms_p95": 8.154270595696286
+        },
+        {
+          "TErr": 0.040009770542383194,
+          "IAE": 6.677822443619363,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.673326100960064,
+          "latency_ms_median": 6.440650511649437,
+          "latency_ms_p95": 8.945060604310129
+        },
+        {
+          "TErr": 0.03152614086866379,
+          "IAE": 6.239227880984547,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.390668281004764,
+          "latency_ms_median": 6.592746503883973,
+          "latency_ms_p95": 12.235043995315205
+        },
+        {
+          "TErr": 0.04488380625844002,
+          "IAE": 6.4759842354804285,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.318809367173041,
+          "latency_ms_median": 6.219428978511132,
+          "latency_ms_p95": 7.827816903591155
+        },
+        {
+          "TErr": 2.0833799839019775,
+          "IAE": 9.83526795387268,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.407025987670447,
+          "latency_ms_median": 6.309097516350448,
+          "latency_ms_p95": 7.857044189586304
+        },
+        {
+          "TErr": 0.04372096061706543,
+          "IAE": 5.980964660272003,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.578165315246831,
+          "latency_ms_median": 6.350457493681461,
+          "latency_ms_p95": 8.437291493464725
+        },
+        {
+          "TErr": 0.09795192629098892,
+          "IAE": 8.027598922252654,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.026398867640334,
+          "latency_ms_median": 5.897547511267476,
+          "latency_ms_p95": 7.570984192716416
+        },
+        {
+          "TErr": 0.03881565481424332,
+          "IAE": 6.641331190839407,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.2879592275324585,
+          "latency_ms_median": 6.067359980079345,
+          "latency_ms_p95": 7.818652455171103
+        },
+        {
+          "TErr": 0.036231089383363724,
+          "IAE": 6.596056062169373,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.594638427486643,
+          "latency_ms_median": 6.415483498130925,
+          "latency_ms_p95": 8.405098802177234
+        },
+        {
+          "TErr": 0.08926016837358475,
+          "IAE": 7.212747458517554,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.509573259584916,
+          "latency_ms_median": 6.296056511928327,
+          "latency_ms_p95": 7.949414689210241
+        },
+        {
+          "TErr": 0.18387585878372192,
+          "IAE": 8.018634510040286,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.8084466389458,
+          "latency_ms_median": 6.52493150846567,
+          "latency_ms_p95": 9.001687137060795
+        },
+        {
+          "TErr": 0.03366726264357567,
+          "IAE": 6.127631269469856,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.420018059434369,
+          "latency_ms_median": 6.259051020606421,
+          "latency_ms_p95": 7.916630334511863
+        },
+        {
+          "TErr": 0.019360648468136787,
+          "IAE": 5.8652858389914035,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.089328431601946,
+          "latency_ms_median": 6.012098994688131,
+          "latency_ms_p95": 7.308743750036227
+        },
+        {
+          "TErr": 0.2947944700717926,
+          "IAE": 8.732881704568863,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.2809815678823115,
+          "latency_ms_median": 6.126686988864094,
+          "latency_ms_p95": 7.962765413685701
+        },
+        {
+          "TErr": 0.027505483478307724,
+          "IAE": 6.642995950169859,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.417471759680969,
+          "latency_ms_median": 6.253014507819898,
+          "latency_ms_p95": 8.125883182219695
+        },
+        {
+          "TErr": 0.038954611867666245,
+          "IAE": 6.467060907408591,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.379319461605822,
+          "latency_ms_median": 6.227045523701236,
+          "latency_ms_p95": 8.250196352310008
+        },
+        {
+          "TErr": 0.020289132371544838,
+          "IAE": 6.4188631979376085,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.377347826298016,
+          "latency_ms_median": 6.156832983833738,
+          "latency_ms_p95": 8.65761645545717
+        },
+        {
+          "TErr": 0.19552847743034363,
+          "IAE": 7.421676487922671,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.934555032445739,
+          "latency_ms_median": 6.661674502538517,
+          "latency_ms_p95": 9.161377818963956
+        },
+        {
+          "TErr": 0.020930370315909386,
+          "IAE": 6.250258265510201,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.06166168616619,
+          "latency_ms_median": 6.8714009976247326,
+          "latency_ms_p95": 9.318770200479774
+        },
+        {
+          "TErr": 0.6833760142326355,
+          "IAE": 8.745928419828418,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.619751846689421,
+          "latency_ms_median": 6.531050501507707,
+          "latency_ms_p95": 8.166350411192978
+        },
+        {
+          "TErr": 0.046878550201654434,
+          "IAE": 7.177103097215293,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.909265300336604,
+          "latency_ms_median": 5.873156012967229,
+          "latency_ms_p95": 6.958933602436445
+        },
+        {
+          "TErr": 0.045761588960886,
+          "IAE": 6.954229371771213,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.208810027843962,
+          "latency_ms_median": 6.014256490743719,
+          "latency_ms_p95": 7.841739359719213
+        },
+        {
+          "TErr": 0.04471736401319504,
+          "IAE": 5.832627597525716,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.257643287729782,
+          "latency_ms_median": 6.127839500550181,
+          "latency_ms_p95": 7.501984445843845
+        },
+        {
+          "TErr": 0.032769035547971725,
+          "IAE": 5.302170770131051,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.424254179582931,
+          "latency_ms_median": 6.193494482431561,
+          "latency_ms_p95": 8.388578511949163
+        },
+        {
+          "TErr": 0.030271857976913452,
+          "IAE": 5.0454235632717594,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.371869932045229,
+          "latency_ms_median": 6.233776992303319,
+          "latency_ms_p95": 8.102666393097023
+        },
+        {
+          "TErr": 0.022732725366950035,
+          "IAE": 6.836234970837835,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.61992913344875,
+          "latency_ms_median": 6.324450499960221,
+          "latency_ms_p95": 8.696770395908969
+        },
+        {
+          "TErr": 0.043626196682453156,
+          "IAE": 6.844768601879474,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.037019112225001,
+          "latency_ms_median": 6.740105483913794,
+          "latency_ms_p95": 9.416956044151448
+        },
+        {
+          "TErr": 0.027996838092803955,
+          "IAE": 6.07856330994517,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.859932326866935,
+          "latency_ms_median": 6.558979017427191,
+          "latency_ms_p95": 9.167267441807772
+        }
+      ]
+    },
+    "PD_K10": {
+      "n": 80,
+      "success_count": 53,
+      "success_rate": 0.6625,
+      "TErr_mean": 0.380118570686318,
+      "TErr_median": 0.14976652711629868,
+      "IAE_mean": 8.531378633754795,
+      "latency_ms_mean": 12.225110796129835,
+      "individual": [
+        {
+          "TErr": 0.2776828706264496,
+          "IAE": 9.341134920120233,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.678320814894201,
+          "latency_ms_median": 13.452412007609382,
+          "latency_ms_p95": 18.119901655882128
+        },
+        {
+          "TErr": 1.711687445640564,
+          "IAE": 10.01564242362976,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.34870659924733,
+          "latency_ms_median": 12.121611507609487,
+          "latency_ms_p95": 16.175514667702366
+        },
+        {
+          "TErr": 0.04682007059454918,
+          "IAE": 8.412705423235904,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.037602999635661,
+          "latency_ms_median": 13.088316496578045,
+          "latency_ms_p95": 16.794868260330983
+        },
+        {
+          "TErr": 0.5059908032417297,
+          "IAE": 9.982726846933373,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.560040539052958,
+          "latency_ms_median": 12.408239505020902,
+          "latency_ms_p95": 16.10035034827888
+        },
+        {
+          "TErr": 0.036193784326314926,
+          "IAE": 7.61913433451206,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.602683567480804,
+          "latency_ms_median": 12.548616010462865,
+          "latency_ms_p95": 16.127627952664625
+        },
+        {
+          "TErr": 0.1438303142786026,
+          "IAE": 7.843413169682027,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.898962887159238,
+          "latency_ms_median": 11.7875094874762,
+          "latency_ms_p95": 14.965667766227847
+        },
+        {
+          "TErr": 0.21000348031520844,
+          "IAE": 8.370790841281412,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.168915361398831,
+          "latency_ms_median": 12.070361510268413,
+          "latency_ms_p95": 15.048987205955198
+        },
+        {
+          "TErr": 0.04176149517297745,
+          "IAE": 7.965713895335792,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.210405900065476,
+          "latency_ms_median": 11.928011503187008,
+          "latency_ms_p95": 16.228236290044148
+        },
+        {
+          "TErr": 0.18423756957054138,
+          "IAE": 9.101855156123642,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.311593305785209,
+          "latency_ms_median": 12.106784502975643,
+          "latency_ms_p95": 15.865594347997101
+        },
+        {
+          "TErr": 1.9132052659988403,
+          "IAE": 10.63943373203278,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.935046733667454,
+          "latency_ms_median": 12.733772498904727,
+          "latency_ms_p95": 17.391554381174497
+        },
+        {
+          "TErr": 0.3200853765010834,
+          "IAE": 9.139104398488996,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.402519127315221,
+          "latency_ms_median": 13.222829511505552,
+          "latency_ms_p95": 16.99664325278718
+        },
+        {
+          "TErr": 0.12325873225927353,
+          "IAE": 7.970972689539192,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.056469790753908,
+          "latency_ms_median": 12.66243499412667,
+          "latency_ms_p95": 17.658338659384746
+        },
+        {
+          "TErr": 0.1435682773590088,
+          "IAE": 8.008336947262288,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.217403381170394,
+          "latency_ms_median": 12.048839504132047,
+          "latency_ms_p95": 16.006080647639465
+        },
+        {
+          "TErr": 0.2685410976409912,
+          "IAE": 9.476000778079033,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.39237213274464,
+          "latency_ms_median": 12.122673491830938,
+          "latency_ms_p95": 15.671820243005637
+        },
+        {
+          "TErr": 0.12783406674861908,
+          "IAE": 8.391856047511101,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.175850508307727,
+          "latency_ms_median": 12.204028505948372,
+          "latency_ms_p95": 15.527325893344821
+        },
+        {
+          "TErr": 0.3440731167793274,
+          "IAE": 8.553116358518594,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.323721811990254,
+          "latency_ms_median": 12.198264492326416,
+          "latency_ms_p95": 15.32926275831414
+        },
+        {
+          "TErr": 0.04397495463490486,
+          "IAE": 6.877628361806281,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.586857146040225,
+          "latency_ms_median": 12.602916001924314,
+          "latency_ms_p95": 16.133878345135596
+        },
+        {
+          "TErr": 0.1703035533428192,
+          "IAE": 8.065096537470819,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.279540046777887,
+          "latency_ms_median": 12.175693496828899,
+          "latency_ms_p95": 15.852649700536857
+        },
+        {
+          "TErr": 1.9810776710510254,
+          "IAE": 10.394749190807346,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.11122308000146,
+          "latency_ms_median": 12.976386497030035,
+          "latency_ms_p95": 17.524266855616585
+        },
+        {
+          "TErr": 0.044190913438797,
+          "IAE": 8.071908122897147,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.213667585941343,
+          "latency_ms_median": 12.078308514901437,
+          "latency_ms_p95": 15.518676656938624
+        },
+        {
+          "TErr": 0.053823575377464294,
+          "IAE": 7.566621216535565,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.854309107293375,
+          "latency_ms_median": 11.763276503188536,
+          "latency_ms_p95": 15.109413606114682
+        },
+        {
+          "TErr": 0.21590369939804077,
+          "IAE": 9.112368489801883,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.520838607063828,
+          "latency_ms_median": 12.507218503742479,
+          "latency_ms_p95": 16.02701449301093
+        },
+        {
+          "TErr": 0.05998517572879791,
+          "IAE": 8.327028088271623,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.179110087454319,
+          "latency_ms_median": 12.096053003915586,
+          "latency_ms_p95": 15.612429562315807
+        },
+        {
+          "TErr": 0.15350037813186646,
+          "IAE": 9.04357911616564,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.149874411406927,
+          "latency_ms_median": 11.939381001866423,
+          "latency_ms_p95": 15.34634060662938
+        },
+        {
+          "TErr": 0.05602479353547096,
+          "IAE": 6.21259690862149,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.419638612191193,
+          "latency_ms_median": 12.340880508418195,
+          "latency_ms_p95": 15.955631597898899
+        },
+        {
+          "TErr": 0.03770407661795616,
+          "IAE": 6.994989804923537,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.770766006045355,
+          "latency_ms_median": 12.327172502409667,
+          "latency_ms_p95": 16.96938624663744
+        },
+        {
+          "TErr": 0.037782054394483566,
+          "IAE": 7.139704392999409,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.412269306757176,
+          "latency_ms_median": 12.263393509783782,
+          "latency_ms_p95": 15.38305744761601
+        },
+        {
+          "TErr": 0.39912962913513184,
+          "IAE": 9.166395114660272,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.484515572820479,
+          "latency_ms_median": 12.202148500364274,
+          "latency_ms_p95": 16.331778494350143
+        },
+        {
+          "TErr": 0.1963425874710083,
+          "IAE": 9.206301739513863,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.194844005823446,
+          "latency_ms_median": 13.06924749223981,
+          "latency_ms_p95": 17.368379206163805
+        },
+        {
+          "TErr": 0.06788798421621323,
+          "IAE": 7.512929254323245,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.3942410282325,
+          "latency_ms_median": 12.35781449940987,
+          "latency_ms_p95": 15.347900360939086
+        },
+        {
+          "TErr": 0.5158746242523193,
+          "IAE": 9.317143545150758,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.539542306719037,
+          "latency_ms_median": 12.569172497023828,
+          "latency_ms_p95": 16.226098213519432
+        },
+        {
+          "TErr": 0.21617235243320465,
+          "IAE": 8.727001587748525,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.379805608458506,
+          "latency_ms_median": 12.39883349626325,
+          "latency_ms_p95": 15.24239281279733
+        },
+        {
+          "TErr": 1.1364564895629883,
+          "IAE": 10.747649562358852,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.44903469904481,
+          "latency_ms_median": 12.03313899168279,
+          "latency_ms_p95": 16.158892345265482
+        },
+        {
+          "TErr": 0.1460326761007309,
+          "IAE": 7.696303900480271,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.489249426095435,
+          "latency_ms_median": 12.375109508866444,
+          "latency_ms_p95": 16.20341216039378
+        },
+        {
+          "TErr": 0.0464693121612072,
+          "IAE": 7.423077621906997,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.355698121051924,
+          "latency_ms_median": 12.152316005085595,
+          "latency_ms_p95": 15.484146800008597
+        },
+        {
+          "TErr": 0.05383606627583504,
+          "IAE": 8.606368615552782,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.502529458336843,
+          "latency_ms_median": 12.3322824947536,
+          "latency_ms_p95": 17.289551738940624
+        },
+        {
+          "TErr": 0.0763101801276207,
+          "IAE": 7.862350510954857,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.223189979752837,
+          "latency_ms_median": 12.070459997630678,
+          "latency_ms_p95": 15.558587445411831
+        },
+        {
+          "TErr": 0.5191671252250671,
+          "IAE": 9.884774044752126,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.602591026613178,
+          "latency_ms_median": 12.507457999163307,
+          "latency_ms_p95": 15.99524743069196
+        },
+        {
+          "TErr": 0.04788490757346153,
+          "IAE": 8.00102122440934,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.33372947977235,
+          "latency_ms_median": 12.233832996571437,
+          "latency_ms_p95": 15.483948920154942
+        },
+        {
+          "TErr": 0.041749678552150726,
+          "IAE": 7.655351947322487,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.275995553548759,
+          "latency_ms_median": 12.041810012306087,
+          "latency_ms_p95": 16.633110849943474
+        },
+        {
+          "TErr": 0.35941725969314575,
+          "IAE": 9.289051802754402,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.218044086087806,
+          "latency_ms_median": 12.244151992490515,
+          "latency_ms_p95": 15.172636006900571
+        },
+        {
+          "TErr": 0.04416145756840706,
+          "IAE": 8.25922231346369,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.031371086486615,
+          "latency_ms_median": 11.767754011088982,
+          "latency_ms_p95": 15.543637398513965
+        },
+        {
+          "TErr": 0.06948461383581161,
+          "IAE": 7.936790688633921,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.477219640665377,
+          "latency_ms_median": 12.420475002727471,
+          "latency_ms_p95": 16.11735670012422
+        },
+        {
+          "TErr": 1.529466152191162,
+          "IAE": 9.651983532905573,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.978496226559704,
+          "latency_ms_median": 12.066620998666622,
+          "latency_ms_p95": 15.15112491324543
+        },
+        {
+          "TErr": 2.622404098510742,
+          "IAE": 10.933298568725583,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.74698028845402,
+          "latency_ms_median": 12.290576996747404,
+          "latency_ms_p95": 18.12992564955493
+        },
+        {
+          "TErr": 0.06567147374153137,
+          "IAE": 6.871805586069825,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.82392081944272,
+          "latency_ms_median": 11.763144008000381,
+          "latency_ms_p95": 15.19528064382029
+        },
+        {
+          "TErr": 0.4503076672554016,
+          "IAE": 9.58532091200352,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.841456419206224,
+          "latency_ms_median": 11.839050508569926,
+          "latency_ms_p95": 15.146699544857253
+        },
+        {
+          "TErr": 0.18297795951366425,
+          "IAE": 8.278296272754668,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.61842398031149,
+          "latency_ms_median": 12.2838954848703,
+          "latency_ms_p95": 17.59710489568533
+        },
+        {
+          "TErr": 0.723160982131958,
+          "IAE": 10.126475554704662,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.762734893515395,
+          "latency_ms_median": 11.78903499385342,
+          "latency_ms_p95": 14.612166910956146
+        },
+        {
+          "TErr": 0.04944292828440666,
+          "IAE": 7.594125855490566,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.155450405552983,
+          "latency_ms_median": 12.022084003547207,
+          "latency_ms_p95": 15.911226162279489
+        },
+        {
+          "TErr": 0.030818535014986992,
+          "IAE": 6.551847044862812,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.746688588367155,
+          "latency_ms_median": 11.764755006879568,
+          "latency_ms_p95": 14.757726500101851
+        },
+        {
+          "TErr": 1.9377193450927734,
+          "IAE": 10.686975331306462,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.1697771064161,
+          "latency_ms_median": 12.021142509183846,
+          "latency_ms_p95": 16.391294750792433
+        },
+        {
+          "TErr": 0.3220655024051666,
+          "IAE": 8.963158098459248,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.065864393759208,
+          "latency_ms_median": 12.152011491707526,
+          "latency_ms_p95": 15.713718252663963
+        },
+        {
+          "TErr": 0.1197245791554451,
+          "IAE": 7.746254936307669,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.957676051533781,
+          "latency_ms_median": 11.842999520013109,
+          "latency_ms_p95": 15.173133699863683
+        },
+        {
+          "TErr": 0.10824710875749588,
+          "IAE": 8.213096917420623,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.267682800690332,
+          "latency_ms_median": 12.262363496120088,
+          "latency_ms_p95": 15.225419605849307
+        },
+        {
+          "TErr": 0.9917067885398865,
+          "IAE": 10.034312155246734,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.77646932095134,
+          "latency_ms_median": 11.814342011348344,
+          "latency_ms_p95": 15.105803898768496
+        },
+        {
+          "TErr": 1.634562373161316,
+          "IAE": 9.928287928104396,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.302395580724502,
+          "latency_ms_median": 11.947056002099998,
+          "latency_ms_p95": 15.84911375248339
+        },
+        {
+          "TErr": 0.08725176751613617,
+          "IAE": 8.23161752060056,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.845187120488845,
+          "latency_ms_median": 11.520810003275983,
+          "latency_ms_p95": 15.441798805841238
+        },
+        {
+          "TErr": 0.7149134278297424,
+          "IAE": 9.958548122644423,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.682358920030916,
+          "latency_ms_median": 11.590919006266631,
+          "latency_ms_p95": 14.4592619035393
+        },
+        {
+          "TErr": 0.2006635069847107,
+          "IAE": 8.928655833303932,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.073961773615641,
+          "latency_ms_median": 11.789506490458734,
+          "latency_ms_p95": 15.365074602595994
+        },
+        {
+          "TErr": 0.2875739336013794,
+          "IAE": 8.797125344276425,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.017395772272721,
+          "latency_ms_median": 11.762424997868948,
+          "latency_ms_p95": 15.49780690256739
+        },
+        {
+          "TErr": 0.45741742849349976,
+          "IAE": 8.8409489351511,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.115931667697927,
+          "latency_ms_median": 11.893637492903508,
+          "latency_ms_p95": 15.802527018240651
+        },
+        {
+          "TErr": 1.1596193313598633,
+          "IAE": 9.57281991481781,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.840174826211296,
+          "latency_ms_median": 11.724061012500897,
+          "latency_ms_p95": 15.107025510224044
+        },
+        {
+          "TErr": 0.10770383477210999,
+          "IAE": 8.531415402740246,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.508137986529619,
+          "latency_ms_median": 11.462356487754732,
+          "latency_ms_p95": 14.495453395647926
+        },
+        {
+          "TErr": 0.0599922239780426,
+          "IAE": 7.225297468192875,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.924924000437992,
+          "latency_ms_median": 11.926450504688546,
+          "latency_ms_p95": 14.644804467388894
+        },
+        {
+          "TErr": 0.11593660712242126,
+          "IAE": 8.74676563322544,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.967599840718322,
+          "latency_ms_median": 11.972181993769482,
+          "latency_ms_p95": 15.025448604137637
+        },
+        {
+          "TErr": 0.3953084945678711,
+          "IAE": 9.237756235003474,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.600583907527229,
+          "latency_ms_median": 12.401845509884879,
+          "latency_ms_p95": 17.384275222138964
+        },
+        {
+          "TErr": 0.039167311042547226,
+          "IAE": 7.9529841067641955,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.822061721468344,
+          "latency_ms_median": 11.827886002720334,
+          "latency_ms_p95": 15.254473011009393
+        },
+        {
+          "TErr": 0.3937152624130249,
+          "IAE": 9.24436520636082,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.351980768338157,
+          "latency_ms_median": 12.355779996141791,
+          "latency_ms_p95": 15.511015053198204
+        },
+        {
+          "TErr": 0.10107037425041199,
+          "IAE": 7.264250466376545,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.03948408093614,
+          "latency_ms_median": 11.98025447956752,
+          "latency_ms_p95": 15.186816797358915
+        },
+        {
+          "TErr": 0.3237380087375641,
+          "IAE": 9.082383227348325,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.668690760464719,
+          "latency_ms_median": 11.591021990170702,
+          "latency_ms_p95": 14.970646300935185
+        },
+        {
+          "TErr": 0.1230527013540268,
+          "IAE": 7.723260694444179,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.863486067159101,
+          "latency_ms_median": 11.8856495100772,
+          "latency_ms_p95": 15.018607050296847
+        },
+        {
+          "TErr": 1.0184226036071777,
+          "IAE": 9.909616019725796,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.74445857895383,
+          "latency_ms_median": 11.717505505657755,
+          "latency_ms_p95": 14.218784710101314
+        },
+        {
+          "TErr": 0.3096100091934204,
+          "IAE": 8.988965470790857,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.898763332089098,
+          "latency_ms_median": 11.76716601185035,
+          "latency_ms_p95": 14.909245587477923
+        },
+        {
+          "TErr": 0.12609882652759552,
+          "IAE": 7.774352734684942,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.756569487430776,
+          "latency_ms_median": 11.597514007007703,
+          "latency_ms_p95": 14.372507140797097
+        },
+        {
+          "TErr": 0.021939337253570557,
+          "IAE": 5.807529574446376,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.83139796621011,
+          "latency_ms_median": 11.678297494654544,
+          "latency_ms_p95": 15.155080799013373
+        },
+        {
+          "TErr": 0.05040670558810234,
+          "IAE": 6.8665954720601405,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.878927846167548,
+          "latency_ms_median": 11.546259498572908,
+          "latency_ms_p95": 15.716365513799245
+        },
+        {
+          "TErr": 0.05078238993883133,
+          "IAE": 6.872911538071932,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 10.837694640116146,
+          "latency_ms_median": 10.824164986843243,
+          "latency_ms_p95": 13.522801002545743
+        },
+        {
+          "TErr": 0.17748162150382996,
+          "IAE": 8.282458102107054,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.34015325185222,
+          "latency_ms_median": 11.188568489160389,
+          "latency_ms_p95": 14.245172798109705
+        },
+        {
+          "TErr": 0.12992289662361145,
+          "IAE": 7.574487316310407,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.414611961032884,
+          "latency_ms_median": 11.165149000589736,
+          "latency_ms_p95": 14.687765455164477
+        }
+      ]
+    },
+    "R1_s5_K10": {
+      "n": 80,
+      "success_count": 79,
+      "success_rate": 0.9875,
+      "TErr_mean": 0.03866825168952346,
+      "TErr_median": 0.01824048813432455,
+      "IAE_mean": 6.222299837204627,
+      "latency_ms_mean": 6.215000966420727,
+      "individual": [
+        {
+          "TErr": 0.025242650881409645,
+          "IAE": 5.70361642232165,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.917692111494641,
+          "latency_ms_median": 5.737265004427172,
+          "latency_ms_p95": 7.480678241699932
+        },
+        {
+          "TErr": 0.026362959295511246,
+          "IAE": 6.377092663422227,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.8550078243327635,
+          "latency_ms_median": 5.718633503420278,
+          "latency_ms_p95": 6.884704294498077
+        },
+        {
+          "TErr": 0.11137554049491882,
+          "IAE": 8.139276831746102,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.360608074852887,
+          "latency_ms_median": 6.203672004630789,
+          "latency_ms_p95": 7.970960400416515
+        },
+        {
+          "TErr": 0.09912580996751785,
+          "IAE": 7.919386221468452,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.08411308649617,
+          "latency_ms_median": 5.920001494814642,
+          "latency_ms_p95": 7.86568893381627
+        },
+        {
+          "TErr": 0.018721139058470726,
+          "IAE": 6.32539299249649,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.050012373210241,
+          "latency_ms_median": 5.9377854922786355,
+          "latency_ms_p95": 7.296805054647847
+        },
+        {
+          "TErr": 0.018101651221513748,
+          "IAE": 5.4612425772845725,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.0997680194365484,
+          "latency_ms_median": 6.025882001267746,
+          "latency_ms_p95": 7.369726187607739
+        },
+        {
+          "TErr": 0.017354391515254974,
+          "IAE": 6.364553661309183,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.030935081459272,
+          "latency_ms_median": 5.815283002448268,
+          "latency_ms_p95": 7.34846319683129
+        },
+        {
+          "TErr": 0.039777971804142,
+          "IAE": 7.3686634789407215,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.906642373457241,
+          "latency_ms_median": 6.638966005994007,
+          "latency_ms_p95": 9.153539256658405
+        },
+        {
+          "TErr": 0.01481372769922018,
+          "IAE": 5.584921623561531,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.3050765336568775,
+          "latency_ms_median": 6.204886987688951,
+          "latency_ms_p95": 7.628369264421052
+        },
+        {
+          "TErr": 0.015813961625099182,
+          "IAE": 6.097593099139632,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.008363919875895,
+          "latency_ms_median": 5.780066014267504,
+          "latency_ms_p95": 7.322585154906846
+        },
+        {
+          "TErr": 0.014032747596502304,
+          "IAE": 6.342114069722591,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.92167712689843,
+          "latency_ms_median": 5.819404002977535,
+          "latency_ms_p95": 6.854342512087896
+        },
+        {
+          "TErr": 0.02932293526828289,
+          "IAE": 6.074009710848332,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.85919516258097,
+          "latency_ms_median": 5.741205008234829,
+          "latency_ms_p95": 7.658601297589484
+        },
+        {
+          "TErr": 0.023615842685103416,
+          "IAE": 6.274275448955591,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.05509024055209,
+          "latency_ms_median": 5.802972489618696,
+          "latency_ms_p95": 7.921474165050309
+        },
+        {
+          "TErr": 0.020753955468535423,
+          "IAE": 7.182839758433402,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.238895545830019,
+          "latency_ms_median": 5.963878007605672,
+          "latency_ms_p95": 8.01555879006628
+        },
+        {
+          "TErr": 0.032875292003154755,
+          "IAE": 6.364717689156529,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.949217559536919,
+          "latency_ms_median": 5.812604518723674,
+          "latency_ms_p95": 7.483443953969979
+        },
+        {
+          "TErr": 0.052330322563648224,
+          "IAE": 6.884664005264638,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.010460981633514,
+          "latency_ms_median": 5.8751809992827475,
+          "latency_ms_p95": 7.547555821656713
+        },
+        {
+          "TErr": 0.013596522621810436,
+          "IAE": 5.519888159967959,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.378791598641935,
+          "latency_ms_median": 6.059811494196765,
+          "latency_ms_p95": 8.86407429934479
+        },
+        {
+          "TErr": 0.023985926061868668,
+          "IAE": 6.176355470158159,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.976834320657265,
+          "latency_ms_median": 5.857112992089242,
+          "latency_ms_p95": 7.303225900977847
+        },
+        {
+          "TErr": 0.018842730671167374,
+          "IAE": 5.967657189816237,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.051318214546579,
+          "latency_ms_median": 5.852499001775868,
+          "latency_ms_p95": 7.9487993032671485
+        },
+        {
+          "TErr": 0.02089654467999935,
+          "IAE": 6.378605979625136,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.3733779796166345,
+          "latency_ms_median": 6.167256491607986,
+          "latency_ms_p95": 8.23566905746702
+        },
+        {
+          "TErr": 0.012512446381151676,
+          "IAE": 5.620367849022147,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.8144380984595045,
+          "latency_ms_median": 5.696491003618576,
+          "latency_ms_p95": 6.956504758272786
+        },
+        {
+          "TErr": 0.010003121569752693,
+          "IAE": 5.48285322809592,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.162307906779461,
+          "latency_ms_median": 6.056433005142026,
+          "latency_ms_p95": 7.69542414927855
+        },
+        {
+          "TErr": 0.009107842110097408,
+          "IAE": 5.710847644265737,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.656756366370246,
+          "latency_ms_median": 5.459230000269599,
+          "latency_ms_p95": 7.104998105205595
+        },
+        {
+          "TErr": 0.011961582116782665,
+          "IAE": 5.822037606779487,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.933262133621611,
+          "latency_ms_median": 5.790612995042466,
+          "latency_ms_p95": 7.494396352558393
+        },
+        {
+          "TErr": 0.019831519573926926,
+          "IAE": 4.990641266759487,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.039614478553024,
+          "latency_ms_median": 5.931855499511585,
+          "latency_ms_p95": 7.126981086912564
+        },
+        {
+          "TErr": 0.6182236671447754,
+          "IAE": 8.589470192193986,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.112802247322786,
+          "latency_ms_median": 6.031262004398741,
+          "latency_ms_p95": 7.311299951106775
+        },
+        {
+          "TErr": 0.025725573301315308,
+          "IAE": 5.234774719811973,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.710651433677413,
+          "latency_ms_median": 6.502707998151891,
+          "latency_ms_p95": 8.780154396663418
+        },
+        {
+          "TErr": 0.012497661635279655,
+          "IAE": 5.8467389436066135,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.892137846676633,
+          "latency_ms_median": 5.758169500040822,
+          "latency_ms_p95": 7.142198493238537
+        },
+        {
+          "TErr": 0.011088060215115547,
+          "IAE": 5.651142273433506,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.871366101200692,
+          "latency_ms_median": 5.7472949847579,
+          "latency_ms_p95": 7.082333249854854
+        },
+        {
+          "TErr": 0.02937210351228714,
+          "IAE": 6.795702736675744,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.081407914365021,
+          "latency_ms_median": 5.916429989156313,
+          "latency_ms_p95": 7.361240051977801
+        },
+        {
+          "TErr": 0.06503703445196152,
+          "IAE": 6.755256470292805,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.239055966143496,
+          "latency_ms_median": 6.050237498129718,
+          "latency_ms_p95": 7.850894099101423
+        },
+        {
+          "TErr": 0.17822544276714325,
+          "IAE": 7.7748767283558795,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.330140553570042,
+          "latency_ms_median": 6.1337494844337925,
+          "latency_ms_p95": 7.940691738622261
+        },
+        {
+          "TErr": 0.01314206887036562,
+          "IAE": 6.256439692806454,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.011650887473176,
+          "latency_ms_median": 5.909621002501808,
+          "latency_ms_p95": 7.4528770972392495
+        },
+        {
+          "TErr": 0.16746163368225098,
+          "IAE": 7.3550846141576764,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.909977753375036,
+          "latency_ms_median": 5.777219979790971,
+          "latency_ms_p95": 7.073401405068577
+        },
+        {
+          "TErr": 0.011489336378872395,
+          "IAE": 5.130038099456577,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.9538140330308424,
+          "latency_ms_median": 5.826001492096111,
+          "latency_ms_p95": 7.166234002215787
+        },
+        {
+          "TErr": 0.02720147930085659,
+          "IAE": 7.255313374623652,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.513667126030971,
+          "latency_ms_median": 6.3690375100122765,
+          "latency_ms_p95": 7.910768817237113
+        },
+        {
+          "TErr": 0.01947030983865261,
+          "IAE": 5.307514216285202,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.92636734014377,
+          "latency_ms_median": 5.832410504808649,
+          "latency_ms_p95": 7.220169137872284
+        },
+        {
+          "TErr": 0.008520172908902168,
+          "IAE": 6.738988117650149,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.8833955534889055,
+          "latency_ms_median": 5.693229497410357,
+          "latency_ms_p95": 7.4535199048114
+        },
+        {
+          "TErr": 0.009390357881784439,
+          "IAE": 5.710313548184931,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.753248046773176,
+          "latency_ms_median": 5.614986497676,
+          "latency_ms_p95": 6.981536059174687
+        },
+        {
+          "TErr": 0.01178991049528122,
+          "IAE": 6.381229654718193,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.861692354859163,
+          "latency_ms_median": 5.685329990228638,
+          "latency_ms_p95": 7.36800060258247
+        },
+        {
+          "TErr": 0.23346352577209473,
+          "IAE": 7.896484681665896,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.18211659990872,
+          "latency_ms_median": 6.058997503714636,
+          "latency_ms_p95": 7.541573914932087
+        },
+        {
+          "TErr": 0.010716045275330544,
+          "IAE": 5.790725590512152,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.885701419125932,
+          "latency_ms_median": 5.754711994086392,
+          "latency_ms_p95": 6.974653301585931
+        },
+        {
+          "TErr": 0.01192686427384615,
+          "IAE": 5.322896192781629,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.758668381410341,
+          "latency_ms_median": 5.632170490571298,
+          "latency_ms_p95": 6.914035849331411
+        },
+        {
+          "TErr": 0.01017901673913002,
+          "IAE": 5.931775801982732,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.70870717385939,
+          "latency_ms_median": 5.59098350640852,
+          "latency_ms_p95": 6.820287952723445
+        },
+        {
+          "TErr": 0.034649088978767395,
+          "IAE": 6.686043604016302,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.80951771485464,
+          "latency_ms_median": 5.699608504073694,
+          "latency_ms_p95": 7.135694308090023
+        },
+        {
+          "TErr": 0.01497511938214302,
+          "IAE": 5.170372869819404,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.134234532364644,
+          "latency_ms_median": 5.9715240058721974,
+          "latency_ms_p95": 7.652677256555761
+        },
+        {
+          "TErr": 0.01785111427307129,
+          "IAE": 6.46168289355934,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.952949775188851,
+          "latency_ms_median": 5.79914050467778,
+          "latency_ms_p95": 7.138639841286931
+        },
+        {
+          "TErr": 0.00606042193248868,
+          "IAE": 5.304886700697242,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.909193535141337,
+          "latency_ms_median": 5.787567512015812,
+          "latency_ms_p95": 7.286779551941433
+        },
+        {
+          "TErr": 0.03078014776110649,
+          "IAE": 7.088852196857331,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.301338553700286,
+          "latency_ms_median": 6.100109487306327,
+          "latency_ms_p95": 7.926565487287007
+        },
+        {
+          "TErr": 0.020030904561281204,
+          "IAE": 6.3872539043799055,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.925147459104967,
+          "latency_ms_median": 5.7521194976288825,
+          "latency_ms_p95": 7.332070535630915
+        },
+        {
+          "TErr": 0.007174690254032612,
+          "IAE": 5.244619702734056,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.1220187206830206,
+          "latency_ms_median": 5.86859199393075,
+          "latency_ms_p95": 7.833100357674991
+        },
+        {
+          "TErr": 0.019630208611488342,
+          "IAE": 6.5211352830007625,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.020345440289627,
+          "latency_ms_median": 5.86287651094608,
+          "latency_ms_p95": 7.468145762686615
+        },
+        {
+          "TErr": 0.011166040785610676,
+          "IAE": 5.809023638144135,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.780887259131608,
+          "latency_ms_median": 6.444686005124822,
+          "latency_ms_p95": 8.886896533658724
+        },
+        {
+          "TErr": 0.024731695652008057,
+          "IAE": 6.147082471437753,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.579433247485819,
+          "latency_ms_median": 6.421309488359839,
+          "latency_ms_p95": 8.532624354120344
+        },
+        {
+          "TErr": 0.015778327360749245,
+          "IAE": 6.414086663611231,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.766417719578992,
+          "latency_ms_median": 6.471097993198782,
+          "latency_ms_p95": 8.787292108172549
+        },
+        {
+          "TErr": 0.07183396816253662,
+          "IAE": 7.572410493642092,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.654056252834077,
+          "latency_ms_median": 6.4629759872332215,
+          "latency_ms_p95": 7.972282137779984
+        },
+        {
+          "TErr": 0.09118284285068512,
+          "IAE": 6.928469816446304,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.654051548296896,
+          "latency_ms_median": 6.514546505059116,
+          "latency_ms_p95": 8.129261998692526
+        },
+        {
+          "TErr": 0.009007922373712063,
+          "IAE": 5.777469733078029,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.650117945779736,
+          "latency_ms_median": 6.474342997535132,
+          "latency_ms_p95": 8.408073653117752
+        },
+        {
+          "TErr": 0.006129167508333921,
+          "IAE": 5.986605315180498,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 7.212062873489534,
+          "latency_ms_median": 6.997482487349771,
+          "latency_ms_p95": 9.267727093538262
+        },
+        {
+          "TErr": 0.011251495219767094,
+          "IAE": 6.094316469803447,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.636623494753924,
+          "latency_ms_median": 6.546920005348511,
+          "latency_ms_p95": 8.269620359351391
+        },
+        {
+          "TErr": 0.020616130903363228,
+          "IAE": 6.079492282494904,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.310065458722723,
+          "latency_ms_median": 6.127877000835724,
+          "latency_ms_p95": 8.039064145123117
+        },
+        {
+          "TErr": 0.04697105288505554,
+          "IAE": 6.870562138110397,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.430416108341888,
+          "latency_ms_median": 6.287889511440881,
+          "latency_ms_p95": 7.96947040071245
+        },
+        {
+          "TErr": 0.024452418088912964,
+          "IAE": 6.187048832885925,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.193973494227976,
+          "latency_ms_median": 6.028435498592444,
+          "latency_ms_p95": 7.845470210304484
+        },
+        {
+          "TErr": 0.012999867089092731,
+          "IAE": 5.472908844873305,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.904580914027368,
+          "latency_ms_median": 6.485309495474212,
+          "latency_ms_p95": 9.713806700892741
+        },
+        {
+          "TErr": 0.0067155566066503525,
+          "IAE": 5.635894341999662,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.407904100099889,
+          "latency_ms_median": 6.28700248489622,
+          "latency_ms_p95": 8.063740898796821
+        },
+        {
+          "TErr": 0.0452459342777729,
+          "IAE": 7.1416365673393,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.304930677676263,
+          "latency_ms_median": 6.212984008016065,
+          "latency_ms_p95": 7.798973839089739
+        },
+        {
+          "TErr": 0.013249829411506653,
+          "IAE": 6.000223281439391,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.271373358904384,
+          "latency_ms_median": 6.0457510116975754,
+          "latency_ms_p95": 8.183536694559727
+        },
+        {
+          "TErr": 0.015811480581760406,
+          "IAE": 5.9419279634207465,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.4949218853143975,
+          "latency_ms_median": 6.21923099970445,
+          "latency_ms_p95": 8.784827000636135
+        },
+        {
+          "TErr": 0.009774829261004925,
+          "IAE": 6.15916663860902,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.446798265872833,
+          "latency_ms_median": 6.3761800120119005,
+          "latency_ms_p95": 7.677678250183816
+        },
+        {
+          "TErr": 0.01557433232665062,
+          "IAE": 5.576716473046688,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.341529860510491,
+          "latency_ms_median": 6.163222016766667,
+          "latency_ms_p95": 7.631076818506698
+        },
+        {
+          "TErr": 0.012100953608751297,
+          "IAE": 5.922289737891408,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.50956350689133,
+          "latency_ms_median": 6.389332003891468,
+          "latency_ms_p95": 8.281380345579237
+        },
+        {
+          "TErr": 0.15834900736808777,
+          "IAE": 7.262438420355319,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.340104326372966,
+          "latency_ms_median": 6.24284049263224,
+          "latency_ms_p95": 7.9200932610547135
+        },
+        {
+          "TErr": 0.012798354029655457,
+          "IAE": 6.039072763305158,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.724482599529438,
+          "latency_ms_median": 6.59491000988055,
+          "latency_ms_p95": 8.307158540992532
+        },
+        {
+          "TErr": 0.0336434468626976,
+          "IAE": 6.558632965013388,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.0792871518060565,
+          "latency_ms_median": 5.969444493530318,
+          "latency_ms_p95": 7.444026549637783
+        },
+        {
+          "TErr": 0.026749074459075928,
+          "IAE": 6.34217933736742,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.176496318851908,
+          "latency_ms_median": 6.000799985486083,
+          "latency_ms_p95": 7.941036907141096
+        },
+        {
+          "TErr": 0.01110102515667677,
+          "IAE": 4.989431967586277,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.405107200844213,
+          "latency_ms_median": 6.22565251251217,
+          "latency_ms_p95": 8.241101099702064
+        },
+        {
+          "TErr": 0.008585386909544468,
+          "IAE": 5.122760819047691,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.369021165301092,
+          "latency_ms_median": 6.364659508108161,
+          "latency_ms_p95": 7.548505638260391
+        },
+        {
+          "TErr": 0.01201159693300724,
+          "IAE": 5.369603200685228,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.771543386663931,
+          "latency_ms_median": 6.476380993262865,
+          "latency_ms_p95": 9.038774541113524
+        },
+        {
+          "TErr": 0.018379325047135353,
+          "IAE": 6.079989242479203,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.463377534334238,
+          "latency_ms_median": 6.256583001231775,
+          "latency_ms_p95": 8.084744194638914
+        },
+        {
+          "TErr": 0.02081797830760479,
+          "IAE": 5.579319104254248,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.520178081700578,
+          "latency_ms_median": 6.3559639966115355,
+          "latency_ms_p95": 8.062586341111455
+        }
+      ]
+    },
+    "PD_K20": {
+      "n": 80,
+      "success_count": 59,
+      "success_rate": 0.7375,
+      "TErr_mean": 0.272982568689622,
+      "TErr_median": 0.0972178503870964,
+      "IAE_mean": 8.025085822809022,
+      "latency_ms_mean": 12.470847295776668,
+      "individual": [
+        {
+          "TErr": 0.07356315106153488,
+          "IAE": 8.202970426976677,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 14.496976993589973,
+          "latency_ms_median": 13.940031494712457,
+          "latency_ms_p95": 19.364584697177634
+        },
+        {
+          "TErr": 0.11673814058303833,
+          "IAE": 8.055814275145533,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.46257504739333,
+          "latency_ms_median": 12.192952490295283,
+          "latency_ms_p95": 16.218130808556452
+        },
+        {
+          "TErr": 0.03803633525967598,
+          "IAE": 7.238111124485729,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.60137150840213,
+          "latency_ms_median": 12.472209491534159,
+          "latency_ms_p95": 16.264501961995848
+        },
+        {
+          "TErr": 0.33189570903778076,
+          "IAE": 9.127412716746333,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.206954899360426,
+          "latency_ms_median": 13.226320501416922,
+          "latency_ms_p95": 16.918609107960943
+        },
+        {
+          "TErr": 0.053510379046201706,
+          "IAE": 7.077333516180512,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.209630746510811,
+          "latency_ms_median": 12.121517997002229,
+          "latency_ms_p95": 15.298390855605247
+        },
+        {
+          "TErr": 0.05623989179730415,
+          "IAE": 7.116887107044462,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.455419565861424,
+          "latency_ms_median": 12.220765012898482,
+          "latency_ms_p95": 15.983133063127752
+        },
+        {
+          "TErr": 0.1014421135187149,
+          "IAE": 7.5331442758441,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.187339407973923,
+          "latency_ms_median": 12.122753993025981,
+          "latency_ms_p95": 15.17838349245721
+        },
+        {
+          "TErr": 0.12598924338817596,
+          "IAE": 8.307398541867736,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.199273053362655,
+          "latency_ms_median": 12.149297006544657,
+          "latency_ms_p95": 15.864135240553875
+        },
+        {
+          "TErr": 0.03331022337079048,
+          "IAE": 7.680237621217967,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.835748406592757,
+          "latency_ms_median": 11.820605999673717,
+          "latency_ms_p95": 14.4848307070788
+        },
+        {
+          "TErr": 0.14348408579826355,
+          "IAE": 7.977097689509393,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.113261287255833,
+          "latency_ms_median": 12.116599507862702,
+          "latency_ms_p95": 14.774387107172515
+        },
+        {
+          "TErr": 0.2998069226741791,
+          "IAE": 8.88277252793313,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.204707833162198,
+          "latency_ms_median": 12.927677496918477,
+          "latency_ms_p95": 17.115424603980497
+        },
+        {
+          "TErr": 0.054084233939647675,
+          "IAE": 7.129585416987543,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.186502025579102,
+          "latency_ms_median": 12.175955504062586,
+          "latency_ms_p95": 15.085755207110196
+        },
+        {
+          "TErr": 0.11306769400835037,
+          "IAE": 8.121774910092354,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.003852841017457,
+          "latency_ms_median": 12.866507502621971,
+          "latency_ms_p95": 16.97344925341895
+        },
+        {
+          "TErr": 0.4952806830406189,
+          "IAE": 9.87629822134972,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.64458506697944,
+          "latency_ms_median": 12.291655002627522,
+          "latency_ms_p95": 16.400807410536796
+        },
+        {
+          "TErr": 0.05227997899055481,
+          "IAE": 7.698915646001695,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.975014140053341,
+          "latency_ms_median": 12.843643009546213,
+          "latency_ms_p95": 16.755357598594852
+        },
+        {
+          "TErr": 0.9447251558303833,
+          "IAE": 9.025614993572244,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.222613181414394,
+          "latency_ms_median": 12.186966996523552,
+          "latency_ms_p95": 15.003042953321708
+        },
+        {
+          "TErr": 0.025591319426894188,
+          "IAE": 7.461472148708997,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.551072092998462,
+          "latency_ms_median": 12.52179050061386,
+          "latency_ms_p95": 16.171387504436986
+        },
+        {
+          "TErr": 0.14313450455665588,
+          "IAE": 7.972372918426987,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.674530892594097,
+          "latency_ms_median": 12.495094997575507,
+          "latency_ms_p95": 15.676017307850996
+        },
+        {
+          "TErr": 0.23238135874271393,
+          "IAE": 8.809291859567166,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.240701792567657,
+          "latency_ms_median": 12.324253999395296,
+          "latency_ms_p95": 15.626130493183153
+        },
+        {
+          "TErr": 0.02553628571331501,
+          "IAE": 7.568840739019216,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.582925013266504,
+          "latency_ms_median": 12.336897489149123,
+          "latency_ms_p95": 16.16092279873555
+        },
+        {
+          "TErr": 0.04351396486163139,
+          "IAE": 7.004897364377979,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.00755623790125,
+          "latency_ms_median": 11.923588492209092,
+          "latency_ms_p95": 14.426352141890673
+        },
+        {
+          "TErr": 0.04366588592529297,
+          "IAE": 7.599796518757939,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.224009251998117,
+          "latency_ms_median": 11.84901050874032,
+          "latency_ms_p95": 15.986857065581713
+        },
+        {
+          "TErr": 0.026624679565429688,
+          "IAE": 6.952000884860748,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.972253992183445,
+          "latency_ms_median": 11.94707902322989,
+          "latency_ms_p95": 15.011304694053244
+        },
+        {
+          "TErr": 0.08879406750202179,
+          "IAE": 8.40208503201604,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.020929499412887,
+          "latency_ms_median": 11.762308000470512,
+          "latency_ms_p95": 16.268625795783006
+        },
+        {
+          "TErr": 0.032004162669181824,
+          "IAE": 5.7528802205994705,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.124265887541696,
+          "latency_ms_median": 12.034689512802288,
+          "latency_ms_p95": 15.14927339594578
+        },
+        {
+          "TErr": 0.04568488150835037,
+          "IAE": 6.522204033359884,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.626907186000608,
+          "latency_ms_median": 11.56543000251986,
+          "latency_ms_p95": 14.455157102202064
+        },
+        {
+          "TErr": 0.04056106135249138,
+          "IAE": 6.278357465341688,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.968652786415381,
+          "latency_ms_median": 12.837249494623393,
+          "latency_ms_p95": 17.075819197634697
+        },
+        {
+          "TErr": 2.8150360584259033,
+          "IAE": 10.687913918495175,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.027323946628409,
+          "latency_ms_median": 11.996758490568027,
+          "latency_ms_p95": 14.520242792787029
+        },
+        {
+          "TErr": 0.13223272562026978,
+          "IAE": 8.978674961924547,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.220324679510668,
+          "latency_ms_median": 11.987628502538428,
+          "latency_ms_p95": 15.388027405424507
+        },
+        {
+          "TErr": 0.5402895212173462,
+          "IAE": 8.957803794145585,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.365533166448586,
+          "latency_ms_median": 12.04656099434942,
+          "latency_ms_p95": 16.05255480535561
+        },
+        {
+          "TErr": 0.20718328654766083,
+          "IAE": 8.695693243443968,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.78111456722642,
+          "latency_ms_median": 11.816573998657987,
+          "latency_ms_p95": 14.799709955696011
+        },
+        {
+          "TErr": 1.3680182695388794,
+          "IAE": 9.646197245120996,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.016523558374805,
+          "latency_ms_median": 12.705660003121011,
+          "latency_ms_p95": 17.06456011015689
+        },
+        {
+          "TErr": 0.17400668561458588,
+          "IAE": 8.887695322930815,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.48066404776182,
+          "latency_ms_median": 12.484964507166296,
+          "latency_ms_p95": 15.797435956483241
+        },
+        {
+          "TErr": 0.09567604213953018,
+          "IAE": 7.350518871396777,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.2954042731241,
+          "latency_ms_median": 12.030241996399127,
+          "latency_ms_p95": 15.937002800637853
+        },
+        {
+          "TErr": 0.03932525962591171,
+          "IAE": 6.909595535025003,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.205785753709884,
+          "latency_ms_median": 12.145999993663281,
+          "latency_ms_p95": 15.66053269780241
+        },
+        {
+          "TErr": 0.76529860496521,
+          "IAE": 10.252107695341108,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.114762626588345,
+          "latency_ms_median": 12.156641503679566,
+          "latency_ms_p95": 15.300847048638389
+        },
+        {
+          "TErr": 0.037381481379270554,
+          "IAE": 7.4360259447991846,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.151750869001262,
+          "latency_ms_median": 12.987384499865584,
+          "latency_ms_p95": 16.850250109564506
+        },
+        {
+          "TErr": 0.49109572172164917,
+          "IAE": 9.566126487255097,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.821590553115433,
+          "latency_ms_median": 12.602284492459148,
+          "latency_ms_p95": 16.140144232485905
+        },
+        {
+          "TErr": 0.042916201055049896,
+          "IAE": 6.700515808239574,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 14.34593548028109,
+          "latency_ms_median": 14.140291983494535,
+          "latency_ms_p95": 18.71118150738766
+        },
+        {
+          "TErr": 0.04245557263493538,
+          "IAE": 7.584781063981351,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.130796840802455,
+          "latency_ms_median": 12.779936485458165,
+          "latency_ms_p95": 16.77320645394502
+        },
+        {
+          "TErr": 0.8800839185714722,
+          "IAE": 9.846347125768657,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.871615881643569,
+          "latency_ms_median": 12.420561004546471,
+          "latency_ms_p95": 17.83950979588553
+        },
+        {
+          "TErr": 0.038684844970703125,
+          "IAE": 7.428129113204775,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.597685775447948,
+          "latency_ms_median": 12.38461049797479,
+          "latency_ms_p95": 16.38296165328938
+        },
+        {
+          "TErr": 0.05019976571202278,
+          "IAE": 7.1245866916328655,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.706338006149357,
+          "latency_ms_median": 12.462344006053172,
+          "latency_ms_p95": 16.639792700880204
+        },
+        {
+          "TErr": 0.9642912745475769,
+          "IAE": 9.194496809244155,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.123175053857267,
+          "latency_ms_median": 12.104473484214395,
+          "latency_ms_p95": 15.361499600112436
+        },
+        {
+          "TErr": 0.30762597918510437,
+          "IAE": 9.145738628506663,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 13.191199905704707,
+          "latency_ms_median": 12.854242508183233,
+          "latency_ms_p95": 16.957309804274697
+        },
+        {
+          "TErr": 0.04859525337815285,
+          "IAE": 6.57921036928892,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.226471659184122,
+          "latency_ms_median": 11.97484000294935,
+          "latency_ms_p95": 15.366056255879807
+        },
+        {
+          "TErr": 0.18028543889522552,
+          "IAE": 8.428698522746561,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.014444326632656,
+          "latency_ms_median": 12.169854016974568,
+          "latency_ms_p95": 14.877908052585546
+        },
+        {
+          "TErr": 0.09826535731554031,
+          "IAE": 7.541196296364071,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.50508819881361,
+          "latency_ms_median": 12.453952003852464,
+          "latency_ms_p95": 16.147906206606418
+        },
+        {
+          "TErr": 0.4285944402217865,
+          "IAE": 9.353876428008087,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.370257832226343,
+          "latency_ms_median": 12.32746300229337,
+          "latency_ms_p95": 15.371621149824932
+        },
+        {
+          "TErr": 0.043357089161872864,
+          "IAE": 6.614147405251863,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.701041246919582,
+          "latency_ms_median": 13.615406001918018,
+          "latency_ms_p95": 17.250834654259954
+        },
+        {
+          "TErr": 0.04895449057221413,
+          "IAE": 6.417566581815484,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.558501473783204,
+          "latency_ms_median": 12.518290503066964,
+          "latency_ms_p95": 15.418036647315601
+        },
+        {
+          "TErr": 1.5968456268310547,
+          "IAE": 10.058501291275025,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.745063306453327,
+          "latency_ms_median": 12.5542165042134,
+          "latency_ms_p95": 16.43902309733675
+        },
+        {
+          "TErr": 0.06342396140098572,
+          "IAE": 7.719596066325901,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.636917213482471,
+          "latency_ms_median": 12.2282584925415,
+          "latency_ms_p95": 16.99058509257156
+        },
+        {
+          "TErr": 0.06231188774108887,
+          "IAE": 7.223488922119135,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.413005426254434,
+          "latency_ms_median": 12.268723992747255,
+          "latency_ms_p95": 15.974014646781143
+        },
+        {
+          "TErr": 0.03538837283849716,
+          "IAE": 7.784995825737716,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.32626826793421,
+          "latency_ms_median": 12.14940901263617,
+          "latency_ms_p95": 15.53153573768213
+        },
+        {
+          "TErr": 0.2549201250076294,
+          "IAE": 8.754429808259015,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.089417146053165,
+          "latency_ms_median": 12.133691998315044,
+          "latency_ms_p95": 15.219898859504603
+        },
+        {
+          "TErr": 0.41066795587539673,
+          "IAE": 8.701675405502321,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.511096861756718,
+          "latency_ms_median": 12.456597498385236,
+          "latency_ms_p95": 16.104317692224868
+        },
+        {
+          "TErr": 0.05050760880112648,
+          "IAE": 7.4408331877738245,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.94355888738452,
+          "latency_ms_median": 11.86599901120644,
+          "latency_ms_p95": 14.851361853652632
+        },
+        {
+          "TErr": 0.46478956937789917,
+          "IAE": 9.562349230051051,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.749863819762444,
+          "latency_ms_median": 11.689570004818961,
+          "latency_ms_p95": 14.393986911454702
+        },
+        {
+          "TErr": 0.05232315883040428,
+          "IAE": 7.427230655178431,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.684169660011927,
+          "latency_ms_median": 12.439939004252665,
+          "latency_ms_p95": 16.705319863103796
+        },
+        {
+          "TErr": 0.3749600648880005,
+          "IAE": 9.004752860665318,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 11.92060912687642,
+          "latency_ms_median": 11.972693988354877,
+          "latency_ms_p95": 14.768497389741242
+        },
+        {
+          "TErr": 0.5134670734405518,
+          "IAE": 9.011991136074073,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.51753056596499,
+          "latency_ms_median": 12.36368899117224,
+          "latency_ms_p95": 16.0373001548578
+        },
+        {
+          "TErr": 1.211832046508789,
+          "IAE": 9.63225523948669,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.117657933267765,
+          "latency_ms_median": 11.969325496465899,
+          "latency_ms_p95": 15.01243955863174
+        },
+        {
+          "TErr": 0.033459749072790146,
+          "IAE": 7.198419011384245,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.002507505045893,
+          "latency_ms_median": 11.824391505797394,
+          "latency_ms_p95": 15.06466946157161
+        },
+        {
+          "TErr": 0.044338151812553406,
+          "IAE": 7.025931221134958,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.632088913038993,
+          "latency_ms_median": 12.491579982452095,
+          "latency_ms_p95": 15.928964296472257
+        },
+        {
+          "TErr": 0.72651207447052,
+          "IAE": 9.550465288162233,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.035022871762825,
+          "latency_ms_median": 11.9504294852959,
+          "latency_ms_p95": 15.016775450203564
+        },
+        {
+          "TErr": 0.056185282766819,
+          "IAE": 7.778986684009431,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.317579332739115,
+          "latency_ms_median": 12.021931484923698,
+          "latency_ms_p95": 15.659090904227922
+        },
+        {
+          "TErr": 0.03348194435238838,
+          "IAE": 7.162642661668361,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.836446847300977,
+          "latency_ms_median": 11.722624505637214,
+          "latency_ms_p95": 15.278710245911494
+        },
+        {
+          "TErr": 0.2133036106824875,
+          "IAE": 8.761754862666125,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.29407037976974,
+          "latency_ms_median": 12.189126005978324,
+          "latency_ms_p95": 15.55516819062177
+        },
+        {
+          "TErr": 0.7878673076629639,
+          "IAE": 8.926422111988064,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.431415458947109,
+          "latency_ms_median": 12.193811999168247,
+          "latency_ms_p95": 16.124791085894678
+        },
+        {
+          "TErr": 0.10683837532997131,
+          "IAE": 8.03907150745391,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.263982398435473,
+          "latency_ms_median": 12.162407496361993,
+          "latency_ms_p95": 15.395970146346365
+        },
+        {
+          "TErr": 0.06518872082233429,
+          "IAE": 7.162545023262504,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.529566700492675,
+          "latency_ms_median": 12.268392005353235,
+          "latency_ms_p95": 16.243849656893865
+        },
+        {
+          "TErr": 0.41630205512046814,
+          "IAE": 9.018120476603501,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 12.574515799836567,
+          "latency_ms_median": 12.506204497185536,
+          "latency_ms_p95": 16.36192915175342
+        },
+        {
+          "TErr": 0.10194598883390427,
+          "IAE": 7.517643703669311,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 13.17506073314386,
+          "latency_ms_median": 12.909640514408238,
+          "latency_ms_p95": 17.531780655554027
+        },
+        {
+          "TErr": 0.0961703434586525,
+          "IAE": 7.567810758054258,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.570156080958744,
+          "latency_ms_median": 12.62603051145561,
+          "latency_ms_p95": 15.793571941321709
+        },
+        {
+          "TErr": 0.030994554981589317,
+          "IAE": 5.802156509533529,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.666432865856526,
+          "latency_ms_median": 12.416225494234823,
+          "latency_ms_p95": 16.04011846357025
+        },
+        {
+          "TErr": 0.03781251609325409,
+          "IAE": 6.2643941952288165,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 11.978724965786872,
+          "latency_ms_median": 11.789401003625244,
+          "latency_ms_p95": 15.538773957814556
+        },
+        {
+          "TErr": 0.04290901869535446,
+          "IAE": 6.831214439868928,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.242763146641664,
+          "latency_ms_median": 11.995359498541802,
+          "latency_ms_p95": 15.350081952055913
+        },
+        {
+          "TErr": 0.1821013242006302,
+          "IAE": 8.352546314597129,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.606426747903848,
+          "latency_ms_median": 12.465898500522599,
+          "latency_ms_p95": 15.875667348154813
+        },
+        {
+          "TErr": 0.1509576290845871,
+          "IAE": 8.021429367065426,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 12.032904338945324,
+          "latency_ms_median": 11.944158002734184,
+          "latency_ms_p95": 15.283244731836021
+        }
+      ]
+    },
+    "R1_s5_K20": {
+      "n": 80,
+      "success_count": 77,
+      "success_rate": 0.9625,
+      "TErr_mean": 0.03996757476998027,
+      "TErr_median": 0.012451951391994953,
+      "IAE_mean": 5.818888616186042,
+      "latency_ms_mean": 6.202789535416135,
+      "individual": [
+        {
+          "TErr": 0.011847269721329212,
+          "IAE": 5.115658811423928,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.980186192512822,
+          "latency_ms_median": 5.794396493001841,
+          "latency_ms_p95": 7.440093551122116
+        },
+        {
+          "TErr": 0.15444661676883698,
+          "IAE": 7.059626213908194,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.416771721172457,
+          "latency_ms_median": 6.221285497304052,
+          "latency_ms_p95": 8.258925244444976
+        },
+        {
+          "TErr": 0.010602863505482674,
+          "IAE": 5.338016508240254,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.305851728344957,
+          "latency_ms_median": 6.086454508476891,
+          "latency_ms_p95": 7.621777651365846
+        },
+        {
+          "TErr": 0.009628057479858398,
+          "IAE": 5.798624155037103,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.1890644069838645,
+          "latency_ms_median": 6.013946505845524,
+          "latency_ms_p95": 7.370426805573514
+        },
+        {
+          "TErr": 0.013166210614144802,
+          "IAE": 5.5036417572945355,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.447311567220216,
+          "latency_ms_median": 6.2370484956773,
+          "latency_ms_p95": 8.263152242579958
+        },
+        {
+          "TErr": 0.01651153340935707,
+          "IAE": 4.846579571571195,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.588416407272841,
+          "latency_ms_median": 6.419339988497086,
+          "latency_ms_p95": 8.44728728989139
+        },
+        {
+          "TErr": 0.12342463433742523,
+          "IAE": 7.1918722897768035,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.459899874171242,
+          "latency_ms_median": 6.286549003561959,
+          "latency_ms_p95": 7.983777433400972
+        },
+        {
+          "TErr": 0.007994887419044971,
+          "IAE": 5.5901682959683185,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.4731444338879855,
+          "latency_ms_median": 6.326408998575062,
+          "latency_ms_p95": 7.994546691770665
+        },
+        {
+          "TErr": 0.013474926352500916,
+          "IAE": 6.201000878922643,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.461181265767664,
+          "latency_ms_median": 6.335134487017058,
+          "latency_ms_p95": 8.136048591404686
+        },
+        {
+          "TErr": 0.03130149841308594,
+          "IAE": 6.223147723823788,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.759089600139608,
+          "latency_ms_median": 6.583552516531199,
+          "latency_ms_p95": 8.63664749340387
+        },
+        {
+          "TErr": 0.17275238037109375,
+          "IAE": 8.026092360019682,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.366786752866271,
+          "latency_ms_median": 6.083016007323749,
+          "latency_ms_p95": 8.605189308582338
+        },
+        {
+          "TErr": 0.013219675980508327,
+          "IAE": 5.839069257173689,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.4209831529296935,
+          "latency_ms_median": 6.274149505770765,
+          "latency_ms_p95": 8.209561739931814
+        },
+        {
+          "TErr": 0.014671320095658302,
+          "IAE": 5.642270712275058,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.339907152190183,
+          "latency_ms_median": 6.203679004102014,
+          "latency_ms_p95": 7.724975155724676
+        },
+        {
+          "TErr": 0.017387961968779564,
+          "IAE": 6.771048997677863,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.308190166795005,
+          "latency_ms_median": 6.117386001278646,
+          "latency_ms_p95": 7.954687006713357
+        },
+        {
+          "TErr": 0.014726013876497746,
+          "IAE": 5.65228989860043,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.837742433999665,
+          "latency_ms_median": 6.631309006479569,
+          "latency_ms_p95": 8.804918763053134
+        },
+        {
+          "TErr": 0.019021864980459213,
+          "IAE": 6.263662022426724,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.41087547390877,
+          "latency_ms_median": 6.2601930112577975,
+          "latency_ms_p95": 7.7717065083561465
+        },
+        {
+          "TErr": 0.011582102626562119,
+          "IAE": 4.609323420589789,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.267007298883982,
+          "latency_ms_median": 6.16305650328286,
+          "latency_ms_p95": 7.492121351242528
+        },
+        {
+          "TErr": 0.1574133038520813,
+          "IAE": 7.427355439066886,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.170212546518694,
+          "latency_ms_median": 6.029526004567742,
+          "latency_ms_p95": 7.326275247032752
+        },
+        {
+          "TErr": 0.010124936699867249,
+          "IAE": 5.943338973373168,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.617024199998316,
+          "latency_ms_median": 6.418816512450576,
+          "latency_ms_p95": 8.21417328697862
+        },
+        {
+          "TErr": 0.0025084754452109337,
+          "IAE": 5.444262601956725,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.526635720122916,
+          "latency_ms_median": 6.331413009320386,
+          "latency_ms_p95": 8.293499152932782
+        },
+        {
+          "TErr": 0.013056633062660694,
+          "IAE": 5.097119857817891,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.043054972930501,
+          "latency_ms_median": 5.868642503628507,
+          "latency_ms_p95": 7.368388508621137
+        },
+        {
+          "TErr": 0.006354106590151787,
+          "IAE": 5.386434674486519,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.25681030699828,
+          "latency_ms_median": 6.107903012889437,
+          "latency_ms_p95": 7.562273435178212
+        },
+        {
+          "TErr": 0.008464852347970009,
+          "IAE": 5.028359477221968,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.843145160276133,
+          "latency_ms_median": 5.702470502001233,
+          "latency_ms_p95": 7.0764230491477065
+        },
+        {
+          "TErr": 0.007677186280488968,
+          "IAE": 5.350755570735782,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.18634764085679,
+          "latency_ms_median": 6.020022497978061,
+          "latency_ms_p95": 7.6587284973356855
+        },
+        {
+          "TErr": 0.006515341345220804,
+          "IAE": 4.8534406557679155,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.397225392671923,
+          "latency_ms_median": 6.297134998021647,
+          "latency_ms_p95": 7.572313844866585
+        },
+        {
+          "TErr": 0.005623188801109791,
+          "IAE": 5.1493185695540165,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.961406533412325,
+          "latency_ms_median": 5.7948254980146885,
+          "latency_ms_p95": 7.358317337639162
+        },
+        {
+          "TErr": 0.015349826775491238,
+          "IAE": 4.974787752591073,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.889570416960244,
+          "latency_ms_median": 5.705291492631659,
+          "latency_ms_p95": 7.211285640369165
+        },
+        {
+          "TErr": 0.003384418087080121,
+          "IAE": 5.861334444717503,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.9327310271328315,
+          "latency_ms_median": 5.813467490952462,
+          "latency_ms_p95": 7.299727048666681
+        },
+        {
+          "TErr": 0.00937840435653925,
+          "IAE": 5.780088450200855,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.197298498397383,
+          "latency_ms_median": 6.002686990541406,
+          "latency_ms_p95": 7.860147798783143
+        },
+        {
+          "TErr": 0.013277972117066383,
+          "IAE": 5.495512287430468,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.829801874545713,
+          "latency_ms_median": 5.706316005671397,
+          "latency_ms_p95": 7.083578142919576
+        },
+        {
+          "TErr": 0.0068903276696801186,
+          "IAE": 5.7648075494635895,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.9504418455374735,
+          "latency_ms_median": 5.791114497696981,
+          "latency_ms_p95": 7.3764621949521825
+        },
+        {
+          "TErr": 0.04048328846693039,
+          "IAE": 6.7820201805978995,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.09018466687606,
+          "latency_ms_median": 5.953749001491815,
+          "latency_ms_p95": 7.4860437933239155
+        },
+        {
+          "TErr": 0.006376094650477171,
+          "IAE": 5.49250148440711,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.946718827278043,
+          "latency_ms_median": 5.838988508912735,
+          "latency_ms_p95": 7.127092551672829
+        },
+        {
+          "TErr": 0.010365366004407406,
+          "IAE": 5.780569903906435,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.7535326796739055,
+          "latency_ms_median": 6.615326987230219,
+          "latency_ms_p95": 8.7358682998456
+        },
+        {
+          "TErr": 0.0049653914757072926,
+          "IAE": 5.079897463452069,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.106779273832217,
+          "latency_ms_median": 5.992510006763041,
+          "latency_ms_p95": 7.222880497283768
+        },
+        {
+          "TErr": 0.019613822922110558,
+          "IAE": 6.300785625502468,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.822600459990402,
+          "latency_ms_median": 5.690213001798838,
+          "latency_ms_p95": 7.1346874785376695
+        },
+        {
+          "TErr": 0.005973432678729296,
+          "IAE": 5.325084473574533,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.820752507812965,
+          "latency_ms_median": 5.717563501093537,
+          "latency_ms_p95": 7.007874954433645
+        },
+        {
+          "TErr": 0.006130510941147804,
+          "IAE": 5.873281401470305,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.670093397648695,
+          "latency_ms_median": 6.389414498698898,
+          "latency_ms_p95": 8.893603888282087
+        },
+        {
+          "TErr": 0.005750719923526049,
+          "IAE": 5.07948509720154,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.29252308610982,
+          "latency_ms_median": 6.036155493347906,
+          "latency_ms_p95": 7.7285007660975635
+        },
+        {
+          "TErr": 0.006623565685003996,
+          "IAE": 5.49551844209433,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.363189292217915,
+          "latency_ms_median": 6.134174502221867,
+          "latency_ms_p95": 8.052357002452482
+        },
+        {
+          "TErr": 0.022247498854994774,
+          "IAE": 5.824304449670013,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.425807692770225,
+          "latency_ms_median": 6.195305002620444,
+          "latency_ms_p95": 8.092739945277568
+        },
+        {
+          "TErr": 0.015153581276535988,
+          "IAE": 5.69701352527365,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.485709445745063,
+          "latency_ms_median": 6.330508520477451,
+          "latency_ms_p95": 8.15291780454572
+        },
+        {
+          "TErr": 0.010462703183293343,
+          "IAE": 5.307411641399383,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.659272739974161,
+          "latency_ms_median": 6.327317503746599,
+          "latency_ms_p95": 9.59501611505402
+        },
+        {
+          "TErr": 0.0524589866399765,
+          "IAE": 6.901330228224391,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.396495228400454,
+          "latency_ms_median": 6.166994498926215,
+          "latency_ms_p95": 8.296223453362467
+        },
+        {
+          "TErr": 0.3539382219314575,
+          "IAE": 7.9856502443552,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.502750761380109,
+          "latency_ms_median": 6.32318299904,
+          "latency_ms_p95": 8.37675184884574
+        },
+        {
+          "TErr": 0.011411032639443874,
+          "IAE": 5.084709772914648,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.141746759531088,
+          "latency_ms_median": 5.976631509838626,
+          "latency_ms_p95": 7.641126793168949
+        },
+        {
+          "TErr": 0.4502895772457123,
+          "IAE": 8.532068335413939,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.468113253552777,
+          "latency_ms_median": 6.295550003414974,
+          "latency_ms_p95": 8.181876393791754
+        },
+        {
+          "TErr": 0.00742411520332098,
+          "IAE": 4.857450909907929,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.429082352357606,
+          "latency_ms_median": 6.102825500420295,
+          "latency_ms_p95": 8.78428694850299
+        },
+        {
+          "TErr": 0.021169623360037804,
+          "IAE": 5.352024532053615,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.940053547965363,
+          "latency_ms_median": 5.790285489638336,
+          "latency_ms_p95": 7.0880627987207845
+        },
+        {
+          "TErr": 0.009935686364769936,
+          "IAE": 5.414121476393191,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.2480455976522835,
+          "latency_ms_median": 6.2023930076975375,
+          "latency_ms_p95": 7.491834354004822
+        },
+        {
+          "TErr": 0.010539591312408447,
+          "IAE": 5.131053251260893,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.045665047907581,
+          "latency_ms_median": 5.878833500901237,
+          "latency_ms_p95": 7.622148339578415
+        },
+        {
+          "TErr": 0.367150217294693,
+          "IAE": 8.02311353981495,
+          "success": false,
+          "collided": false,
+          "latency_ms_mean": 6.288803400627027,
+          "latency_ms_median": 6.174756010295823,
+          "latency_ms_p95": 7.718433669651858
+        },
+        {
+          "TErr": 0.027445385232567787,
+          "IAE": 5.464129188880326,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.841551767468142,
+          "latency_ms_median": 5.7162275043083355,
+          "latency_ms_p95": 7.164420258777679
+        },
+        {
+          "TErr": 0.013549515046179295,
+          "IAE": 5.488268426265566,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.177222140249796,
+          "latency_ms_median": 6.012831494444981,
+          "latency_ms_p95": 7.566592351940924
+        },
+        {
+          "TErr": 0.019480308517813683,
+          "IAE": 5.711582193337384,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.049375533475541,
+          "latency_ms_median": 5.828895009472035,
+          "latency_ms_p95": 7.443505754054057
+        },
+        {
+          "TErr": 0.016153667122125626,
+          "IAE": 5.737066645175219,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.851286746134671,
+          "latency_ms_median": 5.689244993845932,
+          "latency_ms_p95": 7.131128254695794
+        },
+        {
+          "TErr": 0.06839297711849213,
+          "IAE": 7.117249248772859,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.146769601618871,
+          "latency_ms_median": 6.050816009519622,
+          "latency_ms_p95": 7.831077494483905
+        },
+        {
+          "TErr": 0.015237877145409584,
+          "IAE": 5.0451383134350145,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.035926091911581,
+          "latency_ms_median": 6.024767499184236,
+          "latency_ms_p95": 7.186094150529242
+        },
+        {
+          "TErr": 0.010119850747287273,
+          "IAE": 5.272021125350147,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.324213612436627,
+          "latency_ms_median": 6.1597319872817025,
+          "latency_ms_p95": 7.79385649075266
+        },
+        {
+          "TErr": 0.004914448130875826,
+          "IAE": 5.262518114689743,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.0091836139326915,
+          "latency_ms_median": 5.868219508556649,
+          "latency_ms_p95": 7.577986163960304
+        },
+        {
+          "TErr": 0.09094889461994171,
+          "IAE": 6.93885239824653,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.076959811034612,
+          "latency_ms_median": 5.9835210122400895,
+          "latency_ms_p95": 7.62555674591567
+        },
+        {
+          "TErr": 0.1089746356010437,
+          "IAE": 6.827455833256244,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.038925927714445,
+          "latency_ms_median": 5.926850004470907,
+          "latency_ms_p95": 7.452390999242195
+        },
+        {
+          "TErr": 0.03494023159146309,
+          "IAE": 6.3539820823073345,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.047027066621619,
+          "latency_ms_median": 5.981553491437808,
+          "latency_ms_p95": 7.390801704605101
+        },
+        {
+          "TErr": 0.005654601380228996,
+          "IAE": 5.786510930559599,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.045746939295593,
+          "latency_ms_median": 5.7937399978982285,
+          "latency_ms_p95": 7.625259752967393
+        },
+        {
+          "TErr": 0.006998888216912746,
+          "IAE": 5.255474639697932,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.128057533448252,
+          "latency_ms_median": 6.070456496672705,
+          "latency_ms_p95": 7.297210463730152
+        },
+        {
+          "TErr": 0.208121657371521,
+          "IAE": 7.623239454627037,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.394960574495296,
+          "latency_ms_median": 6.309977499768138,
+          "latency_ms_p95": 7.808092408231458
+        },
+        {
+          "TErr": 0.007296920288354158,
+          "IAE": 5.313511205120016,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.124168300690751,
+          "latency_ms_median": 5.890683984034695,
+          "latency_ms_p95": 7.7476651465985915
+        },
+        {
+          "TErr": 0.00803210400044918,
+          "IAE": 5.327461939100184,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.12035333935637,
+          "latency_ms_median": 5.931009509367868,
+          "latency_ms_p95": 7.569412686279974
+        },
+        {
+          "TErr": 0.014215550385415554,
+          "IAE": 5.497022929498928,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.983551093183148,
+          "latency_ms_median": 5.866375504410826,
+          "latency_ms_p95": 7.336582742573226
+        },
+        {
+          "TErr": 0.07345929741859436,
+          "IAE": 7.236098317503928,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.936177741774979,
+          "latency_ms_median": 5.822394494316541,
+          "latency_ms_p95": 7.476605939154979
+        },
+        {
+          "TErr": 0.004483833909034729,
+          "IAE": 5.397908964585513,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.279256746444541,
+          "latency_ms_median": 6.134759998531081,
+          "latency_ms_p95": 7.990790890471542
+        },
+        {
+          "TErr": 0.020650317892432213,
+          "IAE": 5.346680649779733,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.867987447806324,
+          "latency_ms_median": 5.717552499845624,
+          "latency_ms_p95": 7.333338502212427
+        },
+        {
+          "TErr": 0.0067970422096550465,
+          "IAE": 5.725446642180907,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.823752140859142,
+          "latency_ms_median": 5.700280496967025,
+          "latency_ms_p95": 7.280825941415967
+        },
+        {
+          "TErr": 0.018139634281396866,
+          "IAE": 5.6958764166757465,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.937807968002744,
+          "latency_ms_median": 5.885707505512983,
+          "latency_ms_p95": 7.051805395167321
+        },
+        {
+          "TErr": 0.014757340773940086,
+          "IAE": 5.6659417561441625,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.062473026686348,
+          "latency_ms_median": 5.97759400261566,
+          "latency_ms_p95": 7.076460895768832
+        },
+        {
+          "TErr": 0.007047638297080994,
+          "IAE": 4.714377353098245,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.15751627405795,
+          "latency_ms_median": 6.0975384985795245,
+          "latency_ms_p95": 7.562243704160208
+        },
+        {
+          "TErr": 0.006199524737894535,
+          "IAE": 5.177994914762672,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.119460839933406,
+          "latency_ms_median": 5.947099489276297,
+          "latency_ms_p95": 7.74001794925425
+        },
+        {
+          "TErr": 0.011178071610629559,
+          "IAE": 4.84810111379251,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.147282766954352,
+          "latency_ms_median": 5.9216610097792,
+          "latency_ms_p95": 7.628922544245142
+        },
+        {
+          "TErr": 0.0068452381528913975,
+          "IAE": 5.511987780686466,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 5.750658402491051,
+          "latency_ms_median": 5.660818511387333,
+          "latency_ms_p95": 6.822230688703712
+        },
+        {
+          "TErr": 0.007128710392862558,
+          "IAE": 5.620785559350625,
+          "success": true,
+          "collided": false,
+          "latency_ms_mean": 6.013474000501446,
+          "latency_ms_median": 5.881621007574722,
+          "latency_ms_p95": 7.4661930615548044
+        }
+      ]
+    }
+  }
+}

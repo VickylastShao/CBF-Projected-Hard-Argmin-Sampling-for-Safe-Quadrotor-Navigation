@@ -1,0 +1,271 @@
+{
+  "meta": {
+    "note": "CasADi-IPOPT H=20 vs TSH-NMPC K-scaling"
+  },
+  "tests": [
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R1_s5_K10",
+      "CasADi_succ": "80/80",
+      "method_succ": "77/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.06274131203535945,
+      "b_CasADi_wins": 3,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 0.25
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R0_pd_s5_K10",
+      "CasADi_succ": "80/80",
+      "method_succ": "79/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.04108448143233545,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "PD_K10",
+      "CasADi_succ": "80/80",
+      "method_succ": "53/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.4228682330227457,
+      "b_CasADi_wins": 27,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.4901161193847656e-08
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R1_s5_K20",
+      "CasADi_succ": "80/80",
+      "method_succ": "80/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.03170677508896915,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R0_pd_s5_K20",
+      "CasADi_succ": "80/80",
+      "method_succ": "79/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.025665203673997893,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "PD_K20",
+      "CasADi_succ": "80/80",
+      "method_succ": "71/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.1784742659656331,
+      "b_CasADi_wins": 9,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 0.00390625
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R1_s5_K50",
+      "CasADi_succ": "80/80",
+      "method_succ": "80/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.01104689472267637,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R0_pd_s5_K50",
+      "CasADi_succ": "80/80",
+      "method_succ": "80/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.015453742415411397,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "PD_K50",
+      "CasADi_succ": "80/80",
+      "method_succ": "75/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.11114753896836191,
+      "b_CasADi_wins": 5,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 0.0625
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R1_s5_K150",
+      "CasADi_succ": "80/80",
+      "method_succ": "80/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.0051182102331949865,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "R0_pd_s5_K150",
+      "CasADi_succ": "80/80",
+      "method_succ": "80/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.009839774203283014,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "narrow N=80 seed 7777",
+      "method": "PD_K150",
+      "CasADi_succ": "80/80",
+      "method_succ": "73/80",
+      "CasADi_TErr": 0.002511478096130304,
+      "method_TErr": 0.09407565644942224,
+      "b_CasADi_wins": 7,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 0.015625
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R1_s5_K20",
+      "CasADi_succ": "37/40",
+      "method_succ": "28/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.3018637515604496,
+      "b_CasADi_wins": 10,
+      "c_method_wins": 1,
+      "p_exact_two_sided": 0.01171875
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R0_pd_s5_K20",
+      "CasADi_succ": "37/40",
+      "method_succ": "34/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.16654065079055727,
+      "b_CasADi_wins": 5,
+      "c_method_wins": 2,
+      "p_exact_two_sided": 0.453125
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "PD_K20",
+      "CasADi_succ": "37/40",
+      "method_succ": "0/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 4.2468385100364685,
+      "b_CasADi_wins": 37,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.4551915228366852e-11
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R1_s5_K50",
+      "CasADi_succ": "37/40",
+      "method_succ": "38/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.12013667221181094,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 2,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R0_pd_s5_K50",
+      "CasADi_succ": "37/40",
+      "method_succ": "38/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.07900383304804563,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 2,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "PD_K50",
+      "CasADi_succ": "37/40",
+      "method_succ": "0/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 4.203554952144623,
+      "b_CasADi_wins": 37,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.4551915228366852e-11
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R1_s5_K100",
+      "CasADi_succ": "37/40",
+      "method_succ": "38/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.08023815951310098,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 2,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R0_pd_s5_K100",
+      "CasADi_succ": "37/40",
+      "method_succ": "40/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.04352008583955467,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 3,
+      "p_exact_two_sided": 0.25
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "PD_K100",
+      "CasADi_succ": "37/40",
+      "method_succ": "0/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 4.04155453890562,
+      "b_CasADi_wins": 37,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.4551915228366852e-11
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R1_s5_K150",
+      "CasADi_succ": "37/40",
+      "method_succ": "38/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.07088429545983672,
+      "b_CasADi_wins": 1,
+      "c_method_wins": 2,
+      "p_exact_two_sided": 1.0
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "R0_pd_s5_K150",
+      "CasADi_succ": "37/40",
+      "method_succ": "40/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 0.04398952322080731,
+      "b_CasADi_wins": 0,
+      "c_method_wins": 3,
+      "p_exact_two_sided": 0.25
+    },
+    {
+      "task": "+50% mass N=40 seed 2026",
+      "method": "PD_K150",
+      "CasADi_succ": "37/40",
+      "method_succ": "0/40",
+      "CasADi_TErr": 0.05387005547527224,
+      "method_TErr": 4.088193869590759,
+      "b_CasADi_wins": 37,
+      "c_method_wins": 0,
+      "p_exact_two_sided": 1.4551915228366852e-11
+    }
+  ]
+}

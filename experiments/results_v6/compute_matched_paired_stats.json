@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 80,
+    "n_steps": 150,
+    "mass": 1.5,
+    "drag": 0.1,
+    "enable_cbf": true,
+    "model_path": "/mnt/c/Users/vicks/MyWork/PTRM-NMPC/experiments/results_v6/cl_trm_model.pt",
+    "note": "effective_rollouts = K * n_iter for CEM; K for single-iter methods"
+  },
+  "tests": [
+    {
+      "budget": "150-rollout budget",
+      "method_a": "CEM_K50_iter3",
+      "method_b": "R1_s5_K150",
+      "b": 0,
+      "c": 7,
+      "p_exact_two_sided": 0.015625,
+      "succ_a": 73,
+      "succ_b": 80
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "CEM_K50_iter3",
+      "method_b": "R0_pd_s5_K150",
+      "b": 0,
+      "c": 7,
+      "p_exact_two_sided": 0.015625,
+      "succ_a": 73,
+      "succ_b": 80
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "CEM_K50_iter3",
+      "method_b": "PD_K150",
+      "b": 5,
+      "c": 6,
+      "p_exact_two_sided": 1.0,
+      "succ_a": 73,
+      "succ_b": 74
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "CEM_K150_iter1",
+      "method_b": "R1_s5_K150",
+      "b": 0,
+      "c": 49,
+      "p_exact_two_sided": 3.552713678800501e-15,
+      "succ_a": 31,
+      "succ_b": 80
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "PD_K150",
+      "method_b": "R1_s5_K150",
+      "b": 0,
+      "c": 6,
+      "p_exact_two_sided": 0.03125,
+      "succ_a": 74,
+      "succ_b": 80
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "PD_K150",
+      "method_b": "R0_pd_s5_K150",
+      "b": 0,
+      "c": 6,
+      "p_exact_two_sided": 0.03125,
+      "succ_a": 74,
+      "succ_b": 80
+    },
+    {
+      "budget": "150-rollout budget",
+      "method_a": "R0_pd_s5_K150",
+      "method_b": "R1_s5_K150",
+      "b": 0,
+      "c": 0,
+      "p_exact_two_sided": 1.0,
+      "succ_a": 80,
+      "succ_b": 80
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "CEM_K10_iter3",
+      "method_b": "R1_s5_K30",
+      "b": 0,
+      "c": 8,
+      "p_exact_two_sided": 0.0078125,
+      "succ_a": 70,
+      "succ_b": 78
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "CEM_K10_iter3",
+      "method_b": "R0_pd_s5_K30",
+      "b": 0,
+      "c": 10,
+      "p_exact_two_sided": 0.001953125,
+      "succ_a": 70,
+      "succ_b": 80
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "CEM_K10_iter3",
+      "method_b": "PD_K30",
+      "b": 6,
+      "c": 4,
+      "p_exact_two_sided": 0.75390625,
+      "succ_a": 70,
+      "succ_b": 68
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "PD_K30",
+      "method_b": "R1_s5_K30",
+      "b": 2,
+      "c": 12,
+      "p_exact_two_sided": 0.012939453125,
+      "succ_a": 68,
+      "succ_b": 78
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "PD_K30",
+      "method_b": "R0_pd_s5_K30",
+      "b": 0,
+      "c": 12,
+      "p_exact_two_sided": 0.00048828125,
+      "succ_a": 68,
+      "succ_b": 80
+    },
+    {
+      "budget": "30-rollout budget",
+      "method_a": "R0_pd_s5_K30",
+      "method_b": "R1_s5_K30",
+      "b": 2,
+      "c": 0,
+      "p_exact_two_sided": 0.5,
+      "succ_a": 80,
+      "succ_b": 78
+    }
+  ],
+  "summary": "At matched effective-rollout budget (150 = CEM K=50\u00d73 iter or single-iter K=150), CEM K=50 iter3 reaches 73/80 success while R1_s5 K=150 reaches 80/80 (p<0.05 McNemar). At 30-rollout budget, CEM K=10 iter3 reaches 70/80 vs R1_s5 K=30 at 78/80 and R0_pd_s5 K=30 at 80/80. The iterative-refinement advantage of CEM is real (K=150 single-iter collapses to 31/80) but does not close the gap to R1_s5's \u03c3=5 single-iteration spray + argmin selection."
+}

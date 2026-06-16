@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "task": "narrow",
+    "seed": 7777,
+    "n_mc": 80,
+    "n_steps": 150,
+    "K": 10,
+    "sigma": 2.0,
+    "lambdas": [
+      0.01,
+      0.05,
+      0.1,
+      0.5,
+      1.0,
+      5.0
+    ],
+    "mass": 1.5,
+    "drag": 0.1,
+    "enable_cbf": true
+  },
+  "reference": {
+    "R1_s5_K10": {
+      "success_count": 77,
+      "TErr_mean": 0.056473825353896244,
+      "IAE_mean": 6.394130377572554
+    },
+    "PD_K10": {
+      "success_count": 56,
+      "TErr_mean": 0.2833162672352046,
+      "IAE_mean": 8.379723434519022
+    },
+    "R0_pd_s5_K10": {
+      "success_count": 79,
+      "TErr_mean": 0.03770808328990825,
+      "IAE_mean": 5.765282132199151
+    }
+  },
+  "tests": [
+    {
+      "MPPI_lam": "5.0",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 34,
+      "p_exact_two_sided": 1.1641532182693481e-10,
+      "MPPI_success": "43/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "5.0",
+      "reference": "PD_K10",
+      "b": 5,
+      "c": 18,
+      "p_exact_two_sided": 0.010622024536132812,
+      "MPPI_success": "43/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "5.0",
+      "reference": "R0_pd_s5_K10",
+      "b": 0,
+      "c": 36,
+      "p_exact_two_sided": 2.9103830456733704e-11,
+      "MPPI_success": "43/80",
+      "ref_success": "79/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.01",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 36,
+      "p_exact_two_sided": 2.9103830456733704e-11,
+      "MPPI_success": "41/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.01",
+      "reference": "PD_K10",
+      "b": 4,
+      "c": 19,
+      "p_exact_two_sided": 0.002599477767944336,
+      "MPPI_success": "41/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.01",
+      "reference": "R0_pd_s5_K10",
+      "b": 1,
+      "c": 39,
+      "p_exact_two_sided": 7.457856554538012e-11,
+      "MPPI_success": "41/80",
+      "ref_success": "79/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.1",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 36,
+      "p_exact_two_sided": 2.9103830456733704e-11,
+      "MPPI_success": "41/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.1",
+      "reference": "PD_K10",
+      "b": 7,
+      "c": 22,
+      "p_exact_two_sided": 0.008130058646202087,
+      "MPPI_success": "41/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.1",
+      "reference": "R0_pd_s5_K10",
+      "b": 0,
+      "c": 38,
+      "p_exact_two_sided": 7.275957614183426e-12,
+      "MPPI_success": "41/80",
+      "ref_success": "79/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.05",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 37,
+      "p_exact_two_sided": 1.4551915228366852e-11,
+      "MPPI_success": "40/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.05",
+      "reference": "PD_K10",
+      "b": 6,
+      "c": 22,
+      "p_exact_two_sided": 0.0037191659212112427,
+      "MPPI_success": "40/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.05",
+      "reference": "R0_pd_s5_K10",
+      "b": 0,
+      "c": 39,
+      "p_exact_two_sided": 3.637978807091713e-12,
+      "MPPI_success": "40/80",
+      "ref_success": "79/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "1.0",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 41,
+      "p_exact_two_sided": 9.094947017729282e-13,
+      "MPPI_success": "36/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "1.0",
+      "reference": "PD_K10",
+      "b": 3,
+      "c": 23,
+      "p_exact_two_sided": 8.797645568847656e-05,
+      "MPPI_success": "36/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "1.0",
+      "reference": "R0_pd_s5_K10",
+      "b": 1,
+      "c": 44,
+      "p_exact_two_sided": 2.6147972675971687e-12,
+      "MPPI_success": "36/80",
+      "ref_success": "79/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.5",
+      "reference": "R1_s5_K10",
+      "b": 0,
+      "c": 44,
+      "p_exact_two_sided": 1.1368683772161603e-13,
+      "MPPI_success": "33/80",
+      "ref_success": "77/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.5",
+      "reference": "PD_K10",
+      "b": 1,
+      "c": 24,
+      "p_exact_two_sided": 1.5497207641601562e-06,
+      "MPPI_success": "33/80",
+      "ref_success": "56/80",
+      "significant": true
+    },
+    {
+      "MPPI_lam": "0.5",
+      "reference": "R0_pd_s5_K10",
+      "b": 0,
+      "c": 46,
+      "p_exact_two_sided": 2.842170943040401e-14,
+      "MPPI_success": "33/80",
+      "ref_success": "79/80",
+      "significant": true
+    }
+  ],
+  "summary": "Best MPPI \u03bb=5.0 achieves 43/80 = 53.8% vs R1_s5 77/80 = 96.2% (gap 34/80 = 42.5%). The \u03bb sweep confirms that MPPI tuning does not close the gap to R1_s5 or PD; the best MPPI \u03bb=5.0 (43/80) remains well below PD (56/80)."
+}
